@@ -1,0 +1,109 @@
+/* ==========================================================================
+   VIP Executive Styling for Brigadier General (Dr.) AKM Nasir Uddin (retd.)
+   ========================================================================== */
+
+/* Smooth Scrolling & Offset */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+/* Custom Luxury Gold & Deep Navy Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050D1A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #D4AF37 0%, #997A15 100%);
+  border-radius: 9999px;
+  border: 2px solid #050D1A;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #F3E5AB;
+}
+
+/* Metallic Gold Text Shimmer Animation */
+@keyframes goldShimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.gold-shimmer {
+  background: linear-gradient(90deg, #D4AF37 0%, #FFF7D6 50%, #D4AF37 100%);
+  background-size: 200% auto;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: goldShimmer 6s linear infinite;
+}
+
+/* Glassmorphism Card Effect */
+.glass-panel {
+  background: rgba(15, 36, 68, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(212, 175, 55, 0.25);
+}
+
+.glass-panel:hover {
+  border-color: rgba(212, 175, 55, 0.5);
+  box-shadow: 0 10px 30px -10px rgba(212, 175, 55, 0.15);
+}
+
+/* Subtle Pulsing Star & Beacon */
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.6);
+  }
+}
+
+.gold-beacon {
+  animation: pulseGlow 3s infinite;
+}
+
+/* Printable Executive Profile Brief */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #1e293b !important;
+  }
+  
+  header, footer, .fixed, #advisoryForm, #contact, #media {
+    display: none !important;
+  }
+
+  #briefModal {
+    display: block !important;
+    position: static !important;
+    background: transparent !important;
+    padding: 0 !important;
+  }
+
+  #briefModal > div {
+    border: 2px solid #334155 !important;
+    background: #ffffff !important;
+    color: #0f172a !important;
+    box-shadow: none !important;
+    max-width: 100% !important;
+  }
+
+  #briefModal h3, #briefModal h4, #briefModal strong {
+    color: #0f172a !important;
+  }
+
+  #briefModal button, #briefModal a {
+    display: none !important;
+  }
+}
