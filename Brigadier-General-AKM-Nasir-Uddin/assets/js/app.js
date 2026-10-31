@@ -40,7 +40,7 @@ const translations = {
     "hero-photo-ribbon": "Army Medical Corps Veteran",
     "hero-ceo-subtitle": "HEALTHCARE STATESMAN & MEDICAL ADMINISTRATOR",
     "hero-title-prefix": "Brigadier General (Dr.)",
-    "hero-cur-post-title": "Current Executive Leadership:",
+    "hero-cur-post-title": "CURRENT EXECUTIVE LEADERSHIP:",
     "hero-cur-post-val": "Chief Executive Officer (CEO) — Pro-Active Medical College & Hospital Ltd",
     "frame-caption-title": "Former Director, Dhaka Medical College Hospital (DMCH) & Public Health Leader",
     "frame-caption-sub": "CEO, Pro-Active Hospital • Former National Consultant, BRAC Health • Over 35 Years of Exemplary Command",
