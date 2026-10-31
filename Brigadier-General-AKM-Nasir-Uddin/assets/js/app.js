@@ -1,9 +1,10 @@
 /**
- * Executive Portfolio Script for Brigadier General (Dr.) AKM Nasir Uddin (retd.)
- * Interactive Bilingual Engine, Modal Management & Executive Secretariat Communications
+ * Ultra-Premium Executive Portfolio Engine
+ * Brigadier General (Dr.) AKM Nasir Uddin (retd.)
+ * Interactive Bilingual Engine, Count-Up Animations, IntersectionObserver Scroll Reveals & Secretariat Integration
  */
 
-// Comprehensive Bilingual Vocabulary Dictionary
+// Comprehensive Bilingual Vocabulary Dictionary (Including Detailed LinkedIn Career Data)
 const translations = {
   en: {
     // Top Bar
@@ -11,13 +12,13 @@ const translations = {
     "top-announcement": "Executive Healthcare Advisory • Hospital Commissioning • Public Health Strategy",
     "top-book": "Request Executive Consultation",
     "top-service": "24/7 Tertiary Medical Service Available",
-    "hero-ceo-subtitle": "Executive Leadership & Medical Statesman",
-    "hero-tenures-summary": "Former National Consultant, BRAC Health Program (BHP) • Former Commandant, Armed Forces Medical Institute (AFMI) • Former Commandant, Combined Military Hospital (CMH) Chattogram • Former Director, Dhaka Medical College Hospital (DMCH) • Former Director, Rajshahi Medical College Hospital (RMCH) • Former Director, Kurmitola General Hospital • Former Director, DNCC Dedicated Covid-19 Hospital.",
 
     // Navigation
-    "nav-sub": "MBBS • MPhil • MPH | Healthcare Statesman",
+    "nav-sub": "MPhil, MPH, MBBS | Healthcare Statesman & CEO",
     "nav-about": "Biography",
     "nav-milestones": "Career Command",
+    "nav-linkedin-exp": "Leadership Experience",
+    "nav-skills": "Core Competencies",
     "nav-pillars": "Advisory Pillars",
     "nav-crisis": "Crisis Leadership",
     "nav-media": "Media & Press",
@@ -26,17 +27,13 @@ const translations = {
 
     // Hero Section
     "hero-army-badge": "Bangladesh Army Medical Corps • Retired Brigadier General",
+    "hero-ceo-subtitle": "Executive Leadership & Medical Statesman",
     "hero-title-prefix": "Brigadier General (Dr.)",
-    "hero-desc": "Distinguished Healthcare Administrator, Hospital Turnaround Specialist, and Former Director of Dhaka Medical College Hospital (DMCH). Over three and a half decades of stellar leadership across Bangladesh Army Combined Military Hospitals, apex national referral institutes, and premier private healthcare conglomerates.",
-    "badge-ceo": "CEO:",
-    "badge-dmch": "Former Director:",
-    "badge-dncc": "Former Director:",
-    "badge-brac": "Former National Consultant:",
-    "btn-hero-consult": "Request Strategic Advisory",
-    "btn-hero-milestones": "Explore Career Command",
-    "btn-hero-cv": "Executive Brief",
     "frame-caption-title": "Chief Executive Officer (CEO)",
     "frame-caption-sub": "Pro-Active Medical College & Hospital Ltd.",
+    "hero-tenures-summary": "Former National Consultant, BRAC Health Program (BHP) • Former Commandant, Armed Forces Medical Institute (AFMI) • Former Commandant, Combined Military Hospital (CMH) Chattogram • Former Director, Dhaka Medical College Hospital (DMCH) • Former Director, Rajshahi Medical College Hospital (RMCH) • Former Director, Kurmitola General Hospital • Former Director, DNCC Dedicated Covid-19 Hospital.",
+    "btn-hero-consult": "Request Consultation",
+    "btn-hero-cv": "Executive Profile Brief",
 
     // Stats
     "stat-1": "Years of Military & Civil Medical Command",
@@ -47,19 +44,47 @@ const translations = {
     // Biography
     "about-badge": "The Statesman's Journey",
     "about-title": "Where Military Precision Meets Compassionate Healing",
-    "about-p1": "Brigadier General (Dr.) A.K.M. Nasir Uddin (Retd.) represents a rare caliber of healthcare leadership in South Asia—bridging the disciplined rigor of the Bangladesh Army Medical Corps with the complex operational agility demanded by the nation's premier tertiary healthcare institutions.",
-    "about-p2": "Across his illustrious career, he served as the Director of Dhaka Medical College Hospital (DMCH)—the nerve center of Bangladesh's national healthcare system. During severe public health emergencies, including the peak waves of COVID-19 and historic Dengue outbreaks, his strategic decisiveness expanded bed capacity, secured logistics, protected thousands of medical professionals, and ensured equitable care for the vulnerable.",
+    "about-p1": "Brigadier General (Dr.) A.K.M. Nasir Uddin (Retd.) represents a distinguished standard of healthcare leadership in South Asia—bridging the disciplined rigor of the Bangladesh Army Medical Corps with the complex operational agility demanded by the nation's premier tertiary healthcare institutions.",
+    "about-p2": "Across his illustrious career, he served as the Director of Dhaka Medical College Hospital (DMCH)—the central nerve center of Bangladesh's national referral system. During critical public health emergencies, including the peak waves of COVID-19 and historic Dengue outbreaks, his strategic decisiveness expanded bed capacity, secured logistics, protected thousands of medical professionals, and ensured equitable care for the vulnerable.",
     "about-p3": "His institutional stewardship also includes serving as Commandant of the Armed Forces Medical Institute (AFMI), Commandant of CMH Chattogram, Director of Rajshahi Medical College Hospital (RMCH), Director of Kurmitola General Hospital, and steering the mammoth DNCC Dedicated COVID-19 Hospital.",
     "about-p4": "Today, as the Chief Executive Officer (CEO) of Pro-Active Medical College and Hospital Ltd., and former National Consultant for BRAC Health Program, he spearheads modernized hospital systems, clinical governance, and strategic healthcare advisory.",
     "pill-1-title": "Crisis-Tested Governance",
     "pill-1-desc": "Proven experience commanding thousands of beds during national crises.",
     "pill-2-title": "Institutional Transformation",
     "pill-2-desc": "Turnaround strategist for both public mega-hospitals and private setups.",
-    "creed-subtitle": "Executive Philosophy",
+    "creed-subtitle": "Message From CEO",
     "creed-title": "Core Principles of Health Stewardship",
     "creed-quote": "\"Healthcare is not merely an administrative domain; it is a sacred national covenant. True hospital leadership demands military integrity, unwavering empathy for every patient, and the visionary courage to innovate in times of unprecedented crisis.\"",
 
-    // Career Timeline
+    // LinkedIn Experience Section
+    "exp-badge": "LinkedIn Verified Career History",
+    "exp-title": "Executive Appointments & Institutional Leadership",
+    "exp-subtitle": "An extensive overview of leadership tenures recorded on his professional LinkedIn portfolio across military and civilian medical sectors.",
+    "exp1-role": "Chief Executive Officer (CEO)",
+    "exp1-company": "Pro-Active Medical College & Hospital Ltd.",
+    "exp1-desc": "Spearheading comprehensive hospital governance, modernizing 24/7 ICU & critical care, operating suites, medical staff development, patient safety protocols, and strategic hospital branding in Dhaka.",
+    "exp2-role": "Director",
+    "exp2-company": "DNCC Dedicated COVID-19 Hospital, Mohakhali",
+    "exp2-desc": "Commanded the operationalization of Bangladesh’s largest dedicated pandemic field hospital (over 1,000 beds with 200+ ICU capacity), coordinating national patient admission flows during the height of the epidemic.",
+    "exp3-role": "Director",
+    "exp3-company": "Dhaka Medical College Hospital (DMCH)",
+    "exp3-desc": "Directed the premier national referral center. Converted Building-2 into a 600-bed COVID facility, sheltered and provisioned 2,200+ medical frontline workers, and managed the historic 2019 Dengue crisis.",
+    "exp4-role": "Commandant",
+    "exp4-company": "Armed Forces Medical Institute (AFMI)",
+    "exp4-desc": "Provided academic and military leadership for postgraduate medical education, training doctors of the Armed Forces in clinical specializations, disaster medicine, and leadership ethics.",
+    "exp5-role": "Commandant",
+    "exp5-company": "Combined Military Hospital (CMH) Chattogram",
+    "exp5-desc": "Commanded the military medical establishment in the port city, ensuring defense healthcare operational readiness, high-standard tertiary medical support, and family healthcare facilities.",
+    "exp6-role": "National Consultant",
+    "exp6-company": "BRAC Health Program (BHP)",
+    "exp6-desc": "Consulted on national community health initiatives, rural healthcare delivery models, maternal and child survival strategies, and public-private healthcare collaborations.",
+
+    // Skills
+    "skills-badge": "Core Competencies & Endorsements",
+    "skills-title": "LinkedIn Verified Skills & Strategic Expertise",
+    "skills-subtitle": "Demonstrated capabilities validated over 35+ years of healthcare leadership in high-stakes civilian and military environments.",
+
+    // Timeline
     "timeline-badge": "Distinguished Command Record",
     "timeline-title": "Key Institutional Milestones & Executive Posts",
     "timeline-subtitle": "A chronological legacy of heading Bangladesh's most prominent military, public referral, and modern private healthcare organizations.",
@@ -141,7 +166,6 @@ const translations = {
     "contact-desc": "For institutional hospital development, board appointments, medical college commissioning, or keynote invitations, submit your proposal to the executive secretariat.",
     "c-office-title": "Current Executive Office",
     "c-wa-title": "Direct WhatsApp Secretariat",
-    "c-mail-title": "Official Correspondence",
     "form-title": "Strategic Proposal / Consultation",
     "form-sub": "Confidential executive correspondence channel",
     "f-name": "Your Full Name / Dignitary Name *",
@@ -161,13 +185,13 @@ const translations = {
     "top-announcement": "স্বাস্থ্যসেবা কৌশলগত পরামর্শ • হাসপাতাল কমিশনিং • জনস্বাস্থ্য পলিসি",
     "top-book": "এক্সিকিউটিভ পরামর্শ বুক করুন",
     "top-service": "২৪/৭ টারশিয়ারি স্বাস্থ্যসেবা সার্বক্ষণিক প্রস্তুত",
-    "hero-ceo-subtitle": "নির্বাহী স্বাস্থ্য নেতৃত্ব ও জাতীয় রূপকার",
-    "hero-tenures-summary": "সাবেক জাতীয় পরামর্শক, ব্র্যাক হেলথ প্রোগ্রাম (BHP) • সাবেক কমান্ড্যান্ট, আর্মড ফোর্সেস মেডিকেল ইনস্টিটিউট (AFMI) • সাবেক কমান্ড্যান্ট, সিএমএইচ চট্টগ্রাম • সাবেক পরিচালক, ঢাকা মেডিকেল কলেজ হাসপাতাল (DMCH) • সাবেক পরিচালক, রাজশাহী মেডিকেল কলেজ হাসপাতাল (RMCH) • সাবেক পরিচালক, কুর্মিটোলা জেনারেল হাসপাতাল • সাবেক পরিচালক, ডিএনসিসি ডেডিকেটেড কোভিড-১৯ হাসপাতাল।",
 
     // Navigation
-    "nav-sub": "এমবিবিএস • এমফিল • এমপিএইচ | স্বাস্থ্যখাতের রূপকার",
+    "nav-sub": "এমফিল, এমপিএইচ, এমবিবিএস | স্বাস্থ্যখাতের রূপকার ও সিইও",
     "nav-about": "জীবন ও কর্ম",
     "nav-milestones": "কমান্ড রেকর্ড",
+    "nav-linkedin-exp": "নেতৃত্ব ও অভিজ্ঞতা",
+    "nav-skills": "দক্ষতার ক্ষেত্রসমূহ",
     "nav-pillars": "উপদেষ্টা ক্ষেত্র",
     "nav-crisis": "সংকটকালীন নেতৃত্ব",
     "nav-media": "প্রেস ও মিডিয়া",
@@ -176,17 +200,13 @@ const translations = {
 
     // Hero Section
     "hero-army-badge": "বাংলাদেশ সেনাবাহিনী মেডিকেল কোর • অবসরপ্রাপ্ত ব্রিগেডিয়ার জেনারেল",
+    "hero-ceo-subtitle": "নির্বাহী স্বাস্থ্য নেতৃত্ব ও জাতীয় রূপকার",
     "hero-title-prefix": "ব্রিগেডিয়ার জেনারেল (ডা.)",
-    "hero-desc": "বিশিষ্ট স্বাস্থ্য প্রশাসক, হাসপাতাল রূপান্তর বিশেষজ্ঞ এবং ঢাকা মেডিকেল কলেজ হাসপাতালের (DMCH) সাবেক সফল পরিচালক। বাংলাদেশ সেনাবাহিনীর সম্মিলিত সামরিক হাসপাতাল (CMH), জাতীয় রেফারাল ইনস্টিটিউট ও শীর্ষস্থানীয় বেসরকারি স্বাস্থ্য প্রতিষ্ঠানে সাড়ে তিন দশকেরও বেশি সময় ধরে গৌরবোজ্জ্বল নেতৃত্ব প্রদানকারী ব্যক্তিত্ব।",
-    "badge-ceo": "সিইও:",
-    "badge-dmch": "সাবেক পরিচালক:",
-    "badge-dncc": "সাবেক পরিচালক:",
-    "badge-brac": "সাবেক জাতীয় কনসালটেন্ট:",
-    "btn-hero-consult": "কৌশলগত পরামর্শের জন্য আবেদন",
-    "btn-hero-milestones": "কর্মজীবনের গৌরবগাথা",
-    "btn-hero-cv": "এক্সিকিউটিভ প্রোফাইল",
     "frame-caption-title": "প্রধান নির্বাহী কর্মকর্তা (সিইও)",
     "frame-caption-sub": "প্রো-অ্যাক্টিভ মেডিকেল কলেজ ও হাসপাতাল লি.",
+    "hero-tenures-summary": "সাবেক জাতীয় পরামর্শক, ব্র্যাক হেলথ প্রোগ্রাম (BHP) • সাবেক কমান্ড্যান্ট, আর্মড ফোর্সেস মেডিকেল ইনস্টিটিউট (AFMI) • সাবেক কমান্ড্যান্ট, সিএমএইচ চট্টগ্রাম • সাবেক পরিচালক, ঢাকা মেডিকেল কলেজ হাসপাতাল (DMCH) • সাবেক পরিচালক, রাজশাহী মেডিকেল কলেজ হাসপাতাল (RMCH) • সাবেক পরিচালক, কুর্মিটোলা জেনারেল হাসপাতাল • সাবেক পরিচালক, ডিএনসিসি ডেডিকেটেড কোভিড-১৯ হাসপাতাল।",
+    "btn-hero-consult": "পরামর্শের জন্য আবেদন",
+    "btn-hero-cv": "এক্সিকিউটিভ প্রোফাইল",
 
     // Stats
     "stat-1": "বছর সামরিক ও বেসামরিক চিকিৎসা ব্যবস্থাপনায় অবদান",
@@ -205,11 +225,39 @@ const translations = {
     "pill-1-desc": "মহামারিকালে হাজার হাজার শয্যা ও ডাক্তারদের সফল নেতৃত্ব দানের বাস্তব অভিজ্ঞতা।",
     "pill-2-title": "হাসপাতালের সফল রূপান্তর",
     "pill-2-desc": "সরকারি মেগা হাসপাতাল ও বেসরকারি আধুনিক স্বাস্থ্য ব্যবস্থার যুগোপযোগী আধুনিকায়ন।",
-    "creed-subtitle": "নেতৃত্বের মূল দর্শন",
+    "creed-subtitle": "সিইও বার্তা ও মূল দর্শন",
     "creed-title": "স্বাস্থ্যসেবা ও মানবিক দায়িত্ববোধ",
     "creed-quote": "\"স্বাস্থ্যসেবা শুধুমাত্র একটি প্রশাসনিক দায়িত্ব নয়; এটি এক পবিত্র জাতীয় আমানত। একজন সফল স্বাস্থ্য প্রশাসকের সবচেয়ে বড় শক্তি হলো সামরিক সততা, রোগীর প্রতি অকৃত্রিম মানবিক সহানুভূতি এবং যেকোনো জাতীয় সংকটে সাহসী উদ্ভাবনী পদক্ষেপ গ্রহণ করার মানসিকতা।\"",
 
-    // Career Timeline
+    // LinkedIn Experience Section
+    "exp-badge": "লিঙ্কডইন ভেরিফাইড কর্মজীবন",
+    "exp-title": "নির্বাহী পদমর্যাদা ও প্রাতিষ্ঠানিক নেতৃত্ব",
+    "exp-subtitle": "সামরিক ও বেসামরিক স্বাস্থ্য খাতে তাঁর পেশাদার লিঙ্কডইন প্রোফাইলে লিপিবদ্ধ গৌরবোজ্জ্বল দায়িত্বসমূহের বিস্তারিত চিত্র।",
+    "exp1-role": "প্রধান নির্বাহী কর্মকর্তা (সিইও)",
+    "exp1-company": "প্রো-অ্যাক্টিভ মেডিকেল কলেজ ও হাসপাতাল লিমিটেড",
+    "exp1-desc": "সার্বিক হাসপাতাল পরিচালনা, ২৪/৭ আইসিইউ ও ক্রিটিক্যাল কেয়ার আধুনিকায়ন, আধুনিক অপারেশন থিয়েটার, ডাক্তার ও নার্সদের প্রশিক্ষণ এবং ঢাকার বুকে বিশ্বমানের রোগীসেবা নিশ্চিতকরণ।",
+    "exp2-role": "পরিচালক",
+    "exp2-company": "ডিএনসিসি ডেডিকেটেড কোভিড-১৯ হাসপাতাল, মহাখালী",
+    "exp2-desc": "দেশের সর্ববৃহৎ ১,০০০ শয্যার মহামারি ফিল্ড হাসপাতাল এবং ২০০+ আইসিইউ বেডের পূর্ণাঙ্গ কমিশন ও সর্বোচ্চ জাতীয় সংক্রমণকালে রোগী ব্যবস্থাপনার নেতৃত্ব।",
+    "exp3-role": "পরিচালক",
+    "exp3-company": "ঢাকা মেডিকেল কলেজ হাসপাতাল (DMCH)",
+    "exp3-desc": "দেশের শীর্ষ রেফারাল সেন্টার পরিচালনা। ২ নং ভবনে ৬০০ শয্যার কোভিড ইউনিট চালু, ২,২০০+ স্বাস্থ্যকর্মীদের সুরক্ষা ও আবাসন এবং ২০১৯ সালের ডেঙ্গু সংকট সফলভাবে মোকাবিলা।",
+    "exp4-role": "কমান্ড্যান্ট",
+    "exp4-company": "আর্মড ফোর্সেস মেডিকেল ইনস্টিটিউট (AFMI)",
+    "exp4-desc": "সামরিক বাহিনীর উচ্চতর মেডিকেল প্রশিক্ষণ অ্যাকাডেমিতে পোস্টগ্র্যাজুয়েট ডাক্তারদের ক্লিনিক্যাল স্পেশালাইজেশন, দুর্যোগ চিকিৎসা ও সামরিক নেতৃত্বে প্রশিক্ষণ প্রদান।",
+    "exp5-role": "কমান্ড্যান্ট",
+    "exp5-company": "সম্মিলিত সামরিক হাসপাতাল (সিএমএইচ) চট্টগ্রাম",
+    "exp5-desc": "বন্দর নগরীর সামরিক চিকিৎসা কমপ্লেক্সের সার্বিক কমান্ড, প্রতিরক্ষা বাহিনীর স্বাস্থ্য প্রস্তুতি এবং আধুনিক টারশিয়ারি চিকিৎসা সেবার মানোন্নয়ন।",
+    "exp6-role": "জাতীয় পরামর্শক (National Consultant)",
+    "exp6-company": "ব্র্যাক হেলথ প্রোগ্রাম (BHP)",
+    "exp6-desc": "তৃণমূল কমিউনিটি স্বাস্থ্য সম্প্রসারণ, গ্রামীণ স্বাস্থ্যসেবা মডেল, মা ও শিশু স্বাস্থ্য সুরক্ষা এবং সরকারি-বেসরকারি স্বাস্থ্য অংশীদারিত্বে জাতীয় নীতি প্রণয়ন।",
+
+    // Skills
+    "skills-badge": "কোর কম্পিটেন্সি ও অনুমোদন",
+    "skills-title": "লিঙ্কডইন ভেরিফাইড দক্ষতা ও কৌশলগত বিশেষজ্ঞতা",
+    "skills-subtitle": "সামরিক ও বেসামরিক জটিল স্বাস্থ্য পরিবেশে দীর্ঘ ৩৫+ বছরের নেতৃত্বের মাধ্যমে অর্জিত প্রমাণিত সক্ষমতা।",
+
+    // Timeline
     "timeline-badge": "সামরিক ও বেসামরিক কমান্ড রেকর্ড",
     "timeline-title": "গুরুত্বপূর্ণ প্রশাসনিক মাইলফলক ও নেতৃত্ব",
     "timeline-subtitle": "বাংলাদেশের শীর্ষ সামরিক, সরকারি টারশিয়ারি এবং আধুনিক বেসরকারি স্বাস্থ্য অবকাঠামো পরিচালনার কালানুক্রমিক ইতিহাস।",
@@ -291,7 +339,6 @@ const translations = {
     "contact-desc": "নতুন হাসপাতাল স্থাপন, বোর্ড মিটিংয়ে স্বাধীন উপদেষ্টা অন্তর্ভুক্তি, মেডিকেল কলেজ কমিশন অথবা জাতীয় স্বাস্থ্য সেমিনারে মূল বক্তব্যের আমন্ত্রণের জন্য সচিবালয়ে প্রস্তাব পাঠান।",
     "c-office-title": "বর্তমান নির্বাহী কার্যালয়",
     "c-wa-title": "সরাসরি হোয়াটসঅ্যাপ সচিবালয়",
-    "c-mail-title": "অফিসিয়াল ইমেইল পত্রালাপ",
     "form-title": "কৌশলগত প্রস্তাব / পরামর্শের আবেদন",
     "form-sub": "সম্পূর্ণ গোপনীয় এক্সিকিউটিভ যোগাযোগ চ্যানেল",
     "f-name": "আপনার পূর্ণ নাম / পদমর্যাদা *",
@@ -354,12 +401,97 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  // Setup IntersectionObserver for Smooth Scroll Reveal Animations
+  initScrollAnimations();
+
+  // Setup Count-Up Statistics Animation
+  initCountUpAnimation();
+
   // Advisory Form Submission Handler
   const advisoryForm = document.getElementById('advisoryForm');
   if (advisoryForm) {
     advisoryForm.addEventListener('submit', handleAdvisorySubmit);
   }
 });
+
+/**
+ * Initialize IntersectionObserver for Scroll Animations
+ */
+function initScrollAnimations() {
+  const revealElements = document.querySelectorAll('.reveal-init');
+  if (!('IntersectionObserver' in window)) {
+    // Fallback if IntersectionObserver is not supported
+    revealElements.forEach(el => el.classList.add('reveal-visible'));
+    return;
+  }
+
+  const revealObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('reveal-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    root: null,
+    threshold: 0.12,
+    rootMargin: '0px 0px -40px 0px'
+  });
+
+  revealElements.forEach(el => revealObserver.observe(el));
+}
+
+/**
+ * Initialize Smooth Count-Up Numbers for Impact Statistics
+ */
+function initCountUpAnimation() {
+  const countUpElements = document.querySelectorAll('.count-up');
+  if (!countUpElements.length) return;
+
+  let hasAnimated = false;
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !hasAnimated) {
+        hasAnimated = true;
+        countUpElements.forEach(counter => {
+          const target = parseInt(counter.getAttribute('data-target'), 10);
+          if (isNaN(target)) return;
+
+          const duration = 2000; // 2 seconds
+          const frameDuration = 1000 / 60;
+          const totalFrames = Math.round(duration / frameDuration);
+          let frame = 0;
+
+          const timer = setInterval(() => {
+            frame++;
+            const progress = frame / totalFrames;
+            // Ease-out cubic calculation
+            const easeOutProgress = 1 - Math.pow(1 - progress, 3);
+            const currentCount = Math.round(easeOutProgress * target);
+
+            if (target >= 1000) {
+              counter.textContent = currentCount.toLocaleString();
+            } else {
+              counter.textContent = currentCount;
+            }
+
+            if (frame === totalFrames) {
+              clearInterval(timer);
+              if (target >= 1000) {
+                counter.textContent = target.toLocaleString();
+              } else {
+                counter.textContent = target;
+              }
+            }
+          }, frameDuration);
+        });
+      }
+    });
+  }, { threshold: 0.3 });
+
+  const statsSection = document.querySelector('.count-up').closest('section');
+  if (statsSection) observer.observe(statsSection);
+}
 
 /**
  * Apply Language across DOM
@@ -422,7 +554,7 @@ Engagement Nature: ${type}
 ${msg}
 
 -------------------------
-Sent via Official VIP Portfolio`;
+Sent via Official VIP Executive Portfolio`;
 
   const encodedWa = encodeURIComponent(waText);
   // Official Pro-Active Executive & Emergency Secretariat Contact
@@ -433,7 +565,7 @@ Sent via Official VIP Portfolio`;
 
   // Confirmation feedback
   const successMsg = currentLanguage === 'bn' 
-    ? 'ধন্যবাদ! আপনার প্রস্তাবটি সরাসরি ব্রিগেডিয়ার জেনারেল স্যারের হোয়াটসঅ্যাপে প্রস্তুত হয়েছে।' 
+    ? 'ধন্যবাদ! আপনার প্রস্তাবটি সরাসরি ব্রিগেডিয়ার জেনারেল স্যারের হোয়াটসঅ্যাপ সচিবালয়ে প্রস্তুত হয়েছে।' 
     : 'Thank you! Your strategic proposal has been formatted for the Executive Secretariat.';
   
   alert(successMsg);

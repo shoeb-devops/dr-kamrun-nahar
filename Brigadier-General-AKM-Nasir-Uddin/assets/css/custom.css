@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Executive Medical Teal & Clean White Theme
+   Ultra-Premium Animated Styles & Micro-Interactions
    Brigadier General (Dr.) AKM Nasir Uddin (retd.)
    ========================================================================== */
 
@@ -15,17 +15,108 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f5f9;
+  background: #f8fafc;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #025B66;
+  background: linear-gradient(180deg, #025B66 0%, #00A884 100%);
   border-radius: 9999px;
   border: 2px solid #ffffff;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #00A884;
+  background: #013137;
+}
+
+/* Floating Breathing Animation */
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(0.5deg);
+  }
+}
+
+.floating-hero-portrait {
+  animation: floatSlow 6s ease-in-out infinite;
+}
+
+/* Pulsing Radiant Rings for Circular Portrait */
+@keyframes haloPulse {
+  0% {
+    transform: scale(0.96);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.04);
+    opacity: 0.85;
+  }
+  100% {
+    transform: scale(0.96);
+    opacity: 0.5;
+  }
+}
+
+.halo-ring {
+  animation: haloPulse 4s ease-in-out infinite;
+}
+
+/* Subtle Shimmer Effect on Action Buttons */
+@keyframes buttonShine {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.shine-button {
+  background-size: 200% auto;
+  transition: all 0.4s ease;
+}
+
+.shine-button:hover {
+  background-position: right center;
+  box-shadow: 0 10px 25px -5px rgba(0, 168, 132, 0.4);
+}
+
+/* Scroll Reveal Classes */
+.reveal-init {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Premium Card Hover Lift */
+.premium-card {
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.35s ease;
+}
+
+.premium-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 30px -10px rgba(2, 91, 102, 0.12);
+  border-color: #025B66 !important;
+}
+
+/* Skill Badge Hover Effect */
+.skill-pill {
+  transition: all 0.25s ease;
+}
+
+.skill-pill:hover {
+  transform: scale(1.05);
+  background-color: #025B66;
+  color: #ffffff;
+  border-color: #025B66;
+  box-shadow: 0 4px 12px rgba(2, 91, 102, 0.2);
 }
 
 /* Printable Executive Profile Brief */
@@ -35,7 +126,7 @@ html {
     color: #1e293b !important;
   }
   
-  header, footer, .fixed, #advisoryForm, #contact, #media {
+  header, footer, .fixed, #advisoryForm, #contact, #media, .no-print {
     display: none !important;
   }
 

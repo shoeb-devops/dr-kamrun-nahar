@@ -45,7 +45,7 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-  <!-- Custom CSS -->
+  <!-- Custom Animated CSS -->
   <link rel="stylesheet" href="assets/css/custom.css">
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-teal-600 selection:text-white transition-colors duration-300">
@@ -55,7 +55,7 @@
     <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
       <div class="flex items-center space-x-6">
         <span class="flex items-center gap-1.5 font-medium text-teal-100">
-          <i class="fa-solid fa-phone-volume text-emerald-300"></i>
+          <i class="fa-solid fa-phone-volume text-emerald-300 animate-pulse"></i>
           <span>Emergency: <strong class="text-white tracking-wider">01902556070</strong></span>
         </span>
         <span class="hidden sm:flex items-center gap-1.5 text-teal-100">
@@ -76,16 +76,16 @@
         <a href="https://www.linkedin.com/in/brig-gen-dr-akm-nasir-uddin-retd-mphil-mph-mbbs-b84464119/" 
            target="_blank" 
            rel="noopener noreferrer" 
-           class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-white/10 hover:bg-white/20 text-white font-semibold transition border border-white/20">
+           class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-white/10 hover:bg-white/25 text-white font-semibold transition border border-white/20 shadow-sm hover:scale-105 transform">
           <i class="fa-brands fa-linkedin text-sky-300"></i>
-          <span>LinkedIn</span>
+          <span>LinkedIn Verified</span>
         </a>
       </div>
     </div>
   </div>
 
   <!-- Primary White Sticky Navigation Bar -->
-  <header class="sticky top-0 z-40 bg-white border-b border-slate-200/90 shadow-sm backdrop-blur-md bg-white/95" id="mainHeader">
+  <header class="sticky top-0 z-40 bg-white/95 border-b border-slate-200/90 shadow-sm backdrop-blur-md transition-all duration-300" id="mainHeader">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       
       <!-- Logo / VIP Title Brand -->
@@ -112,21 +112,22 @@
       <nav class="hidden lg:flex items-center space-x-7 text-sm font-semibold text-slate-700">
         <a href="#about" class="hover:text-[#025B66] transition" data-lang="nav-about">Biography</a>
         <a href="#milestones" class="hover:text-[#025B66] transition" data-lang="nav-milestones">Career Command</a>
+        <a href="#experience" class="hover:text-[#025B66] transition" data-lang="nav-linkedin-exp">Leadership Experience</a>
+        <a href="#skills" class="hover:text-[#025B66] transition" data-lang="nav-skills">Core Competencies</a>
         <a href="#pillars" class="hover:text-[#025B66] transition" data-lang="nav-pillars">Advisory Pillars</a>
         <a href="#covid" class="hover:text-[#025B66] transition" data-lang="nav-crisis">Crisis Leadership</a>
-        <a href="#media" class="hover:text-[#025B66] transition" data-lang="nav-media">Media & Press</a>
         <a href="#academic" class="hover:text-[#025B66] transition" data-lang="nav-credentials">Credentials</a>
       </nav>
 
       <!-- Language Toggle & Advisory Desk CTA -->
       <div class="flex items-center space-x-3">
         <!-- Language Switcher Button -->
-        <button id="langToggleBtn" class="flex items-center space-x-1.5 px-3 py-1.5 rounded-lg bg-teal-50 hover:bg-teal-100 text-[#025B66] border border-teal-200 text-xs font-bold tracking-wide transition">
+        <button id="langToggleBtn" class="flex items-center space-x-1.5 px-3 py-1.5 rounded-lg bg-teal-50 hover:bg-teal-100 text-[#025B66] border border-teal-200 text-xs font-bold tracking-wide transition hover:scale-105 transform">
           <i class="fa-solid fa-globe text-[#025B66]"></i>
           <span id="currentLangText">বাংলা</span>
         </button>
 
-        <!-- Executive Appointment Button (Matching Pro-Active Style) -->
+        <!-- Executive Appointment Button -->
         <a href="#contact" class="hidden sm:inline-flex items-center space-x-2 px-5 py-2.5 rounded-xl bg-[#00A884] hover:bg-[#008F6F] text-white font-bold text-xs tracking-wider uppercase shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5">
           <i class="fa-regular fa-calendar-check"></i>
           <span data-lang="btn-consult">Advisory Desk</span>
@@ -143,9 +144,10 @@
     <div id="mobileMenu" class="hidden lg:hidden border-t border-slate-200 bg-white px-4 pt-3 pb-6 space-y-3 shadow-lg">
       <a href="#about" class="block py-2 text-sm font-medium text-slate-700 hover:text-[#025B66]" data-lang="nav-about">Biography</a>
       <a href="#milestones" class="block py-2 text-sm font-medium text-slate-700 hover:text-[#025B66]" data-lang="nav-milestones">Career Command</a>
+      <a href="#experience" class="block py-2 text-sm font-medium text-slate-700 hover:text-[#025B66]" data-lang="nav-linkedin-exp">Leadership Experience</a>
+      <a href="#skills" class="block py-2 text-sm font-medium text-slate-700 hover:text-[#025B66]" data-lang="nav-skills">Core Competencies</a>
       <a href="#pillars" class="block py-2 text-sm font-medium text-slate-700 hover:text-[#025B66]" data-lang="nav-pillars">Advisory Pillars</a>
       <a href="#covid" class="block py-2 text-sm font-medium text-slate-700 hover:text-[#025B66]" data-lang="nav-crisis">Crisis Leadership</a>
-      <a href="#media" class="block py-2 text-sm font-medium text-slate-700 hover:text-[#025B66]" data-lang="nav-media">Media & Press</a>
       <a href="#academic" class="block py-2 text-sm font-medium text-slate-700 hover:text-[#025B66]" data-lang="nav-credentials">Credentials</a>
       <a href="#contact" class="block py-2 text-sm font-bold text-[#00A884]" data-lang="btn-consult">Request Strategic Consultation</a>
     </div>
@@ -153,31 +155,32 @@
 
   <main>
 
-    <!-- ==================== HERO SECTION (PRO-ACTIVE TEAL BANNER) ==================== -->
+    <!-- ==================== HERO SECTION (PRO-ACTIVE TEAL BANNER WITH DYNAMIC GLOWS) ==================== -->
     <section class="relative bg-gradient-to-r from-[#02464E] via-[#025B66] to-[#013137] text-white pt-16 pb-20 md:pt-20 md:pb-24 shadow-inner overflow-hidden">
-      <!-- Background Ambient Glow -->
+      <!-- Animated Ambient Glows & Grid -->
       <div class="absolute inset-0 pointer-events-none opacity-20 bg-[radial-gradient(#38bdf8_1px,transparent_1px)] [background-size:24px_24px]"></div>
-      <div class="absolute -top-24 -right-24 w-96 h-96 bg-teal-400/20 rounded-full blur-3xl"></div>
+      <div class="absolute -top-24 -right-24 w-96 h-96 bg-teal-400/20 rounded-full blur-3xl animate-pulse"></div>
+      <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-emerald-400/15 rounded-full blur-3xl"></div>
 
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
           
-          <!-- Circular Portrait Photo (Exactly as on Pro-Active Hospital Page) -->
+          <!-- Circular Portrait Photo with Multi-layered Glowing Pulse Rings -->
           <div class="lg:col-span-5 flex justify-center lg:justify-start">
-            <div class="relative">
-              <!-- Glow Rings -->
-              <div class="absolute -inset-2 bg-gradient-to-tr from-teal-300 via-emerald-400 to-teal-500 rounded-full blur-md opacity-40"></div>
+            <div class="relative floating-hero-portrait">
+              <!-- Animated Glowing Halo Rings -->
+              <div class="absolute -inset-3 bg-gradient-to-tr from-teal-300 via-emerald-400 to-teal-500 rounded-full blur-md opacity-45 halo-ring"></div>
               
               <!-- Circular Frame -->
-              <div class="relative w-64 h-64 sm:w-72 sm:h-72 rounded-full p-2 bg-gradient-to-b from-teal-200/50 to-teal-700/50 border-4 border-white/80 shadow-2xl overflow-hidden group">
+              <div class="relative w-64 h-64 sm:w-72 sm:h-72 rounded-full p-2 bg-gradient-to-b from-teal-200/60 to-teal-800/60 border-4 border-white/90 shadow-2xl overflow-hidden group">
                 <img src="assets/images/brig-gen-nasir-uddin.jpg" 
                      alt="Brigadier General (Dr.) AKM Nasir Uddin (retd.)" 
                      id="heroDoctorImage"
-                     class="w-full h-full object-cover rounded-full group-hover:scale-105 transition-all duration-500">
+                     class="w-full h-full object-cover rounded-full group-hover:scale-105 transition-all duration-700">
                 
                 <!-- Online Status Beacon -->
-                <div class="absolute bottom-4 right-8 bg-[#00A884] text-white text-[10px] font-bold px-2.5 py-1 rounded-full border-2 border-white shadow-lg flex items-center gap-1.5">
-                  <span class="w-1.5 h-1.5 rounded-full bg-white animate-pulse"></span>
+                <div class="absolute bottom-4 right-8 bg-[#00A884] text-white text-[11px] font-bold px-3 py-1 rounded-full border-2 border-white shadow-lg flex items-center gap-1.5 animate-bounce">
+                  <span class="w-2 h-2 rounded-full bg-white animate-ping"></span>
                   <span>CEO</span>
                 </div>
               </div>
@@ -187,7 +190,7 @@
           <!-- Hero Text Details -->
           <div class="lg:col-span-7 space-y-4 text-center lg:text-left">
             
-            <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-teal-100 text-xs font-semibold">
+            <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-teal-100 text-xs font-semibold shadow-sm">
               <i class="fa-solid fa-award text-amber-300"></i>
               <span data-lang="hero-army-badge">Bangladesh Army Medical Corps • Retired Brigadier General</span>
             </div>
@@ -223,7 +226,7 @@
 
             <!-- Action Buttons -->
             <div class="pt-4 flex flex-wrap items-center justify-center lg:justify-start gap-3">
-              <a href="#contact" class="inline-flex items-center space-x-2 px-6 py-3.5 rounded-xl bg-[#00A884] hover:bg-[#008F6F] text-white font-bold text-xs tracking-wider uppercase shadow-lg shadow-emerald-950/20 transition-all duration-300 transform hover:-translate-y-0.5">
+              <a href="#contact" class="inline-flex items-center space-x-2 px-6 py-3.5 rounded-xl bg-[#00A884] hover:bg-[#008F6F] text-white font-bold text-xs tracking-wider uppercase shadow-lg shadow-emerald-950/20 transition-all duration-300 transform hover:-translate-y-0.5 hover:shadow-xl">
                 <i class="fa-solid fa-calendar-check text-sm"></i>
                 <span data-lang="btn-hero-consult">Request Consultation</span>
               </a>
@@ -231,12 +234,12 @@
               <a href="https://www.linkedin.com/in/brig-gen-dr-akm-nasir-uddin-retd-mphil-mph-mbbs-b84464119/" 
                  target="_blank" 
                  rel="noopener noreferrer" 
-                 class="inline-flex items-center space-x-2 px-5 py-3.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/30 text-white font-semibold text-xs tracking-wider transition">
+                 class="inline-flex items-center space-x-2 px-5 py-3.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/30 text-white font-semibold text-xs tracking-wider transition hover:scale-105 transform">
                 <i class="fa-brands fa-linkedin text-sky-300 text-sm"></i>
-                <span>View LinkedIn Profile</span>
+                <span>Connect on LinkedIn</span>
               </a>
 
-              <a href="javascript:void(0)" onclick="openExecutiveBriefModal()" class="inline-flex items-center space-x-2 px-5 py-3.5 rounded-xl bg-teal-800/80 hover:bg-teal-700 text-teal-100 border border-teal-500/40 text-xs font-semibold transition">
+              <a href="javascript:void(0)" onclick="openExecutiveBriefModal()" class="inline-flex items-center space-x-2 px-5 py-3.5 rounded-xl bg-teal-800/80 hover:bg-teal-700 text-teal-100 border border-teal-500/40 text-xs font-semibold transition hover:scale-105 transform">
                 <i class="fa-regular fa-file-lines"></i>
                 <span data-lang="btn-hero-cv">Executive Profile Brief</span>
               </a>
@@ -248,39 +251,45 @@
       </div>
     </section>
 
-    <!-- ==================== EXECUTIVE IMPACT STATS ==================== -->
+    <!-- ==================== EXECUTIVE IMPACT STATS (ANIMATED COUNT-UP) ==================== -->
     <section class="relative z-20 -mt-8 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
         
         <!-- Stat 1 -->
-        <div class="p-6 rounded-2xl bg-white border border-slate-200/90 shadow-lg hover:shadow-xl hover:border-teal-500 transition-all duration-300 group">
+        <div class="p-6 rounded-2xl bg-white border border-slate-200/90 shadow-lg hover:shadow-xl hover:border-teal-500 transition-all duration-300 group premium-card reveal-init">
           <div class="text-[#025B66] text-2xl mb-2 group-hover:scale-110 transition duration-300">
             <i class="fa-solid fa-medal"></i>
           </div>
-          <div class="text-3xl sm:text-4xl font-extrabold text-slate-900">35+</div>
+          <div class="text-3xl sm:text-4xl font-extrabold text-slate-900 flex items-center">
+            <span class="count-up" data-target="35">0</span><span>+</span>
+          </div>
           <p class="text-xs sm:text-sm text-slate-600 font-semibold mt-1" data-lang="stat-1">Years of Military & Civil Medical Command</p>
         </div>
 
         <!-- Stat 2 -->
-        <div class="p-6 rounded-2xl bg-white border border-slate-200/90 shadow-lg hover:shadow-xl hover:border-teal-500 transition-all duration-300 group">
+        <div class="p-6 rounded-2xl bg-white border border-slate-200/90 shadow-lg hover:shadow-xl hover:border-teal-500 transition-all duration-300 group premium-card reveal-init">
           <div class="text-[#025B66] text-2xl mb-2 group-hover:scale-110 transition duration-300">
             <i class="fa-solid fa-hospital"></i>
           </div>
-          <div class="text-3xl sm:text-4xl font-extrabold text-slate-900">6+</div>
+          <div class="text-3xl sm:text-4xl font-extrabold text-slate-900 flex items-center">
+            <span class="count-up" data-target="6">0</span><span>+</span>
+          </div>
           <p class="text-xs sm:text-sm text-slate-600 font-semibold mt-1" data-lang="stat-2">Premier Tertiary Hospitals & Institutes Commanded</p>
         </div>
 
         <!-- Stat 3 -->
-        <div class="p-6 rounded-2xl bg-white border border-slate-200/90 shadow-lg hover:shadow-xl hover:border-teal-500 transition-all duration-300 group">
+        <div class="p-6 rounded-2xl bg-white border border-slate-200/90 shadow-lg hover:shadow-xl hover:border-teal-500 transition-all duration-300 group premium-card reveal-init">
           <div class="text-[#025B66] text-2xl mb-2 group-hover:scale-110 transition duration-300">
             <i class="fa-solid fa-bed-pulse"></i>
           </div>
-          <div class="text-3xl sm:text-4xl font-extrabold text-slate-900">10,000+</div>
+          <div class="text-3xl sm:text-4xl font-extrabold text-slate-900 flex items-center">
+            <span class="count-up" data-target="10000">0</span><span>+</span>
+          </div>
           <p class="text-xs sm:text-sm text-slate-600 font-semibold mt-1" data-lang="stat-3">Hospital Beds Administered Across Career</p>
         </div>
 
         <!-- Stat 4 -->
-        <div class="p-6 rounded-2xl bg-white border border-slate-200/90 shadow-lg hover:shadow-xl hover:border-teal-500 transition-all duration-300 group">
+        <div class="p-6 rounded-2xl bg-white border border-slate-200/90 shadow-lg hover:shadow-xl hover:border-teal-500 transition-all duration-300 group premium-card reveal-init">
           <div class="text-[#025B66] text-2xl mb-2 group-hover:scale-110 transition duration-300">
             <i class="fa-solid fa-people-roof"></i>
           </div>
@@ -295,7 +304,7 @@
     <section id="about" class="py-20 bg-white border-b border-slate-200">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div class="text-center max-w-3xl mx-auto space-y-3 mb-16">
+        <div class="text-center max-w-3xl mx-auto space-y-3 mb-16 reveal-init">
           <span class="text-xs font-bold text-[#025B66] tracking-widest uppercase bg-teal-50 px-3 py-1 rounded-full border border-teal-200" data-lang="about-badge">
             The Statesman's Journey
           </span>
@@ -308,7 +317,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
           <!-- Narrative Left Column -->
-          <div class="lg:col-span-7 space-y-5 text-slate-700 text-base leading-relaxed">
+          <div class="lg:col-span-7 space-y-5 text-slate-700 text-base leading-relaxed reveal-init">
             <p class="text-lg text-slate-800 font-normal leading-relaxed" data-lang="about-p1">
               <strong>Brigadier General (Dr.) A.K.M. Nasir Uddin (Retd.)</strong> represents a distinguished standard of healthcare leadership in South Asia—bridging the disciplined rigor of the <strong>Bangladesh Army Medical Corps</strong> with the complex operational agility demanded by the nation's premier tertiary healthcare institutions.
             </p>
@@ -323,7 +332,7 @@
             </p>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-3">
-              <div class="flex items-start space-x-3 p-4 rounded-xl bg-slate-50 border border-slate-200">
+              <div class="flex items-start space-x-3 p-4 rounded-xl bg-slate-50 border border-slate-200 premium-card">
                 <i class="fa-solid fa-circle-check text-[#00A884] text-lg mt-0.5"></i>
                 <div>
                   <h3 class="text-sm font-bold text-slate-900" data-lang="pill-1-title">Crisis-Tested Governance</h3>
@@ -331,7 +340,7 @@
                 </div>
               </div>
 
-              <div class="flex items-start space-x-3 p-4 rounded-xl bg-slate-50 border border-slate-200">
+              <div class="flex items-start space-x-3 p-4 rounded-xl bg-slate-50 border border-slate-200 premium-card">
                 <i class="fa-solid fa-circle-check text-[#00A884] text-lg mt-0.5"></i>
                 <div>
                   <h3 class="text-sm font-bold text-slate-900" data-lang="pill-2-title">Institutional Transformation</h3>
@@ -342,8 +351,8 @@
           </div>
 
           <!-- CEO Message Card Right Column -->
-          <div class="lg:col-span-5">
-            <div class="p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-[#02464E] to-[#013137] text-white shadow-xl relative overflow-hidden">
+          <div class="lg:col-span-5 reveal-init">
+            <div class="p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-[#02464E] to-[#013137] text-white shadow-xl relative overflow-hidden premium-card">
               <i class="fa-solid fa-quote-right absolute -bottom-6 -right-6 text-8xl text-white/5 pointer-events-none"></i>
               
               <div class="flex items-center space-x-3 mb-6">
@@ -377,11 +386,214 @@
       </div>
     </section>
 
+    <!-- ==================== DETAILED LINKEDIN EXPERIENCE & LEADERSHIP (NEW SECTION) ==================== -->
+    <section id="experience" class="py-20 bg-slate-50 border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto space-y-3 mb-16 reveal-init">
+          <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-sky-50 border border-sky-200 text-sky-800 text-xs font-semibold">
+            <i class="fa-brands fa-linkedin text-sky-600"></i>
+            <span data-lang="exp-badge">LinkedIn Verified Career History</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-bold text-slate-900" data-lang="exp-title">
+            Executive Appointments & Institutional Leadership
+          </h2>
+          <p class="text-sm sm:text-base text-slate-600 font-normal" data-lang="exp-subtitle">
+            An extensive overview of leadership tenures recorded on his professional LinkedIn portfolio across military and civilian medical sectors.
+          </p>
+          <div class="w-20 h-1 bg-[#025B66] mx-auto rounded-full"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          
+          <!-- Experience Card 1 -->
+          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-lg transition-all duration-300 premium-card reveal-init">
+            <div class="flex items-start justify-between">
+              <div class="flex items-center space-x-3.5">
+                <div class="w-12 h-12 rounded-xl bg-teal-50 border border-teal-200 flex items-center justify-center text-[#025B66] text-xl">
+                  <i class="fa-solid fa-hospital-user"></i>
+                </div>
+                <div>
+                  <h3 class="text-base font-bold text-slate-900" data-lang="exp1-role">Chief Executive Officer (CEO)</h3>
+                  <p class="text-xs font-semibold text-[#025B66]" data-lang="exp1-company">Pro-Active Medical College & Hospital Ltd.</p>
+                </div>
+              </div>
+              <span class="px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 text-[11px] font-bold">2022 - Present</span>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mt-4" data-lang="exp1-desc">
+              Spearheading comprehensive hospital governance, modernizing 24/7 ICU & critical care, operating suites, medical staff development, patient safety protocols, and strategic hospital branding in Dhaka.
+            </p>
+          </div>
+
+          <!-- Experience Card 2 -->
+          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-lg transition-all duration-300 premium-card reveal-init">
+            <div class="flex items-start justify-between">
+              <div class="flex items-center space-x-3.5">
+                <div class="w-12 h-12 rounded-xl bg-teal-50 border border-teal-200 flex items-center justify-center text-[#025B66] text-xl">
+                  <i class="fa-solid fa-lungs-virus"></i>
+                </div>
+                <div>
+                  <h3 class="text-base font-bold text-slate-900" data-lang="exp2-role">Director</h3>
+                  <p class="text-xs font-semibold text-[#025B66]" data-lang="exp2-company">DNCC Dedicated COVID-19 Hospital, Mohakhali</p>
+                </div>
+              </div>
+              <span class="px-2.5 py-1 rounded-full bg-teal-50 text-teal-700 border border-teal-200 text-[11px] font-bold">2021</span>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mt-4" data-lang="exp2-desc">
+              Commanded the operationalization of Bangladesh’s largest dedicated pandemic field hospital (over 1,000 beds with 200+ ICU capacity), coordinating national patient admission flows during the height of the epidemic.
+            </p>
+          </div>
+
+          <!-- Experience Card 3 -->
+          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-lg transition-all duration-300 premium-card reveal-init">
+            <div class="flex items-start justify-between">
+              <div class="flex items-center space-x-3.5">
+                <div class="w-12 h-12 rounded-xl bg-teal-50 border border-teal-200 flex items-center justify-center text-[#025B66] text-xl">
+                  <i class="fa-solid fa-building-columns"></i>
+                </div>
+                <div>
+                  <h3 class="text-base font-bold text-slate-900" data-lang="exp3-role">Director</h3>
+                  <p class="text-xs font-semibold text-[#025B66]" data-lang="exp3-company">Dhaka Medical College Hospital (DMCH)</p>
+                </div>
+              </div>
+              <span class="px-2.5 py-1 rounded-full bg-teal-50 text-teal-700 border border-teal-200 text-[11px] font-bold">2017 - 2020</span>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mt-4" data-lang="exp3-desc">
+              Directed the premier national referral center. Converted Building-2 into a 600-bed COVID facility, sheltered and provisioned 2,200+ medical frontline workers, and managed the historic 2019 Dengue crisis.
+            </p>
+          </div>
+
+          <!-- Experience Card 4 -->
+          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-lg transition-all duration-300 premium-card reveal-init">
+            <div class="flex items-start justify-between">
+              <div class="flex items-center space-x-3.5">
+                <div class="w-12 h-12 rounded-xl bg-teal-50 border border-teal-200 flex items-center justify-center text-[#025B66] text-xl">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <div>
+                  <h3 class="text-base font-bold text-slate-900" data-lang="exp4-role">Commandant</h3>
+                  <p class="text-xs font-semibold text-[#025B66]" data-lang="exp4-company">Armed Forces Medical Institute (AFMI)</p>
+                </div>
+              </div>
+              <span class="px-2.5 py-1 rounded-full bg-teal-50 text-teal-700 border border-teal-200 text-[11px] font-bold">Military Command</span>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mt-4" data-lang="exp4-desc">
+              Provided academic and military leadership for postgraduate medical education, training doctors of the Armed Forces in clinical specializations, disaster medicine, and leadership ethics.
+            </p>
+          </div>
+
+          <!-- Experience Card 5 -->
+          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-lg transition-all duration-300 premium-card reveal-init">
+            <div class="flex items-start justify-between">
+              <div class="flex items-center space-x-3.5">
+                <div class="w-12 h-12 rounded-xl bg-teal-50 border border-teal-200 flex items-center justify-center text-[#025B66] text-xl">
+                  <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <div>
+                  <h3 class="text-base font-bold text-slate-900" data-lang="exp5-role">Commandant</h3>
+                  <p class="text-xs font-semibold text-[#025B66]" data-lang="exp5-company">Combined Military Hospital (CMH) Chattogram</p>
+                </div>
+              </div>
+              <span class="px-2.5 py-1 rounded-full bg-teal-50 text-teal-700 border border-teal-200 text-[11px] font-bold">Military Command</span>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mt-4" data-lang="exp5-desc">
+              Commanded the military medical establishment in the port city, ensuring defense healthcare operational readiness, high-standard tertiary medical support, and family healthcare facilities.
+            </p>
+          </div>
+
+          <!-- Experience Card 6 -->
+          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-lg transition-all duration-300 premium-card reveal-init">
+            <div class="flex items-start justify-between">
+              <div class="flex items-center space-x-3.5">
+                <div class="w-12 h-12 rounded-xl bg-teal-50 border border-teal-200 flex items-center justify-center text-[#025B66] text-xl">
+                  <i class="fa-solid fa-hand-holding-medical"></i>
+                </div>
+                <div>
+                  <h3 class="text-base font-bold text-slate-900" data-lang="exp6-role">National Consultant</h3>
+                  <p class="text-xs font-semibold text-[#025B66]" data-lang="exp6-company">BRAC Health Program (BHP)</p>
+                </div>
+              </div>
+              <span class="px-2.5 py-1 rounded-full bg-teal-50 text-teal-700 border border-teal-200 text-[11px] font-bold">Policy & Development</span>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mt-4" data-lang="exp6-desc">
+              Consulted on national community health initiatives, rural healthcare delivery models, maternal and child survival strategies, and public-private healthcare collaborations.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== LINKEDIN CORE COMPETENCIES & SKILLS GRID (NEW SECTION) ==================== -->
+    <section id="skills" class="py-20 bg-white border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto space-y-3 mb-16 reveal-init">
+          <span class="text-xs font-bold text-[#025B66] tracking-widest uppercase bg-teal-50 px-3 py-1 rounded-full border border-teal-200" data-lang="skills-badge">
+            Core Competencies & Endorsements
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-bold text-slate-900" data-lang="skills-title">
+            LinkedIn Verified Skills & Strategic Expertise
+          </h2>
+          <p class="text-sm sm:text-base text-slate-600 font-normal" data-lang="skills-subtitle">
+            Demonstrated capabilities validated over 35+ years of healthcare leadership in high-stakes civilian and military environments.
+          </p>
+          <div class="w-20 h-1 bg-[#025B66] mx-auto rounded-full"></div>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+          
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 text-slate-800 text-xs sm:text-sm font-semibold flex items-center space-x-3 skill-pill cursor-pointer shadow-sm">
+            <i class="fa-solid fa-hospital-symbol text-[#00A884] text-base"></i>
+            <span>Hospital Commissioning</span>
+          </div>
+
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 text-slate-800 text-xs sm:text-sm font-semibold flex items-center space-x-3 skill-pill cursor-pointer shadow-sm">
+            <i class="fa-solid fa-shield-virus text-[#00A884] text-base"></i>
+            <span>Pandemic & Crisis Governance</span>
+          </div>
+
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 text-slate-800 text-xs sm:text-sm font-semibold flex items-center space-x-3 skill-pill cursor-pointer shadow-sm">
+            <i class="fa-solid fa-clipboard-check text-[#00A884] text-base"></i>
+            <span>Clinical Governance & Audit</span>
+          </div>
+
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 text-slate-800 text-xs sm:text-sm font-semibold flex items-center space-x-3 skill-pill cursor-pointer shadow-sm">
+            <i class="fa-solid fa-chart-pie text-[#00A884] text-base"></i>
+            <span>Hospital Turnaround Strategy</span>
+          </div>
+
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 text-slate-800 text-xs sm:text-sm font-semibold flex items-center space-x-3 skill-pill cursor-pointer shadow-sm">
+            <i class="fa-solid fa-graduation-cap text-[#00A884] text-base"></i>
+            <span>Medical Education (AFMI)</span>
+          </div>
+
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 text-slate-800 text-xs sm:text-sm font-semibold flex items-center space-x-3 skill-pill cursor-pointer shadow-sm">
+            <i class="fa-solid fa-earth-americas text-[#00A884] text-base"></i>
+            <span>Public Health Policy (MPH)</span>
+          </div>
+
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 text-slate-800 text-xs sm:text-sm font-semibold flex items-center space-x-3 skill-pill cursor-pointer shadow-sm">
+            <i class="fa-solid fa-boxes-packing text-[#00A884] text-base"></i>
+            <span>Healthcare Supply Chain</span>
+          </div>
+
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 text-slate-800 text-xs sm:text-sm font-semibold flex items-center space-x-3 skill-pill cursor-pointer shadow-sm">
+            <i class="fa-solid fa-handshake-angle text-[#00A884] text-base"></i>
+            <span>Civil-Military Coordination</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
     <!-- ==================== CAREER COMMAND & MILESTONES TIMELINE ==================== -->
     <section id="milestones" class="py-20 bg-slate-50 border-b border-slate-200 relative">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div class="text-center max-w-3xl mx-auto space-y-3 mb-16">
+        <div class="text-center max-w-3xl mx-auto space-y-3 mb-16 reveal-init">
           <span class="text-xs font-bold text-[#025B66] tracking-widest uppercase bg-teal-100/60 px-3 py-1 rounded-full border border-teal-200" data-lang="timeline-badge">
             Distinguished Command Record
           </span>
@@ -402,9 +614,9 @@
           <div class="space-y-10">
             
             <!-- Milestone 1: CEO Pro-Active Hospital -->
-            <div class="relative flex flex-col md:flex-row items-center">
+            <div class="relative flex flex-col md:flex-row items-center reveal-init">
               <div class="flex-1 w-full md:pr-12 md:text-right">
-                <div class="p-6 sm:p-8 rounded-2xl bg-white border border-slate-200 hover:border-[#025B66] transition-all duration-300 shadow-sm hover:shadow-lg group">
+                <div class="p-6 sm:p-8 rounded-2xl bg-white border border-slate-200 hover:border-[#025B66] transition-all duration-300 shadow-sm hover:shadow-lg group premium-card">
                   <span class="inline-block px-3 py-1 rounded-full bg-teal-50 text-[#025B66] text-xs font-bold tracking-wider mb-2 border border-teal-200">2022 - PRESENT</span>
                   <h3 class="text-xl font-bold text-slate-900 group-hover:text-[#025B66] transition" data-lang="m1-title">Chief Executive Officer (CEO) & Director</h3>
                   <p class="text-sm font-semibold text-[#025B66] mb-3" data-lang="m1-inst">Pro-Active Medical College & Hospital Ltd. (PMCHL)</p>
@@ -420,13 +632,13 @@
             </div>
 
             <!-- Milestone 2: Director DNCC Dedicated COVID-19 Hospital -->
-            <div class="relative flex flex-col md:flex-row items-center">
+            <div class="relative flex flex-col md:flex-row items-center reveal-init">
               <div class="flex-1 w-full md:pr-12 hidden md:block"></div>
               <div class="z-10 my-4 md:my-0 w-12 h-12 rounded-full bg-[#025B66] border-4 border-white flex items-center justify-center text-white font-bold shadow-md">
                 <i class="fa-solid fa-virus-covid text-sm"></i>
               </div>
               <div class="flex-1 w-full md:pl-12">
-                <div class="p-6 sm:p-8 rounded-2xl bg-white border border-slate-200 hover:border-[#025B66] transition-all duration-300 shadow-sm hover:shadow-lg group">
+                <div class="p-6 sm:p-8 rounded-2xl bg-white border border-slate-200 hover:border-[#025B66] transition-all duration-300 shadow-sm hover:shadow-lg group premium-card">
                   <span class="inline-block px-3 py-1 rounded-full bg-teal-50 text-[#025B66] text-xs font-bold tracking-wider mb-2 border border-teal-200">2021</span>
                   <h3 class="text-xl font-bold text-slate-900 group-hover:text-[#025B66] transition" data-lang="m2-title">Director</h3>
                   <p class="text-sm font-semibold text-[#025B66] mb-3" data-lang="m2-inst">DNCC Dedicated COVID-19 Hospital, Mohakhali, Dhaka</p>
@@ -438,9 +650,9 @@
             </div>
 
             <!-- Milestone 3: Director Dhaka Medical College Hospital (DMCH) -->
-            <div class="relative flex flex-col md:flex-row items-center">
+            <div class="relative flex flex-col md:flex-row items-center reveal-init">
               <div class="flex-1 w-full md:pr-12 md:text-right">
-                <div class="p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-teal-50 to-white border-2 border-[#025B66]/60 hover:border-[#025B66] transition-all duration-300 shadow-md hover:shadow-xl group">
+                <div class="p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-teal-50 to-white border-2 border-[#025B66]/60 hover:border-[#025B66] transition-all duration-300 shadow-md hover:shadow-xl group premium-card">
                   <span class="inline-block px-3 py-1 rounded-full bg-[#025B66] text-white text-xs font-bold tracking-wider mb-2">APEX NATIONAL TENURE</span>
                   <h3 class="text-xl font-bold text-slate-900 group-hover:text-[#025B66] transition" data-lang="m3-title">Director</h3>
                   <p class="text-sm font-semibold text-[#025B66] mb-3" data-lang="m3-inst">Dhaka Medical College Hospital (DMCH)</p>
@@ -449,20 +661,20 @@
                   </p>
                 </div>
               </div>
-              <div class="z-10 my-4 md:my-0 w-14 h-14 rounded-full bg-[#00A884] border-4 border-white flex items-center justify-center text-white font-bold shadow-lg">
+              <div class="z-10 my-4 md:my-0 w-14 h-14 rounded-full bg-[#00A884] border-4 border-white flex items-center justify-center text-white font-bold shadow-lg animate-pulse">
                 <i class="fa-solid fa-star text-base"></i>
               </div>
               <div class="flex-1 w-full md:pl-12 hidden md:block"></div>
             </div>
 
             <!-- Milestone 4: Director Kurmitola General Hospital -->
-            <div class="relative flex flex-col md:flex-row items-center">
+            <div class="relative flex flex-col md:flex-row items-center reveal-init">
               <div class="flex-1 w-full md:pr-12 hidden md:block"></div>
               <div class="z-10 my-4 md:my-0 w-12 h-12 rounded-full bg-[#025B66] border-4 border-white flex items-center justify-center text-white font-bold shadow-md">
                 <i class="fa-solid fa-hospital-wide text-sm"></i>
               </div>
               <div class="flex-1 w-full md:pl-12">
-                <div class="p-6 sm:p-8 rounded-2xl bg-white border border-slate-200 hover:border-[#025B66] transition-all duration-300 shadow-sm hover:shadow-lg group">
+                <div class="p-6 sm:p-8 rounded-2xl bg-white border border-slate-200 hover:border-[#025B66] transition-all duration-300 shadow-sm hover:shadow-lg group premium-card">
                   <span class="inline-block px-3 py-1 rounded-full bg-teal-50 text-[#025B66] text-xs font-bold tracking-wider mb-2 border border-teal-200">TERTIARY EXCELLENCE</span>
                   <h3 class="text-xl font-bold text-slate-900 group-hover:text-[#025B66] transition" data-lang="m4-title">Director</h3>
                   <p class="text-sm font-semibold text-[#025B66] mb-3" data-lang="m4-inst">Kurmitola General Hospital (KGH), Dhaka</p>
@@ -474,9 +686,9 @@
             </div>
 
             <!-- Milestone 5: Director Rajshahi Medical College Hospital -->
-            <div class="relative flex flex-col md:flex-row items-center">
+            <div class="relative flex flex-col md:flex-row items-center reveal-init">
               <div class="flex-1 w-full md:pr-12 md:text-right">
-                <div class="p-6 sm:p-8 rounded-2xl bg-white border border-slate-200 hover:border-[#025B66] transition-all duration-300 shadow-sm hover:shadow-lg group">
+                <div class="p-6 sm:p-8 rounded-2xl bg-white border border-slate-200 hover:border-[#025B66] transition-all duration-300 shadow-sm hover:shadow-lg group premium-card">
                   <span class="inline-block px-3 py-1 rounded-full bg-teal-50 text-[#025B66] text-xs font-bold tracking-wider mb-2 border border-teal-200">REGIONAL LEADERSHIP</span>
                   <h3 class="text-xl font-bold text-slate-900 group-hover:text-[#025B66] transition" data-lang="m5-title">Director</h3>
                   <p class="text-sm font-semibold text-[#025B66] mb-3" data-lang="m5-inst">Rajshahi Medical College Hospital (RMCH)</p>
@@ -492,13 +704,13 @@
             </div>
 
             <!-- Milestone 6: Military Command - AFMI & CMH Chattogram -->
-            <div class="relative flex flex-col md:flex-row items-center">
+            <div class="relative flex flex-col md:flex-row items-center reveal-init">
               <div class="flex-1 w-full md:pr-12 hidden md:block"></div>
               <div class="z-10 my-4 md:my-0 w-12 h-12 rounded-full bg-[#025B66] border-4 border-white flex items-center justify-center text-white font-bold shadow-md">
                 <i class="fa-solid fa-medal text-sm"></i>
               </div>
               <div class="flex-1 w-full md:pl-12">
-                <div class="p-6 sm:p-8 rounded-2xl bg-white border border-slate-200 hover:border-[#025B66] transition-all duration-300 shadow-sm hover:shadow-lg group">
+                <div class="p-6 sm:p-8 rounded-2xl bg-white border border-slate-200 hover:border-[#025B66] transition-all duration-300 shadow-sm hover:shadow-lg group premium-card">
                   <span class="inline-block px-3 py-1 rounded-full bg-teal-50 text-[#025B66] text-xs font-bold tracking-wider mb-2 border border-teal-200">MILITARY COMMAND</span>
                   <h3 class="text-xl font-bold text-slate-900 group-hover:text-[#025B66] transition" data-lang="m6-title">Commandant</h3>
                   <p class="text-sm font-semibold text-[#025B66] mb-3" data-lang="m6-inst">Armed Forces Medical Institute (AFMI) & CMH Chattogram</p>
@@ -510,9 +722,9 @@
             </div>
 
             <!-- Milestone 7: National Consultant BRAC Health -->
-            <div class="relative flex flex-col md:flex-row items-center">
+            <div class="relative flex flex-col md:flex-row items-center reveal-init">
               <div class="flex-1 w-full md:pr-12 md:text-right">
-                <div class="p-6 sm:p-8 rounded-2xl bg-white border border-slate-200 hover:border-[#025B66] transition-all duration-300 shadow-sm hover:shadow-lg group">
+                <div class="p-6 sm:p-8 rounded-2xl bg-white border border-slate-200 hover:border-[#025B66] transition-all duration-300 shadow-sm hover:shadow-lg group premium-card">
                   <span class="inline-block px-3 py-1 rounded-full bg-teal-50 text-[#025B66] text-xs font-bold tracking-wider mb-2 border border-teal-200">POLICY & CONSULTING</span>
                   <h3 class="text-xl font-bold text-slate-900 group-hover:text-[#025B66] transition" data-lang="m7-title">Former National Consultant</h3>
                   <p class="text-sm font-semibold text-[#025B66] mb-3" data-lang="m7-inst">BRAC Health Program (BHP)</p>
@@ -537,7 +749,7 @@
     <section id="pillars" class="py-20 bg-white border-b border-slate-200">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div class="text-center max-w-3xl mx-auto space-y-3 mb-16">
+        <div class="text-center max-w-3xl mx-auto space-y-3 mb-16 reveal-init">
           <span class="text-xs font-bold text-[#025B66] tracking-widest uppercase bg-teal-50 px-3 py-1 rounded-full border border-teal-200" data-lang="pillars-badge">
             Areas of Expertise
           </span>
@@ -553,7 +765,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           
           <!-- Pillar 1 -->
-          <div class="p-8 rounded-2xl bg-slate-50 border border-slate-200 hover:border-[#025B66] transition-all duration-300 shadow-sm hover:shadow-lg group hover:-translate-y-1">
+          <div class="p-8 rounded-2xl bg-slate-50 border border-slate-200 hover:border-[#025B66] transition-all duration-300 shadow-sm hover:shadow-lg group hover:-translate-y-1 premium-card reveal-init">
             <div class="w-14 h-14 rounded-xl bg-teal-100 border border-teal-200 flex items-center justify-center text-[#025B66] text-2xl mb-6 group-hover:scale-110 transition duration-300">
               <i class="fa-solid fa-building-circle-check"></i>
             </div>
@@ -566,7 +778,7 @@
           </div>
 
           <!-- Pillar 2 -->
-          <div class="p-8 rounded-2xl bg-slate-50 border border-slate-200 hover:border-[#025B66] transition-all duration-300 shadow-sm hover:shadow-lg group hover:-translate-y-1">
+          <div class="p-8 rounded-2xl bg-slate-50 border border-slate-200 hover:border-[#025B66] transition-all duration-300 shadow-sm hover:shadow-lg group hover:-translate-y-1 premium-card reveal-init">
             <div class="w-14 h-14 rounded-xl bg-teal-100 border border-teal-200 flex items-center justify-center text-[#025B66] text-2xl mb-6 group-hover:scale-110 transition duration-300">
               <i class="fa-solid fa-shield-virus"></i>
             </div>
@@ -579,7 +791,7 @@
           </div>
 
           <!-- Pillar 3 -->
-          <div class="p-8 rounded-2xl bg-slate-50 border border-slate-200 hover:border-[#025B66] transition-all duration-300 shadow-sm hover:shadow-lg group hover:-translate-y-1">
+          <div class="p-8 rounded-2xl bg-slate-50 border border-slate-200 hover:border-[#025B66] transition-all duration-300 shadow-sm hover:shadow-lg group hover:-translate-y-1 premium-card reveal-init">
             <div class="w-14 h-14 rounded-xl bg-teal-100 border border-teal-200 flex items-center justify-center text-[#025B66] text-2xl mb-6 group-hover:scale-110 transition duration-300">
               <i class="fa-solid fa-clipboard-check"></i>
             </div>
@@ -592,7 +804,7 @@
           </div>
 
           <!-- Pillar 4 -->
-          <div class="p-8 rounded-2xl bg-slate-50 border border-slate-200 hover:border-[#025B66] transition-all duration-300 shadow-sm hover:shadow-lg group hover:-translate-y-1">
+          <div class="p-8 rounded-2xl bg-slate-50 border border-slate-200 hover:border-[#025B66] transition-all duration-300 shadow-sm hover:shadow-lg group hover:-translate-y-1 premium-card reveal-init">
             <div class="w-14 h-14 rounded-xl bg-teal-100 border border-teal-200 flex items-center justify-center text-[#025B66] text-2xl mb-6 group-hover:scale-110 transition duration-300">
               <i class="fa-solid fa-chart-line"></i>
             </div>
@@ -605,7 +817,7 @@
           </div>
 
           <!-- Pillar 5 -->
-          <div class="p-8 rounded-2xl bg-slate-50 border border-slate-200 hover:border-[#025B66] transition-all duration-300 shadow-sm hover:shadow-lg group hover:-translate-y-1">
+          <div class="p-8 rounded-2xl bg-slate-50 border border-slate-200 hover:border-[#025B66] transition-all duration-300 shadow-sm hover:shadow-lg group hover:-translate-y-1 premium-card reveal-init">
             <div class="w-14 h-14 rounded-xl bg-teal-100 border border-teal-200 flex items-center justify-center text-[#025B66] text-2xl mb-6 group-hover:scale-110 transition duration-300">
               <i class="fa-solid fa-graduation-cap"></i>
             </div>
@@ -618,7 +830,7 @@
           </div>
 
           <!-- Pillar 6 -->
-          <div class="p-8 rounded-2xl bg-slate-50 border border-slate-200 hover:border-[#025B66] transition-all duration-300 shadow-sm hover:shadow-lg group hover:-translate-y-1">
+          <div class="p-8 rounded-2xl bg-slate-50 border border-slate-200 hover:border-[#025B66] transition-all duration-300 shadow-sm hover:shadow-lg group hover:-translate-y-1 premium-card reveal-init">
             <div class="w-14 h-14 rounded-xl bg-teal-100 border border-teal-200 flex items-center justify-center text-[#025B66] text-2xl mb-6 group-hover:scale-110 transition duration-300">
               <i class="fa-solid fa-earth-americas"></i>
             </div>
@@ -641,7 +853,7 @@
         
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
-          <div class="lg:col-span-6 space-y-5">
+          <div class="lg:col-span-6 space-y-5 reveal-init">
             <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-red-100 border border-red-200 text-red-700 text-xs font-semibold">
               <i class="fa-solid fa-biohazard text-red-600"></i>
               <span data-lang="covid-badge">National Frontline Chronicle</span>
@@ -675,9 +887,9 @@
             </div>
           </div>
 
-          <div class="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div class="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-4 reveal-init">
             
-            <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-2 hover:border-[#025B66] transition">
+            <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-2 hover:border-[#025B66] transition premium-card">
               <div class="text-[#025B66] text-2xl mb-1"><i class="fa-solid fa-hospital-symbol"></i></div>
               <h3 class="text-base font-bold text-slate-900">DMCH Building-2</h3>
               <p class="text-xs text-[#025B66] font-semibold">600+ Beds Dedicated</p>
@@ -686,7 +898,7 @@
               </p>
             </div>
 
-            <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-2 hover:border-[#025B66] transition">
+            <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-2 hover:border-[#025B66] transition premium-card">
               <div class="text-[#025B66] text-2xl mb-1"><i class="fa-solid fa-lungs-virus"></i></div>
               <h3 class="text-base font-bold text-slate-900">DNCC Covid Hospital</h3>
               <p class="text-xs text-[#025B66] font-semibold">1,000+ Bed Apex Facility</p>
@@ -695,7 +907,7 @@
               </p>
             </div>
 
-            <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-2 hover:border-[#025B66] transition">
+            <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-2 hover:border-[#025B66] transition premium-card">
               <div class="text-[#025B66] text-2xl mb-1"><i class="fa-solid fa-mosquito"></i></div>
               <h3 class="text-base font-bold text-slate-900">2019 Dengue Surge</h3>
               <p class="text-xs text-[#025B66] font-semibold">Emergency Command</p>
@@ -704,7 +916,7 @@
               </p>
             </div>
 
-            <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-2 hover:border-[#025B66] transition">
+            <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-2 hover:border-[#025B66] transition premium-card">
               <div class="text-[#025B66] text-2xl mb-1"><i class="fa-solid fa-user-doctor"></i></div>
               <h3 class="text-base font-bold text-slate-900">Frontline Welfare</h3>
               <p class="text-xs text-[#025B66] font-semibold">2,200+ Medical Staff</p>
@@ -724,7 +936,7 @@
     <section id="media" class="py-20 bg-white border-b border-slate-200">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div class="text-center max-w-3xl mx-auto space-y-3 mb-16">
+        <div class="text-center max-w-3xl mx-auto space-y-3 mb-16 reveal-init">
           <span class="text-xs font-bold text-[#025B66] tracking-widest uppercase bg-teal-50 px-3 py-1 rounded-full border border-teal-200" data-lang="media-badge">
             National Voice & Transparency
           </span>
@@ -740,7 +952,7 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           
           <!-- Media Item 1 -->
-          <div class="rounded-2xl bg-slate-50 border border-slate-200 hover:border-[#025B66] transition-all duration-300 overflow-hidden shadow-sm hover:shadow-lg flex flex-col justify-between group">
+          <div class="rounded-2xl bg-slate-50 border border-slate-200 hover:border-[#025B66] transition-all duration-300 overflow-hidden shadow-sm hover:shadow-lg flex flex-col justify-between group premium-card reveal-init">
             <div class="p-6 space-y-3">
               <div class="flex items-center justify-between text-xs text-[#025B66] font-semibold">
                 <span>The Business Standard / Prothom Alo</span>
@@ -760,7 +972,7 @@
           </div>
 
           <!-- Media Item 2 -->
-          <div class="rounded-2xl bg-slate-50 border border-slate-200 hover:border-[#025B66] transition-all duration-300 overflow-hidden shadow-sm hover:shadow-lg flex flex-col justify-between group">
+          <div class="rounded-2xl bg-slate-50 border border-slate-200 hover:border-[#025B66] transition-all duration-300 overflow-hidden shadow-sm hover:shadow-lg flex flex-col justify-between group premium-card reveal-init">
             <div class="p-6 space-y-3">
               <div class="flex items-center justify-between text-xs text-[#025B66] font-semibold">
                 <span>National Press Conference</span>
@@ -780,7 +992,7 @@
           </div>
 
           <!-- Media Item 3 -->
-          <div class="rounded-2xl bg-slate-50 border border-slate-200 hover:border-[#025B66] transition-all duration-300 overflow-hidden shadow-sm hover:shadow-lg flex flex-col justify-between group">
+          <div class="rounded-2xl bg-slate-50 border border-slate-200 hover:border-[#025B66] transition-all duration-300 overflow-hidden shadow-sm hover:shadow-lg flex flex-col justify-between group premium-card reveal-init">
             <div class="p-6 space-y-3">
               <div class="flex items-center justify-between text-xs text-[#025B66] font-semibold">
                 <span>Healthcare Leadership Forum</span>
@@ -808,7 +1020,7 @@
     <section id="academic" class="py-20 bg-slate-50 border-b border-slate-200">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div class="text-center max-w-3xl mx-auto space-y-3 mb-16">
+        <div class="text-center max-w-3xl mx-auto space-y-3 mb-16 reveal-init">
           <span class="text-xs font-bold text-[#025B66] tracking-widest uppercase bg-teal-100/60 px-3 py-1 rounded-full border border-teal-200" data-lang="acad-badge">
             Qualifications & Scholarly Footprint
           </span>
@@ -821,7 +1033,7 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           
           <!-- Degree 1 -->
-          <div class="p-8 rounded-2xl bg-white border border-slate-200 text-center space-y-3 shadow-sm hover:shadow-md transition">
+          <div class="p-8 rounded-2xl bg-white border border-slate-200 text-center space-y-3 shadow-sm hover:shadow-md transition premium-card reveal-init">
             <div class="w-16 h-16 rounded-2xl bg-teal-50 border border-teal-200 mx-auto flex items-center justify-center text-[#025B66] text-3xl">
               <i class="fa-solid fa-user-doctor"></i>
             </div>
@@ -833,7 +1045,7 @@
           </div>
 
           <!-- Degree 2 -->
-          <div class="p-8 rounded-2xl bg-white border border-slate-200 text-center space-y-3 shadow-sm hover:shadow-md transition">
+          <div class="p-8 rounded-2xl bg-white border border-slate-200 text-center space-y-3 shadow-sm hover:shadow-md transition premium-card reveal-init">
             <div class="w-16 h-16 rounded-2xl bg-teal-50 border border-teal-200 mx-auto flex items-center justify-center text-[#025B66] text-3xl">
               <i class="fa-solid fa-book-medical"></i>
             </div>
@@ -845,7 +1057,7 @@
           </div>
 
           <!-- Degree 3 -->
-          <div class="p-8 rounded-2xl bg-white border border-slate-200 text-center space-y-3 shadow-sm hover:shadow-md transition">
+          <div class="p-8 rounded-2xl bg-white border border-slate-200 text-center space-y-3 shadow-sm hover:shadow-md transition premium-card reveal-init">
             <div class="w-16 h-16 rounded-2xl bg-teal-50 border border-teal-200 mx-auto flex items-center justify-center text-[#025B66] text-3xl">
               <i class="fa-solid fa-hand-holding-medical"></i>
             </div>
@@ -858,7 +1070,7 @@
 
         </div>
 
-        <div class="mt-12 p-8 rounded-2xl bg-white border border-slate-200 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="mt-12 p-8 rounded-2xl bg-white border border-slate-200 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6 reveal-init premium-card">
           <div class="flex items-center space-x-4">
             <div class="w-12 h-12 rounded-xl bg-teal-100 flex items-center justify-center text-[#025B66] text-2xl flex-shrink-0">
               <i class="fa-solid fa-microscope"></i>
@@ -870,7 +1082,7 @@
               </p>
             </div>
           </div>
-          <a href="https://www.researchgate.net" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-[#025B66] border border-slate-300 text-xs font-bold tracking-wider transition flex items-center gap-2 whitespace-nowrap">
+          <a href="https://www.researchgate.net" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-[#025B66] border border-slate-300 text-xs font-bold tracking-wider transition flex items-center gap-2 whitespace-nowrap hover:scale-105 transform">
             <i class="fa-solid fa-arrow-up-right-from-square"></i>
             <span>ResearchGate Index</span>
           </a>
@@ -886,7 +1098,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           
           <!-- Contact Info Left Column -->
-          <div class="lg:col-span-5 space-y-6">
+          <div class="lg:col-span-5 space-y-6 reveal-init">
             <div>
               <span class="text-xs font-bold text-[#025B66] tracking-widest uppercase bg-teal-50 px-3 py-1 rounded-full border border-teal-200" data-lang="contact-badge">
                 Executive Engagement
@@ -902,7 +1114,7 @@
             <!-- Direct Channel Cards -->
             <div class="space-y-4 pt-2">
               
-              <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 flex items-start space-x-4">
+              <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 flex items-start space-x-4 premium-card">
                 <div class="w-12 h-12 rounded-xl bg-teal-100 flex items-center justify-center text-[#025B66] text-xl flex-shrink-0">
                   <i class="fa-solid fa-hospital"></i>
                 </div>
@@ -913,7 +1125,7 @@
                 </div>
               </div>
 
-              <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 flex items-start space-x-4">
+              <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 flex items-start space-x-4 premium-card">
                 <div class="w-12 h-12 rounded-xl bg-emerald-100 flex items-center justify-center text-[#00A884] text-xl flex-shrink-0">
                   <i class="fa-brands fa-whatsapp"></i>
                 </div>
@@ -929,7 +1141,7 @@
                 </div>
               </div>
 
-              <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 flex items-start space-x-4">
+              <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 flex items-start space-x-4 premium-card">
                 <div class="w-12 h-12 rounded-xl bg-sky-100 flex items-center justify-center text-sky-700 text-xl flex-shrink-0">
                   <i class="fa-brands fa-linkedin"></i>
                 </div>
@@ -949,8 +1161,8 @@
           </div>
 
           <!-- Proposal Form Right Column -->
-          <div class="lg:col-span-7">
-            <div class="p-8 sm:p-10 rounded-3xl bg-slate-50 border-2 border-teal-600/30 shadow-lg relative">
+          <div class="lg:col-span-7 reveal-init">
+            <div class="p-8 sm:p-10 rounded-3xl bg-slate-50 border-2 border-teal-600/30 shadow-lg relative premium-card">
               
               <div class="flex items-center justify-between mb-8 pb-4 border-b border-slate-200">
                 <div>
@@ -1008,7 +1220,7 @@
                 </div>
 
                 <div class="pt-2">
-                  <button type="submit" class="w-full py-4 rounded-xl bg-[#00A884] hover:bg-[#008F6F] text-white font-bold text-sm tracking-wider uppercase shadow-md hover:shadow-lg transition-all duration-300 flex items-center justify-center space-x-2">
+                  <button type="submit" class="w-full py-4 rounded-xl bg-[#00A884] hover:bg-[#008F6F] text-white font-bold text-sm tracking-wider uppercase shadow-md hover:shadow-lg transition-all duration-300 flex items-center justify-center space-x-2 shine-button">
                     <i class="fa-solid fa-paper-plane"></i>
                     <span data-lang="btn-submit-proposal">Transmit Executive Proposal (WhatsApp / Email)</span>
                   </button>
@@ -1054,6 +1266,7 @@
         <div class="md:col-span-6 flex flex-wrap md:justify-end gap-6 text-xs font-semibold text-teal-100">
           <a href="#about" class="hover:text-white transition" data-lang="nav-about">Biography</a>
           <a href="#milestones" class="hover:text-white transition" data-lang="nav-milestones">Career Command</a>
+          <a href="#experience" class="hover:text-white transition" data-lang="nav-linkedin-exp">Leadership Experience</a>
           <a href="#pillars" class="hover:text-white transition" data-lang="nav-pillars">Advisory Pillars</a>
           <a href="#covid" class="hover:text-white transition" data-lang="nav-crisis">Crisis Leadership</a>
           <a href="#contact" class="hover:text-white transition" data-lang="btn-consult">Advisory Desk</a>
@@ -1153,7 +1366,7 @@
     </button>
   </div>
 
-  <!-- JavaScript -->
+  <!-- JavaScript with IntersectionObserver & Count-Up Animations -->
   <script src="assets/js/app.js"></script>
 </body>
 </html>
