@@ -28,14 +28,17 @@ const translations = {
     "btn-consult": "Advisory Desk",
 
     // Hero Section
-    "hero-army-badge": "Bangladesh Army Medical Corps • Retired Brigadier General",
+    "hero-army-badge": "BANGLADESH ARMY MEDICAL CORPS • RETIRED BRIGADIER GENERAL",
     "hero-photo-ribbon": "Army Medical Corps Veteran",
-    "hero-ceo-subtitle": "Healthcare Statesman & Medical Administrator",
+    "hero-ceo-subtitle": "HEALTHCARE STATESMAN & MEDICAL ADMINISTRATOR",
     "hero-title-prefix": "Brigadier General (Dr.)",
+    "hero-cur-post-title": "Current Executive Leadership:",
+    "hero-cur-post-val": "Chief Executive Officer (CEO) — Pro-Active Medical College & Hospital Ltd",
     "frame-caption-title": "Former Director, Dhaka Medical College Hospital (DMCH) & Public Health Leader",
     "frame-caption-sub": "CEO, Pro-Active Hospital • Former National Consultant, BRAC Health • Over 35 Years of Exemplary Command",
     "hero-tenures-summary": "Former National Consultant, BRAC Health Program (BHP) • Former Commandant, Armed Forces Medical Institute (AFMI) • Former Commandant, Combined Military Hospital (CMH) Chattogram • Former Director, Dhaka Medical College Hospital (DMCH) • Former Director, Rajshahi Medical College Hospital (RMCH) • Former Director, Kurmitola General Hospital • Former Director, DNCC Dedicated Covid-19 Hospital.",
-    "btn-hero-consult": "Request Consultation",
+    "btn-hero-consult": "Request Strategic Advisory",
+    "btn-hero-timeline": "17 Career Appointments",
     "btn-hero-cv": "Executive Profile Brief",
 
     // Stats
@@ -206,12 +209,15 @@ const translations = {
     // Hero Section
     "hero-army-badge": "বাংলাদেশ সেনাবাহিনী মেডিকেল কোর • অবসরপ্রাপ্ত ব্রিগেডিয়ার জেনারেল",
     "hero-photo-ribbon": "সেনাবাহিনী মেডিকেল কোর ভেটেরান",
-    "hero-ceo-subtitle": "স্বাস্থ্য প্রশাসক ও জাতীয় স্বাস্থ্য রূপকার",
+    "hero-ceo-subtitle": "স্বাস্থ্য প্রশাসক ও প্রধান নির্বাহী কর্মকর্তা",
     "hero-title-prefix": "ব্রিগেডিয়ার জেনারেল (ডা.)",
+    "hero-cur-post-title": "বর্তমান নির্বাহী নেতৃত্ব:",
+    "hero-cur-post-val": "প্রধান নির্বাহী কর্মকর্তা (সিইও) — প্রো-অ্যাক্টিভ মেডিকেল কলেজ ও হাসপাতাল লিমিটেড",
     "frame-caption-title": "সাবেক পরিচালক, ঢাকা মেডিকেল কলেজ হাসপাতাল (DMCH) ও স্বাস্থ্য প্রশাসক",
     "frame-caption-sub": "সিইও, প্রো-অ্যাক্টিভ হাসপাতাল • সাবেক জাতীয় পরামর্শক, ব্র্যাক হেলথ • ৩৫+ বছরের গৌরবোজ্জ্বল কমান্ড",
     "hero-tenures-summary": "সাবেক জাতীয় পরামর্শক, ব্র্যাক হেলথ প্রোগ্রাম (BHP) • সাবেক কমান্ড্যান্ট, আর্মড ফোর্সেস মেডিকেল ইনস্টিটিউট (AFMI) • সাবেক কমান্ড্যান্ট, সিএমএইচ চট্টগ্রাম • সাবেক পরিচালক, ঢাকা মেডিকেল কলেজ হাসপাতাল (DMCH) • সাবেক পরিচালক, রাজশাহী মেডিকেল কলেজ হাসপাতাল (RMCH) • সাবেক পরিচালক, কুর্মিটোলা জেনারেল হাসপাতাল • সাবেক পরিচালক, ডিএনসিসি ডেডিকেটেড কোভিড-১৯ হাসপাতাল।",
-    "btn-hero-consult": "পরামর্শের জন্য আবেদন",
+    "btn-hero-consult": "কৌশলগত পরামর্শের জন্য আবেদন",
+    "btn-hero-timeline": "১৭টি কর্মজীবন ও কমান্ড রেকর্ড",
     "btn-hero-cv": "এক্সিকিউটিভ প্রোফাইল",
 
     // Stats
