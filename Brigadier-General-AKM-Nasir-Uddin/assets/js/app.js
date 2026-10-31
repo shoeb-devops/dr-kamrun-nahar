@@ -58,10 +58,10 @@ const translations = {
     // Biography
     "about-badge": "The Statesman's Journey",
     "about-title": "Where Military Precision Meets Compassionate Healing",
-    "about-p1": "Brigadier General (Dr.) AKM Nasir Uddin (retd.) is a distinguished medical commander, health system architect, and healthcare statesman with over 33+ years of high-command leadership across military, public tertiary, private, and international NGO sectors.",
-    "about-p2": "Throughout his career, he served as strategic commander of major military hospitals, commanded field medical units in operational and austere environments, and served as Commandant of the Armed Forces Medical Institute (AFMI). Under the Ministry of Health and Family Welfare, he successfully led and transformed four of the nation’s largest tertiary care medical college hospitals, most notably as Director of Dhaka Medical College Hospital (DMCH) and Director of Rajshahi Medical College Hospital (RMCH).",
-    "about-p3": "A certified CBRN (Chemical, Biological, Radiation, and Nuclear) medical expert, his crisis leadership was critically tested during the COVID-19 pandemic, where he spearheaded the national response by leading two apex COVID-19 tertiary hospital facilities (including founding the 1,000-bed DNCC Dedicated COVID-19 Hospital). From 2017 to 2021, he served as Chairman of the Medical & Anti-Doping Committee of the Bangladesh Olympic Association (BOA) under WADA protocols.",
-    "about-p4": "As National Consultant for the BRAC Health Program (BHP), he guided national public health mega-programs in NCD, Mental Health & Psychosocial Support (MHPSS), and Maternal & Child Health. Currently, he applies his multi-sectoral executive expertise as Chief Executive Officer (CEO) of Pro-Active Medical College and Hospital Ltd, actively dedicated to civic organizations and building resilient health systems for societal good.",
+    "about-p1": "<strong class=\"font-bold text-[#023E3A] font-serif text-lg sm:text-[19px]\">Brigadier General (Dr.) AKM Nasir Uddin (retd.)</strong> is a distinguished medical commander, health system architect, and healthcare statesman with over <span class=\"font-bold text-[#023E3A] bg-amber-100/70 px-2 py-0.5 rounded-md border border-amber-200/60\">33+ years of high-command leadership</span> across military, public tertiary, private, and international NGO sectors.",
+    "about-p2": "Throughout his career, he served as strategic commander of major military hospitals, commanded field medical units in operational and austere environments, and served as <strong class=\"text-[#023E3A] font-semibold\">Commandant of the Armed Forces Medical Institute (AFMI)</strong>—the apex institution for military medical education and research. Under the Ministry of Health and Family Welfare, he successfully led and transformed four of the nation’s largest tertiary care medical college hospitals, most notably as <strong class=\"text-[#023E3A] font-semibold\">Director of Dhaka Medical College Hospital (DMCH)</strong> and <strong class=\"text-[#023E3A] font-semibold\">Director of Rajshahi Medical College Hospital (RMCH)</strong>.",
+    "about-p3": "A certified <strong class=\"text-[#023E3A] font-semibold\">CBRN (Chemical, Biological, Radiation, and Nuclear) medical expert</strong>, his crisis leadership was critically tested during the COVID-19 pandemic, where he spearheaded the national response by leading two apex COVID-19 tertiary hospital facilities (including founding the <strong class=\"text-[#023E3A] font-semibold\">1,000-bed DNCC Dedicated COVID-19 Hospital</strong>). From 2017 to 2021, he served as <strong class=\"text-[#023E3A] font-semibold\">Chairman of the Medical & Anti-Doping Committee of the Bangladesh Olympic Association (BOA)</strong> under WADA protocols.",
+    "about-p4": "As National Consultant for the <strong class=\"text-[#023E3A] font-semibold\">BRAC Health Program (BHP)</strong>, he guided national public health mega-programs in <strong class=\"text-[#023E3A] font-semibold\">NCD</strong>, <strong class=\"text-[#023E3A] font-semibold\">Mental Health & Psychosocial Support (MHPSS)</strong>, and <strong class=\"text-[#023E3A] font-semibold\">Maternal & Child Health</strong>. Currently, he applies his multi-sectoral executive expertise as <strong class=\"text-[#023E3A] font-semibold\">Chief Executive Officer (CEO) of Pro-Active Medical College and Hospital Ltd</strong>, actively dedicated to civic organizations and building resilient health systems for societal good.",
     "pill-1-title": "Crisis-Tested Governance",
     "pill-1-desc": "Proven experience commanding thousands of beds during national crises.",
     "pill-2-title": "Institutional Transformation",
@@ -286,10 +286,10 @@ const translations = {
     // Biography
     "about-badge": "জীবনবৃত্তান্ত ও কর্মতর্পণ",
     "about-title": "সামরিক শৃঙ্খলা ও মানবিক চিকিৎসা সেবার অনন্য মেলবন্ধন",
-    "about-p1": "ব্রিগেডিয়ার জেনারেল (ডা.) এ কে এম নাসির উদ্দিন (অব.) দক্ষিণ এশিয়ার স্বাস্থ্য ব্যবস্থাপনায় এক অনন্য ও আলোকিত ব্যক্তিত্ব—যিনি বাংলাদেশ সেনাবাহিনী মেডিকেল কোরের কঠোর নিয়মানুবর্তিতার সাথে বেসামরিক বৃহত্তম স্বাস্থ্য প্রতিষ্ঠানগুলোর জটিল পরিচালন দক্ষতার এক অপূর্ব সমন্বয় ঘটিয়েছেন।",
-    "about-p2": "তাঁর গৌরবোজ্জ্বল কর্মজীবনে তিনি বাংলাদেশের স্বাস্থ্য ব্যবস্থার প্রাণকেন্দ্র ঢাকা মেডিকেল কলেজ হাসপাতালের (DMCH) পরিচালকের দায়িত্ব পালন করেন। করোনাভাইরাস মহামারি এবং অতীতের ভয়াবহ ডেঙ্গু প্রাদুর্ভাবের মতো জাতীয় সংকটে তাঁর দৃঢ় ও দূরদর্শী সিদ্ধান্ত হাজার হাজার রোগী ও স্বাস্থ্যকর্মীদের সুরক্ষা নিশ্চিত করেছিল।",
-    "about-p3": "তিনি আর্মড ফোর্সেস মেডিকেল ইনস্টিটিউটের (AFMI) কমান্ড্যান্ট, সিএমএইচ চট্টগ্রামের কমান্ড্যান্ট, রাজশাহী মেডিকেল কলেজ হাসপাতালের (RMCH) পরিচালক, কুর্মিটোলা জেনারেল হাসপাতালের পরিচালক এবং দেশের সর্ববৃহৎ ডিএনসিসি ডেডিকেটেড কোভিড-১৯ হাসপাতালের পরিচালকের দায়িত্ব সুনামের সাথে সম্পন্ন করেছেন।",
-    "about-p4": "বর্তমানে তিনি প্রো-অ্যাক্টিভ মেডিকেল কলেজ ও হাসপাতাল লিমিটেডের প্রধান নির্বাহী কর্মকর্তা (সিইও) হিসেবে দায়িত্ব পালন করছেন এবং পূর্বে ব্র্যাকের জাতীয় স্বাস্থ্য উপদেষ্টা হিসেবে অবদান রেখেছেন।",
+    "about-p1": "<strong class=\"font-bold text-[#023E3A] font-serif text-lg sm:text-[19px]\">ব্রিগেডিয়ার জেনারেল (ডা.) এ কে এম নাসির উদ্দিন (অব.)</strong> হলেন সামরিক বাহিনী, সরকারি টারশিয়ারি, বেসরকারি ও আন্তর্জাতিক এনজিও খাতে <span class=\"font-bold text-[#023E3A] bg-amber-100/70 px-2 py-0.5 rounded-md border border-amber-200/60 whitespace-nowrap\">৩৩+ বছরের উচ্চপর্যায়ের কমান্ড নেতৃত্বসম্পন্ন</span> এক বিশিষ্ট স্বাস্থ্য প্রশাসক, স্বাস্থ্য রূপকার ও দূরদর্শী ব্যক্তিত্ব।",
+    "about-p2": "সুদীর্ঘ বর্ণাঢ্য কর্মজীবনে তিনি কৌশলগতভাবে বৃহৎ সামরিক হাসপাতালের নেতৃত্ব দিয়েছেন, ফিল্ড মেডিকেল ইউনিটের কমান্ড পরিচালনা করেছেন এবং সামরিক চিকিৎসা গবেষণা ও শিক্ষার সর্বোচ্চ প্রতিষ্ঠান <strong class=\"text-[#023E3A] font-semibold\">আর্মড ফোর্সেস মেডিকেল ইনস্টিটিউট (AFMI)-এর কমান্ড্যান্ট</strong> হিসেবে দায়িত্ব পালন করেছেন। স্বাস্থ্য ও পরিবার কল্যাণ মন্ত্রণালয়ের অধীনে তিনি দেশের শীর্ষ চারটি টারশিয়ারি কেয়ার মেডিকেল কলেজ হাসপাতালকে সফলভাবে নেতৃত্ব ও আধুনিকায়ন করেছেন—বিশেষ করে <strong class=\"text-[#023E3A] font-semibold\">ঢাকা মেডিকেল কলেজ হাসপাতাল (DMCH)</strong> এবং <strong class=\"text-[#023E3A] font-semibold\">রাজশাহী মেডিকেল কলেজ হাসপাতাল (RMCH)-এর পরিচালক</strong> হিসেবে।",
+    "about-p3": "একজন সার্টিফায়েড <strong class=\"text-[#023E3A] font-semibold\">CBRN (কেমিক্যাল, বায়োলজিক্যাল, রেডিয়েশন ও নিউক্লিয়ার) মেডিকেল বিশেষজ্ঞ</strong> হিসেবে করোনা মহামারিকালে তাঁর দূরদর্শী নেতৃত্ব চূড়ান্তভাবে প্রমাণিত হয়—যেখানে তিনি সম্মুখসারির দুটি বৃহত্তম টারশিয়ারি কোভিড হাসপাতাল পরিচালনা করেন (যার মধ্যে দেশের সর্ববৃহৎ <strong class=\"text-[#023E3A] font-semibold\">১,০০০ শয্যার ডিএনসিসি ডেডিকেটেড কোভিড-১৯ হাসপাতাল</strong> প্রতিষ্ঠা অন্তর্ভুক্ত)। ২০১৭ থেকে ২০২১ সাল পর্যন্ত তিনি <strong class=\"text-[#023E3A] font-semibold\">বাংলাদেশ অলিম্পিক অ্যাসোসিয়েশন (BOA)-এর মেডিকেল ও অ্যান্টি-ডোপিং কমিটির চেয়ারম্যান</strong> হিসেবে ক্রীড়াবিদদের স্বাস্থ্য ও ওয়াডা (WADA) প্রটোকল বাস্তবায়নে নেতৃত্ব দেন।",
+    "about-p4": "বিশ্বের সর্ববৃহৎ বেসরকারি উন্নয়ন সংস্থা <strong class=\"text-[#023E3A] font-semibold\">ব্র্যাক-এর স্বাস্থ্য কর্মসূচিতে (BHP) জাতীয় পরামর্শক</strong> হিসেবে তিনি অসংক্রামক ব্যাধি (NCD), মানসিক স্বাস্থ্য ও সাইকোসোশ্যাল সাপোর্ট (MHPSS) এবং মাতৃ ও শিশু স্বাস্থ্য মেগাপ্রকল্পে নীতিনির্ধারণী দিকনির্দেশনা দিয়েছেন। বর্তমানে তিনি <strong class=\"text-[#023E3A] font-semibold\">প্রো-অ্যাক্টিভ মেডিকেল কলেজ ও হাসপাতাল লিমিটেডের প্রধান নির্বাহী কর্মকর্তা (সিইও)</strong> হিসেবে দায়িত্ব পালনের পাশাপাশি জনকল্যাণমূলক স্বাস্থ্য ব্যবস্থার প্রসারে নিষ্ঠার সাথে কাজ করে যাচ্ছেন।",
     "pill-1-title": "সংকটকালে পরীক্ষিত নেতৃত্ব",
     "pill-1-desc": "মহামারিকালে হাজার হাজার শয্যা ও ডাক্তারদের সফল নেতৃত্ব দানের বাস্তব অভিজ্ঞতা।",
     "pill-2-title": "হাসপাতালের সফল রূপান্তর",
@@ -591,11 +591,15 @@ function initCountUpAnimation() {
 function applyLanguage(lang) {
   const dict = translations[lang] || translations.en;
   
-  // Update all elements with data-lang attribute
+  // Update all elements with data-lang attribute (supporting rich HTML highlights)
   document.querySelectorAll('[data-lang]').forEach(elem => {
     const key = elem.getAttribute('data-lang');
     if (dict[key]) {
-      elem.textContent = dict[key];
+      if (dict[key].includes('<') && dict[key].includes('>')) {
+        elem.innerHTML = dict[key];
+      } else {
+        elem.textContent = dict[key];
+      }
     }
   });
 
