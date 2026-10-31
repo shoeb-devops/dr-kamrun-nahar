@@ -69,9 +69,10 @@
       font-family: 'Playfair Display', serif;
     }
     .gold-gradient-text {
-      background: linear-gradient(135deg, #f3e7c4 0%, #d4af37 50%, #aa820a 100%);
+      background: linear-gradient(135deg, #FFFFFF 0%, #FFF4D0 18%, #F7D068 45%, #E5B33C 75%, #C89422 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      filter: drop-shadow(0 2px 10px rgba(212, 175, 55, 0.25));
     }
     .gold-border {
       border: 1px solid rgba(212, 175, 55, 0.45);
@@ -264,10 +265,20 @@
                 HEALTHCARE STATESMAN & MEDICAL ADMINISTRATOR
               </span>
 
-              <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-[52px] xl:text-6xl font-bold text-[#FFF8EE] tracking-tight leading-[1.12]" style="font-family: 'Playfair Display', Georgia, serif;">
-                <span data-lang="hero-title-prefix">Brigadier General (Dr.)</span><br>
-                <span class="gold-gradient-text">AKM Nasir Uddin</span>
-                <span class="text-xl sm:text-2xl md:text-3xl font-light text-[#E5C178] font-sans ml-2">(retd.)</span>
+              <h1 class="tracking-tight leading-[1.15]" style="font-family: 'Playfair Display', Georgia, serif;">
+                <!-- Military Rank & Medical Title Prefix -->
+                <span class="block text-2xl sm:text-3xl md:text-4xl lg:text-[40px] font-semibold text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.6)] mb-1" data-lang="hero-title-prefix">
+                  Brigadier General (Dr.)
+                </span>
+                <!-- Statesman Name in Radiant 24K Gold + Sleek Retd Badge -->
+                <span class="inline-flex flex-wrap items-baseline gap-x-3 gap-y-1">
+                  <span class="gold-gradient-text font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[56px] tracking-tight">
+                    AKM Nasir Uddin
+                  </span>
+                  <span class="inline-flex items-center px-3 py-0.5 sm:py-1 rounded-full bg-[#081813]/90 border border-[#D4AF37]/50 text-[#FBE3A1] text-xs sm:text-sm font-sans font-bold tracking-wider align-middle -translate-y-1 shadow-[0_2px_10px_rgba(0,0,0,0.6)] backdrop-blur-sm">
+                    (retd.)
+                  </span>
+                </span>
               </h1>
 
               <!-- Clean Qualifications Row with Bullet Dividers -->
