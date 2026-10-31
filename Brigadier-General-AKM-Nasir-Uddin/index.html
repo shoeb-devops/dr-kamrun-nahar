@@ -59,6 +59,28 @@
 
   <!-- Custom Styles -->
   <link rel="stylesheet" href="assets/css/custom.css">
+  <!-- Plus Jakarta Sans & User Hero Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    .serif-font {
+      font-family: 'Playfair Display', serif;
+    }
+    .hero-bg {
+      background: linear-gradient(135deg, #0b1e17 0%, #06130e 50%, #030a07 100%);
+    }
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #f3e7c4 0%, #d4af37 50%, #aa820a 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .gold-border {
+      border: 1px solid rgba(212, 175, 55, 0.3);
+    }
+    .glass-card {
+      background: rgba(11, 30, 23, 0.75);
+      backdrop-filter: blur(12px);
+    }
+  </style>
 </head>
 
 <body class="bg-[#F8FAFB] text-slate-800 antialiased font-sans selection:bg-[#025B66] selection:text-white overflow-x-hidden">
@@ -163,153 +185,115 @@
 
   <main>
 
-    <!-- ==================== ULTRA-PREMIUM HERO SECTION ==================== -->
-    <section class="relative bg-gradient-to-br from-[#041411] via-[#08211B] to-[#03100D] text-white py-14 sm:py-20 overflow-hidden shadow-2xl border-b border-amber-400/20">
-
-      <!-- Authentic Heraldic Sovereign Watermark (Bangladesh National Seal, Medal Ribbons & Military Crests) -->
-      <div class="absolute top-0 left-0 bottom-0 w-full sm:w-[60%] lg:w-[48%] pointer-events-none select-none z-0 overflow-hidden">
-        <img src="assets/images/hero-insignia-watermark.png"
-             alt="Bangladesh National Seal and Armed Forces Honors Watermark"
-             class="w-full h-full object-cover sm:object-contain object-left-top opacity-75 mix-blend-screen pointer-events-none">
-      </div>
-
-      <!-- Tactical Military Geometric Lines & Ambient Grid -->
-      <svg class="absolute inset-0 w-full h-full pointer-events-none opacity-20 z-0" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <linearGradient id="tacticalGoldLine" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stop-color="#C8A25D" stop-opacity="0.35" />
-            <stop offset="50%" stop-color="#E5C178" stop-opacity="0.7" />
-            <stop offset="100%" stop-color="#C8A25D" stop-opacity="0.15" />
-          </linearGradient>
-        </defs>
-        <line x1="0" y1="25%" x2="100%" y2="75%" stroke="url(#tacticalGoldLine)" stroke-width="0.75" />
-        <line x1="10%" y1="0" x2="90%" y2="100%" stroke="url(#tacticalGoldLine)" stroke-width="0.75" />
-        <line x1="0" y1="85%" x2="65%" y2="0" stroke="url(#tacticalGoldLine)" stroke-width="0.5" stroke-dasharray="4,6" />
-        <circle cx="28%" cy="50%" r="300" stroke="url(#tacticalGoldLine)" stroke-width="0.5" fill="none" opacity="0.4" />
-      </svg>
-
-      <!-- Luxury Sovereign Ambient Glow Lighting -->
-      <div class="absolute -top-40 -right-40 w-[550px] h-[550px] bg-emerald-500/10 rounded-full blur-[140px] pointer-events-none"></div>
-      <div class="absolute -bottom-40 -left-40 w-[550px] h-[550px] bg-amber-400/10 rounded-full blur-[140px] pointer-events-none"></div>
-
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
-
-          <!-- Left Column: Double-Concentric Gold Ring Portrait & Pill -->
-          <div class="lg:col-span-5 flex flex-col items-center justify-center">
-            <div class="relative my-2 flex flex-col items-center">
-
-              <!-- Outer Concentric Gold Ring Frame with Radiant Glow -->
-              <div class="relative p-2.5 sm:p-3.5 rounded-full border-[1.5px] border-[#C8A25D] shadow-[0_0_35px_rgba(200,162,93,0.25)] flex items-center justify-center bg-black/20 backdrop-blur-xs">
-
-                <!-- Inner Gold Ring with High-Resolution Portrait -->
-                <div class="w-64 h-64 sm:w-76 sm:h-76 md:w-84 md:h-84 lg:w-92 lg:h-92 rounded-full border-2 border-[#C8A25D] overflow-hidden relative shadow-inner">
-                  <img src="assets/images/Gemini_Generated_Image_revc7hrevc7hrevc.jpg"
-                       alt="Brigadier General (Dr.) AKM Nasir Uddin (retd.)"
-                       id="heroDoctorImage"
-                       class="w-full h-full object-cover object-[center_12%] rounded-full transition-transform duration-700 hover:scale-103">
+    <!-- ==================== HERO SECTION (USER EXACT CODE) ==================== -->
+    <section class="hero-bg text-white min-w-full flex items-center justify-center px-6 md:px-16 py-12 relative overflow-hidden border-b border-emerald-900/40">
+        <div class="max-w-7xl w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Left Column: Portrait & Badge -->
+            <div class="lg:col-span-5 flex flex-col items-center justify-center relative">
+                <!-- Ambient Glow behind portrait -->
+                <div class="absolute w-72 h-72 bg-[#d4af37]/10 rounded-full blur-3xl -z-10"></div>
+                
+                <!-- CEO Tag on Top of Image -->
+                <div class="mb-4 inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-black/40 border border-[#d4af37]/40 text-xs text-emerald-100 shadow-lg">
+                    <span class="w-2 h-2 rounded-full bg-[#d4af37] animate-pulse"></span>
+                    <span>CEO • Pro-Active Hospital</span>
                 </div>
 
-                <!-- Top-Right Live Executive Pill (Overlapping concentric rings at ~1 o'clock) -->
-                <div class="absolute top-2 right-2 sm:top-3 sm:right-3 z-20 bg-[#F0F2EB] text-[#1E302A] px-4 py-1.5 rounded-full shadow-lg border border-slate-200/80 flex items-center gap-2 whitespace-nowrap">
-                  <span class="w-2.5 h-2.5 rounded-full bg-[#B8964E] flex-shrink-0"></span>
-                  <span class="text-xs font-semibold tracking-tight text-[#1E302A]">CEO • Pro-Active Hospital</span>
+                <!-- Circular Portrait with Golden Ring -->
+                <div class="relative p-2 rounded-full bg-gradient-to-b from-[#d4af37] via-[#997925] to-[#47340b] shadow-2xl">
+                    <div class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden bg-emerald-950 border-4 border-[#0b1e17]">
+                        <img src="assets/images/Gemini_Generated_Image_revc7hrevc7hrevc.jpg" 
+                             alt="Brigadier General (Dr.) AKM Nasir Uddin" 
+                             id="heroDoctorImage"
+                             class="w-full h-full object-cover object-[center_12%] scale-105 hover:scale-100 transition duration-500">
+                    </div>
                 </div>
 
-              </div>
-
-              <!-- Bottom Dignified Ribbon Label: ★ ARMY MEDICAL CORPS VETERAN ★ -->
-              <div class="mt-4 sm:mt-5 text-center select-none">
-                <span class="text-xs sm:text-sm font-serif font-bold tracking-[0.22em] text-[#C8A25D] uppercase flex items-center justify-center gap-2.5" style="font-family: 'Playfair Display', Georgia, serif;">
-                  <span class="text-xs sm:text-sm text-[#C8A25D]">★</span>
-                  <span data-lang="hero-photo-ribbon">ARMY MEDICAL CORPS VETERAN</span>
-                  <span class="text-xs sm:text-sm text-[#C8A25D]">★</span>
-                </span>
-              </div>
-
-            </div>
-          </div>
-
-          <!-- Right Column: Sovereign Statesman Brief & Editorial Typography -->
-          <div class="lg:col-span-7 space-y-4 text-center lg:text-left">
-
-            <!-- Military Honor Distinction Badge -->
-            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#061815]/90 backdrop-blur-md border border-[#C8A25D]/50 text-amber-200 text-xs font-bold tracking-wider uppercase shadow-md">
-              <span class="text-sm">🇧🇩</span>
-              <span data-lang="hero-army-badge">BANGLADESH ARMY MEDICAL CORPS • RETIRED BRIGADIER GENERAL</span>
+                <!-- Sub-badge under image -->
+                <div class="mt-5 text-center">
+                    <span class="text-xs uppercase tracking-widest text-[#d4af37] font-semibold" data-lang="hero-photo-ribbon">★ Army Medical Corps Veteran ★</span>
+                </div>
             </div>
 
-            <!-- Grand Editorial Name & Scholarly Badges -->
-            <div class="space-y-1.5">
-              <span class="text-xs sm:text-sm font-bold uppercase tracking-[0.22em] text-[#E5C178] block" data-lang="hero-ceo-subtitle">
-                HEALTHCARE STATESMAN & MEDICAL ADMINISTRATOR
-              </span>
+            <!-- Right Column: Titles, Bio & Details -->
+            <div class="lg:col-span-7 flex flex-col space-y-6">
+                
+                <!-- Top Badge -->
+                <div>
+                    <span class="inline-block px-4 py-1.5 rounded-full bg-[#132c22] gold-border text-xs tracking-wider text-[#d4af37] font-medium uppercase" data-lang="hero-army-badge">
+                        ● Bangladesh Army Medical Corps • Retired Brigadier General
+                    </span>
+                </div>
 
-              <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-[52px] xl:text-6xl font-bold text-[#FFF8EE] tracking-tight leading-[1.12]" style="font-family: 'Playfair Display', Georgia, serif;">
-                <span data-lang="hero-title-prefix">Brigadier General (Dr.)</span><br>
-                <span class="text-[#FFF8EE]">AKM Nasir Uddin</span>
-                <span class="text-xl sm:text-2xl md:text-3xl font-light text-[#E5C178] font-sans ml-2">(retd.)</span>
-              </h1>
+                <!-- Sub-header Role -->
+                <p class="text-sm uppercase tracking-widest text-emerald-400 font-semibold" data-lang="hero-ceo-subtitle">
+                    Healthcare Statesman & Medical Administrator
+                </p>
 
-              <!-- Clean Qualifications Row with Bullet Dividers -->
-              <div class="flex flex-wrap items-center justify-center lg:justify-start gap-x-3 gap-y-1.5 text-xs sm:text-sm text-[#D8E2DC] font-medium pt-1">
-                <span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span> MBBS (Rajshahi Univ)</span>
-                <span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span> MPhil (BUP)</span>
-                <span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span> MPH (DU)</span>
-                <span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span> Senior Hospital Administrator</span>
-              </div>
+                <!-- Main Name Title -->
+                <h1 class="serif-font text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white">
+                    <span data-lang="hero-title-prefix">Brigadier General (Dr.)</span> <br>
+                    <span class="gold-gradient-text">AKM Nasir Uddin</span> <span class="text-2xl md:text-3xl text-emerald-300 font-normal">(retd.)</span>
+                </h1>
+
+                <!-- Qualifications List -->
+                <div class="flex flex-wrap items-center gap-y-2 text-sm text-emerald-100/90 font-medium">
+                    <span class="hover:text-[#d4af37] transition">MBBS (Rajshahi Univ)</span> 
+                    <span class="mx-3 text-[#d4af37]">•</span>
+                    <span class="hover:text-[#d4af37] transition">MPhil (BUP)</span> 
+                    <span class="mx-3 text-[#d4af37]">•</span>
+                    <span class="hover:text-[#d4af37] transition">MPH (DU)</span> 
+                    <span class="mx-3 text-[#d4af37]">•</span>
+                    <span class="hover:text-[#d4af37] transition">Senior Hospital Administrator</span>
+                </div>
+
+                <!-- Executive Leadership Card -->
+                <div class="glass-card gold-border rounded-xl p-6 shadow-xl mt-2">
+                    <div class="flex items-center space-x-2 text-xs font-bold uppercase tracking-wider text-[#d4af37] mb-2">
+                        <span>💼</span>
+                        <span data-lang="hero-cur-post-title">Current Executive Leadership:</span>
+                    </div>
+                    <h2 class="text-lg md:text-xl font-semibold text-white mb-4" data-lang="hero-cur-post-val">
+                        Chief Executive Officer (CEO) — Pro-Active Medical College & Hospital Ltd
+                    </h2>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs md:text-sm text-emerald-100/80 border-t border-emerald-900/50 pt-4">
+                        <div class="flex items-center space-x-2">
+                            <span class="text-[#d4af37]">✓</span>
+                            <span>Former Director, DMCH (Dhaka Medical)</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <span class="text-[#d4af37]">✓</span>
+                            <span>Former Director, DNCC COVID Hospital</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <span class="text-[#d4af37]">✓</span>
+                            <span>Former Commandant, AFMI</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <span class="text-[#d4af37]">✓</span>
+                            <span>Kuwait Armed Forces Veteran</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Action CTA Buttons -->
+                <div class="flex flex-wrap items-center gap-4 pt-4">
+                    <a href="#contact" class="px-7 py-3.5 rounded-full bg-gradient-to-r from-[#d4af37] to-[#aa820a] text-black font-bold text-sm tracking-wide shadow-lg hover:brightness-110 transition text-center" data-lang="btn-hero-consult">
+                        REQUEST STRATEGIC ADVISORY
+                    </a>
+                    <a href="#experience" class="px-6 py-3.5 rounded-full glass-card gold-border text-white font-medium text-sm hover:bg-emerald-950/50 transition text-center" data-lang="btn-hero-timeline">
+                        17 Career Appointments
+                    </a>
+                    <a href="javascript:void(0)" onclick="openExecutiveBriefModal()" class="px-6 py-3.5 rounded-full glass-card gold-border text-white font-medium text-sm hover:bg-emerald-950/50 transition text-center" data-lang="btn-hero-cv">
+                        Executive Profile Brief
+                    </a>
+                </div>
+
             </div>
-
-            <!-- Current Executive Leadership Card (Master Glassmorphic with Gold Border) -->
-            <div class="rounded-2xl bg-[#071917]/95 backdrop-blur-md border border-[#D4AF37]/45 p-5 sm:p-6 text-left shadow-[0_10px_30px_-10px_rgba(0,0,0,0.7),inset_0_1px_0_rgba(200,162,93,0.2)] space-y-3 relative overflow-hidden">
-              <div class="flex items-center gap-2 text-[#DFB15B] font-bold text-xs uppercase tracking-wider">
-                <i class="fa-solid fa-briefcase text-xs text-[#DFB15B]"></i>
-                <span data-lang="hero-cur-post-title">CURRENT EXECUTIVE LEADERSHIP:</span>
-              </div>
-
-              <p class="text-white font-bold text-base sm:text-lg lg:text-xl leading-snug tracking-tight" data-lang="hero-cur-post-val">
-                Chief Executive Officer (CEO) — Pro-Active Medical College & Hospital Ltd
-              </p>
-
-              <div class="border-t border-white/10 pt-3.5 grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs sm:text-[13px] text-slate-200 font-medium">
-                <div class="flex items-center space-x-2">
-                  <i class="fa-solid fa-check text-[#DFB15B] text-xs flex-shrink-0"></i>
-                  <span>Former Director, DMCH (Dhaka Medical)</span>
-                </div>
-                <div class="flex items-center space-x-2">
-                  <i class="fa-solid fa-check text-[#DFB15B] text-xs flex-shrink-0"></i>
-                  <span>Former Director, DNCC COVID Hospital</span>
-                </div>
-                <div class="flex items-center space-x-2">
-                  <i class="fa-solid fa-check text-[#DFB15B] text-xs flex-shrink-0"></i>
-                  <span>Former Commandant, AFMI</span>
-                </div>
-                <div class="flex items-center space-x-2">
-                  <i class="fa-solid fa-check text-[#DFB15B] text-xs flex-shrink-0"></i>
-                  <span>Kuwait Armed Forces Veteran</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Action Suite (Radiant Solid Gold Gradient CTA + Rounded-Full Pills) -->
-            <div class="flex flex-wrap items-center justify-center lg:justify-start gap-3 pt-2">
-              <a href="#contact" class="px-6 py-3 rounded-full bg-gradient-to-r from-[#DFB15B] via-[#F3D389] to-[#C8963E] hover:from-[#F3D389] hover:to-[#DFB15B] text-slate-950 font-black text-xs tracking-wider uppercase shadow-[0_4px_20px_rgba(223,177,91,0.35)] hover:shadow-[0_6px_25px_rgba(223,177,91,0.5)] transition-all duration-300 transform hover:-translate-y-0.5 whitespace-nowrap">
-                <span data-lang="btn-hero-consult">REQUEST STRATEGIC ADVISORY</span>
-              </a>
-
-              <a href="#experience" class="px-5 py-3 rounded-full bg-black/40 hover:bg-black/60 text-white font-bold text-xs tracking-wide border border-amber-400/50 backdrop-blur-md transition-all whitespace-nowrap hover:border-amber-300">
-                <span data-lang="btn-hero-timeline">17 Career Appointments</span>
-              </a>
-
-              <button onclick="openExecutiveBriefModal()" class="px-5 py-3 rounded-full bg-black/40 hover:bg-black/60 text-white font-bold text-xs tracking-wide border border-white/30 backdrop-blur-md transition-all whitespace-nowrap hover:border-white/60 cursor-pointer">
-                <span data-lang="btn-hero-cv">Executive Profile Brief</span>
-              </button>
-            </div>
-
-          </div>
 
         </div>
-      </div>
     </section>
 
     <!-- ==================== EXECUTIVE METRICS STRIP ==================== -->
