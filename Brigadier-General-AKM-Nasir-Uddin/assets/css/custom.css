@@ -3,6 +3,13 @@
    Brigadier General (Dr.) AKM Nasir Uddin (retd.)
    ========================================================================== */
 
+/* Prevent Horizontal Overflow Globally */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
+}
+
 /* Smooth Scrolling & Offset */
 html {
   scroll-behavior: smooth;
@@ -101,8 +108,8 @@ html {
 }
 
 .premium-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 20px 30px -10px rgba(2, 91, 102, 0.12);
+  transform: translateY(-4px);
+  box-shadow: 0 16px 25px -8px rgba(2, 91, 102, 0.12);
   border-color: #025B66 !important;
 }
 
@@ -125,7 +132,7 @@ html {
     background: #ffffff !important;
     color: #1e293b !important;
   }
-  
+
   header, footer, .fixed, #advisoryForm, #contact, #media, .no-print {
     display: none !important;
   }

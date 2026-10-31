@@ -490,6 +490,9 @@ document.addEventListener('DOMContentLoaded', () => {
   // Initialize Category Filters for Career Appointments
   initTimelineFilters();
 
+  // Initialize Military Ledger Drawer Toggle
+  initLedgerToggle();
+
   // Initialize Scroll-Spy for Active Navbar Links
   initScrollSpy();
 
@@ -725,7 +728,50 @@ function initTimelineFilters() {
           card.style.display = 'none';
         }
       });
+
+      // Auto-expand drawer if user selects a specific category so matching ledger roles are visible
+      if (filter !== 'all') {
+        const drawer = document.getElementById('ledgerDrawer');
+        const chevron = document.getElementById('ledgerChevron');
+        const toggleText = document.getElementById('toggleLedgerText');
+        if (drawer && drawer.classList.contains('hidden')) {
+          drawer.classList.remove('hidden');
+          if (chevron) chevron.classList.add('rotate-180');
+          if (toggleText) {
+            toggleText.textContent = (currentLanguage === 'bn') ? 'সংক্ষেপ করুন' : 'Collapse Roles';
+          }
+        }
+      }
     });
+  });
+}
+
+/**
+ * Military Ledger Collapsible Drawer
+ */
+function initLedgerToggle() {
+  const toggleBtn = document.getElementById('toggleLedgerBtn');
+  const drawer = document.getElementById('ledgerDrawer');
+  const chevron = document.getElementById('ledgerChevron');
+  const toggleText = document.getElementById('toggleLedgerText');
+
+  if (!toggleBtn || !drawer) return;
+
+  toggleBtn.addEventListener('click', () => {
+    const isHidden = drawer.classList.contains('hidden');
+    if (isHidden) {
+      drawer.classList.remove('hidden');
+      if (chevron) chevron.classList.add('rotate-180');
+      if (toggleText) {
+        toggleText.textContent = (currentLanguage === 'bn') ? 'সংক্ষেপ করুন' : 'Collapse Roles';
+      }
+    } else {
+      drawer.classList.add('hidden');
+      if (chevron) chevron.classList.remove('rotate-180');
+      if (toggleText) {
+        toggleText.textContent = (currentLanguage === 'bn') ? 'সব ১২টি পদ দেখুন' : 'Expand All 12 Roles';
+      }
+    }
   });
 }
 
