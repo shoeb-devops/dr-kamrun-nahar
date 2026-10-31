@@ -710,13 +710,13 @@ function initTimelineFilters() {
     btn.addEventListener('click', () => {
       const filter = btn.getAttribute('data-filter');
 
-      // Update button styling
+      // Update segmented pill button styling
       filterBtns.forEach(b => {
-        b.classList.remove('bg-[#025B66]', 'text-white', 'border-[#025B66]', 'shadow-md');
-        b.classList.add('bg-white', 'text-slate-700', 'border-slate-300', 'shadow-xs');
+        b.classList.remove('active', 'bg-[#025B66]', 'text-white', 'shadow-xs');
+        b.classList.add('text-slate-700', 'hover:text-slate-900', 'hover:bg-slate-50');
       });
-      btn.classList.remove('bg-white', 'text-slate-700', 'border-slate-300', 'shadow-xs');
-      btn.classList.add('bg-[#025B66]', 'text-white', 'border-[#025B66]', 'shadow-md');
+      btn.classList.remove('text-slate-700', 'hover:text-slate-900', 'hover:bg-slate-50');
+      btn.classList.add('active', 'bg-[#025B66]', 'text-white', 'shadow-xs');
 
       // Filter timeline cards with smooth transition
       cards.forEach(card => {

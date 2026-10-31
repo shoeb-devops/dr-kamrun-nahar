@@ -450,327 +450,411 @@
     </section>
 
     <!-- ==================== EXECUTIVE CAREER & COMMAND CHRONOLOGY (#experience) ==================== -->
-    <section id="experience" class="py-16 sm:py-20 bg-slate-50 border-b border-slate-200">
+        <section id="experience" class="py-16 sm:py-20 bg-slate-50 border-b border-slate-200">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        <!-- Section Header -->
-        <div class="text-center max-w-3xl mx-auto space-y-2 mb-10">
-          <div class="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full bg-sky-50 border border-sky-200 text-sky-800 text-xs font-semibold">
-            <i class="fa-brands fa-linkedin text-[#0077B5]"></i>
-            <span data-lang="exp-badge">Official LinkedIn Career History</span>
+        <!-- ==================== SECTION HEADER: ELEVATED STATESMAN THEME ==================== -->
+        <div class="text-center max-w-3xl mx-auto space-y-3 mb-10">
+          <!-- Dignified Statesman Badge with Subtle LinkedIn Verification -->
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gradient-to-r from-teal-50 via-emerald-50 to-teal-50 border border-teal-200/90 text-[#025B66] text-xs font-bold tracking-wider uppercase shadow-2xs">
+            <i class="fa-solid fa-award text-amber-500"></i>
+            <span>Distinguished Command & Career Record</span>
+            <span class="text-slate-300">•</span>
+            <a href="https://www.linkedin.com/in/brig-gen-dr-akm-nasir-uddin-retd-mphil-mph-mbbs-b84464119/"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="inline-flex items-center gap-1 text-[#0077B5] hover:text-[#005f93] font-bold normal-case text-[11px] hover:underline"
+               title="View authentic verified profile on LinkedIn">
+              <i class="fa-brands fa-linkedin text-xs"></i> LinkedIn Verified
+            </a>
           </div>
-          <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900" data-lang="exp-title">
-            Executive Career & Command Chronology
+
+          <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight" data-lang="exp-title">
+            Executive Appointments & Institutional Leadership
           </h2>
-          <p class="text-xs sm:text-sm text-slate-600 font-normal" data-lang="exp-subtitle">
-            Authentic career appointments spanning over 35 years across the Bangladesh Army Medical Corps, apex national hospitals, and international defense deputation.
+
+          <p class="text-xs sm:text-sm text-slate-600 font-normal max-w-2xl mx-auto leading-relaxed" data-lang="exp-subtitle">
+            Over 35 years of exemplary institutional stewardship spanning the Bangladesh Army Medical Corps, apex national tertiary hospitals, and international defense medicine.
           </p>
+
           <div class="w-16 h-1 bg-[#025B66] mx-auto rounded-full mt-2"></div>
         </div>
 
-        <!-- Interactive Category Filters -->
-        <div class="flex flex-wrap items-center justify-center gap-2 mb-10" id="timelineFilters">
-          <button class="filter-btn active px-3.5 py-2 rounded-xl text-xs font-bold border transition bg-[#025B66] text-white border-[#025B66] shadow-xs cursor-pointer flex items-center gap-1.5" data-filter="all">
-            <i class="fa-solid fa-list-check text-xs"></i>
-            <span data-lang="filter-all">All Appointments (17)</span>
-          </button>
-          <button class="filter-btn px-3.5 py-2 rounded-xl text-xs font-bold border transition bg-white text-slate-700 border-slate-300 shadow-2xs hover:bg-slate-100 cursor-pointer flex items-center gap-1.5" data-filter="civilian">
-            <i class="fa-solid fa-hospital text-teal-600 text-xs"></i>
-            <span data-lang="filter-civilian">Civilian Hospitals (5)</span>
-          </button>
-          <button class="filter-btn px-3.5 py-2 rounded-xl text-xs font-bold border transition bg-white text-slate-700 border-slate-300 shadow-2xs hover:bg-slate-100 cursor-pointer flex items-center gap-1.5" data-filter="army">
-            <i class="fa-solid fa-shield-halved text-amber-600 text-xs"></i>
-            <span data-lang="filter-army">Army Medical Command (9)</span>
-          </button>
-          <button class="filter-btn px-3.5 py-2 rounded-xl text-xs font-bold border transition bg-white text-slate-700 border-slate-300 shadow-2xs hover:bg-slate-100 cursor-pointer flex items-center gap-1.5" data-filter="advisory">
-            <i class="fa-solid fa-medal text-sky-600 text-xs"></i>
-            <span data-lang="filter-advisory">National Advisory & Sports (3)</span>
-          </button>
+        <!-- ==================== SMART SEGMENTED FILTER BAR ==================== -->
+        <div class="flex justify-center mb-10">
+          <div class="inline-flex flex-wrap items-center justify-center gap-1.5 p-1.5 rounded-2xl bg-white border border-slate-200 shadow-xs" id="timelineFilters">
+            <button class="filter-btn active px-4 py-2 rounded-xl text-xs font-bold transition-all bg-[#025B66] text-white shadow-xs cursor-pointer flex items-center gap-1.5" data-filter="all">
+              <i class="fa-solid fa-list-check text-xs"></i>
+              <span data-lang="filter-all">All Appointments</span>
+              <span class="px-1.5 py-0.2 rounded-full text-[10px] bg-white/20 text-white font-extrabold ml-0.5">17</span>
+            </button>
+            <button class="filter-btn px-4 py-2 rounded-xl text-xs font-semibold text-slate-700 hover:text-slate-900 hover:bg-slate-50 transition-all cursor-pointer flex items-center gap-1.5" data-filter="civilian">
+              <i class="fa-solid fa-hospital text-teal-600 text-xs"></i>
+              <span data-lang="filter-civilian">Civilian Hospitals</span>
+              <span class="px-1.5 py-0.2 rounded-full text-[10px] bg-slate-100 text-slate-600 font-extrabold ml-0.5">5</span>
+            </button>
+            <button class="filter-btn px-4 py-2 rounded-xl text-xs font-semibold text-slate-700 hover:text-slate-900 hover:bg-slate-50 transition-all cursor-pointer flex items-center gap-1.5" data-filter="army">
+              <i class="fa-solid fa-shield-halved text-amber-600 text-xs"></i>
+              <span data-lang="filter-army">Army Medical Command</span>
+              <span class="px-1.5 py-0.2 rounded-full text-[10px] bg-slate-100 text-slate-600 font-extrabold ml-0.5">9</span>
+            </button>
+            <button class="filter-btn px-4 py-2 rounded-xl text-xs font-semibold text-slate-700 hover:text-slate-900 hover:bg-slate-50 transition-all cursor-pointer flex items-center gap-1.5" data-filter="advisory">
+              <i class="fa-solid fa-medal text-sky-600 text-xs"></i>
+              <span data-lang="filter-advisory">National Advisory & Sports</span>
+              <span class="px-1.5 py-0.2 rounded-full text-[10px] bg-slate-100 text-slate-600 font-extrabold ml-0.5">3</span>
+            </button>
+          </div>
         </div>
 
-        <!-- Container for Timeline Cards (Filtered dynamically) -->
-        <div id="timelineCardsContainer" class="space-y-4">
+        <!-- ==================== CONTAINER FOR TIMELINE CARDS ==================== -->
+        <div id="timelineCardsContainer" class="space-y-5">
 
-          <!-- ==================== TOP 5 FLAGSHIP APPOINTMENTS ==================== -->
-          
-          <!-- Card 1: CEO Pro-Active Hospital -->
-          <div data-category="civilian" class="p-6 rounded-2xl bg-white border-2 border-emerald-500/30 shadow-sm hover:shadow-md transition">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-slate-100">
-              <div class="flex items-center gap-2">
-                <span class="px-2.5 py-0.5 rounded-full text-[11px] font-black uppercase tracking-wider bg-emerald-50 text-emerald-800 border border-emerald-300">
-                  Current Executive Leadership
-                </span>
-                <span class="text-xs text-slate-500 font-medium">Apr 2022 – Present • Full-time</span>
-              </div>
-              <span class="text-xs font-bold text-slate-600"><i class="fa-solid fa-location-dot text-slate-400 mr-1"></i>Narayanganj (Signboard), Dhaka</span>
-            </div>
-            <div class="mt-3">
-              <h3 class="text-lg font-bold text-slate-900">Chief Executive Officer (CEO)</h3>
-              <div class="text-sm font-bold text-slate-700">Pro-Active Medical College and Hospital Ltd</div>
-              <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
-                Spearheading total operational, clinical, and financial governance of this major modern healthcare institute. Managing specialized clinical departments, tertiary inpatient expansion, healthcare insurance partnerships, and faculty administration.
-              </p>
-              <div class="flex flex-wrap gap-1.5 pt-3 text-[11px]">
-                <span class="px-2 py-0.5 rounded bg-teal-50 text-teal-800 border border-teal-200 font-medium">Financial Management</span>
-                <span class="px-2 py-0.5 rounded bg-teal-50 text-teal-800 border border-teal-200 font-medium">Health Insurance</span>
-                <span class="px-2 py-0.5 rounded bg-teal-50 text-teal-800 border border-teal-200 font-medium">Hospital Expansion</span>
-              </div>
-            </div>
-          </div>
+          <!-- ==================== TOP 5 FLAGSHIP EXECUTIVE APPOINTMENTS ==================== -->
 
-          <!-- Card 2: Director DNCC Dedicated COVID-19 Hospital -->
-          <div data-category="civilian" class="p-6 rounded-2xl bg-white border-2 border-teal-500/30 shadow-sm hover:shadow-md transition">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-slate-100">
-              <div class="flex items-center gap-2">
-                <span class="px-2.5 py-0.5 rounded-full text-[11px] font-black uppercase tracking-wider bg-teal-50 text-teal-800 border border-teal-300">
-                  National Pandemic Command
-                </span>
-                <span class="text-xs text-slate-500 font-medium">Dec 2020 – Oct 2021 • 11 mos</span>
-              </div>
-              <span class="text-xs font-bold text-slate-600"><i class="fa-solid fa-location-dot text-slate-400 mr-1"></i>Mohakhali, Dhaka</span>
-            </div>
-            <div class="mt-3">
-              <h3 class="text-lg font-bold text-slate-900">Former Director (as Brigadier General)</h3>
-              <div class="text-sm font-bold text-slate-700">DNCC Dedicated Covid-19 Hospital (1,000+ Beds)</div>
-              <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
-                Appointed on deputation from Bangladesh Army under Ministry of Local Government (MoLGRD) and Ministry of Health & Family Welfare. Established and commanded Bangladesh's largest COVID defense facility with 1,000+ general beds and 200+ ICU/HDU critical care beds.
-              </p>
-              <div class="flex flex-wrap gap-1.5 pt-3 text-[11px]">
-                <span class="px-2 py-0.5 rounded bg-teal-50 text-teal-800 border border-teal-200 font-medium">Crisis Leadership</span>
-                <span class="px-2 py-0.5 rounded bg-teal-50 text-teal-800 border border-teal-200 font-medium">Critical Care Logistics</span>
-                <span class="px-2 py-0.5 rounded bg-teal-50 text-teal-800 border border-teal-200 font-medium">Oxygen Grid Management</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 3: Director DMCH -->
-          <div data-category="civilian" class="p-6 rounded-2xl bg-white border-2 border-teal-500/30 shadow-sm hover:shadow-md transition">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-slate-100">
-              <div class="flex items-center gap-2">
-                <span class="px-2.5 py-0.5 rounded-full text-[11px] font-black uppercase tracking-wider bg-teal-50 text-teal-800 border border-teal-300">
-                  Apex Tertiary Hospital
-                </span>
-                <span class="text-xs text-slate-500 font-medium">Aug 2017 – Nov 2020 • 3 yrs 4 mos</span>
-              </div>
-              <span class="text-xs font-bold text-slate-600"><i class="fa-solid fa-location-dot text-slate-400 mr-1"></i>Dhaka, Bangladesh</span>
-            </div>
-            <div class="mt-3">
-              <h3 class="text-lg font-bold text-slate-900">Former Director (as Brigadier General)</h3>
-              <div class="text-sm font-bold text-slate-700">Dhaka Medical College and Hospital (DMCH)</div>
-              <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
-                Directed Bangladesh's largest 2,600-bed national tertiary hospital. Led the historic ৳23,000 Crore Master Plan for a 5,000-bed medical complex, established One-Stop Crisis Centres (OCC), and chaired JICA Health Quality Improvement projects.
-              </p>
-              <div class="flex flex-wrap gap-1.5 pt-3 text-[11px]">
-                <span class="px-2 py-0.5 rounded bg-teal-50 text-teal-800 border border-teal-200 font-medium">Hospital Master Planning</span>
-                <span class="px-2 py-0.5 rounded bg-teal-50 text-teal-800 border border-teal-200 font-medium">Financial Governance</span>
-                <span class="px-2 py-0.5 rounded bg-teal-50 text-teal-800 border border-teal-200 font-medium">Bilateral Projects (JICA)</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 4: Commandant AFMI -->
-          <div data-category="army" class="p-6 rounded-2xl bg-white border-2 border-amber-500/30 shadow-sm hover:shadow-md transition">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-slate-100">
-              <div class="flex items-center gap-2">
-                <span class="px-2.5 py-0.5 rounded-full text-[11px] font-black uppercase tracking-wider bg-amber-50 text-amber-900 border border-amber-300">
-                  Army Medical Command
-                </span>
-                <span class="text-xs text-slate-500 font-medium">Oct 2021 (Also Former Commandant 2012)</span>
-              </div>
-              <span class="text-xs font-bold text-slate-600"><i class="fa-solid fa-location-dot text-slate-400 mr-1"></i>Dhaka Cantonment</span>
-            </div>
-            <div class="mt-3">
-              <h3 class="text-lg font-bold text-slate-900">Former Commandant (as Brigadier General)</h3>
-              <div class="text-sm font-bold text-slate-700">Armed Forces Medical Institute (AFMI) — Bangladesh Army</div>
-              <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
-                Commanded the premier postgraduate medical training institute of the Bangladesh Armed Forces. Spearheaded curriculum modernization for military medical officers, dental surgeons, and specialized nursing corps.
-              </p>
-              <div class="flex flex-wrap gap-1.5 pt-3 text-[11px]">
-                <span class="px-2 py-0.5 rounded bg-amber-50 text-amber-900 border border-amber-200 font-medium">Military Medical Education</span>
-                <span class="px-2 py-0.5 rounded bg-amber-50 text-amber-900 border border-amber-200 font-medium">Officer Leadership</span>
-                <span class="px-2 py-0.5 rounded bg-amber-50 text-amber-900 border border-amber-200 font-medium">Academic Governance</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 5: Chairman Medical & Anti-Doping Committee BOA -->
-          <div data-category="advisory" class="p-6 rounded-2xl bg-white border-2 border-sky-500/30 shadow-sm hover:shadow-md transition">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-slate-100">
-              <div class="flex items-center gap-2">
-                <span class="px-2.5 py-0.5 rounded-full text-[11px] font-black uppercase tracking-wider bg-sky-50 text-sky-800 border border-sky-300">
-                  Olympic & Anti-Doping Governance
-                </span>
-                <span class="text-xs text-slate-500 font-medium">Aug 2017 – May 2022 • 4 yrs 10 mos</span>
-              </div>
-              <span class="text-xs font-bold text-slate-600"><i class="fa-solid fa-location-dot text-slate-400 mr-1"></i>Dhaka, Bangladesh</span>
-            </div>
-            <div class="mt-3">
-              <h3 class="text-lg font-bold text-slate-900">Chairman, Medical & Anti-Doping Committee</h3>
-              <div class="text-sm font-bold text-slate-700">Bangladesh Olympic Association (BOA) / WADA Affiliated</div>
-              <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
-                Led medical support operations, trauma response teams, and anti-doping protocols in strict compliance with the World Anti-Doping Agency (WADA) for all national and international Olympic athletes across Bangladesh.
-              </p>
-              <div class="flex flex-wrap gap-1.5 pt-3 text-[11px]">
-                <span class="px-2 py-0.5 rounded bg-sky-50 text-sky-800 border border-sky-200 font-medium">WADA Compliance</span>
-                <span class="px-2 py-0.5 rounded bg-sky-50 text-sky-800 border border-sky-200 font-medium">Sports Medicine</span>
-                <span class="px-2 py-0.5 rounded bg-sky-50 text-sky-800 border border-sky-200 font-medium">National Federation Oversight</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- ==================== EXECUTIVE COLLAPSIBLE LEDGER: 12 ADDITIONAL POSTINGS ==================== -->
-          <div class="pt-4">
-            <!-- Toggle Banner -->
-            <div class="p-4 sm:p-5 rounded-2xl bg-gradient-to-r from-slate-900 via-[#02464E] to-slate-900 text-white flex flex-col sm:flex-row items-center justify-between gap-4 shadow-md">
-              <div class="flex items-center gap-3 text-center sm:text-left">
-                <div class="w-10 h-10 rounded-xl bg-amber-400/20 border border-amber-400/40 flex items-center justify-center text-amber-300 flex-shrink-0">
-                  <i class="fa-solid fa-award text-base"></i>
+          <!-- 1. CEO Pro-Active Hospital -->
+          <div data-category="civilian" class="p-6 rounded-2xl bg-white border border-slate-200/90 border-l-4 border-l-emerald-500 shadow-sm hover:shadow-md transition">
+            <div class="flex flex-col md:flex-row md:items-start justify-between gap-4">
+              <div class="flex items-start gap-3.5">
+                <div class="w-12 h-12 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-700 flex items-center justify-center text-xl flex-shrink-0 shadow-2xs">
+                  <i class="fa-solid fa-hospital-user"></i>
                 </div>
                 <div>
-                  <h4 class="text-sm font-bold text-white">Military Service & Deputations Ledger (12 Additional Postings)</h4>
-                  <p class="text-xs text-teal-200 font-light">Authentic career appointments spanning Kuwait Air Force, RMCH, Kurmitola, CMH, BGB & Field Ambulances.</p>
+                  <div class="flex items-center gap-2 flex-wrap mb-1">
+                    <span class="px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-emerald-100/70 text-emerald-900 border border-emerald-300">
+                      Current Executive Leadership
+                    </span>
+                    <span class="text-xs text-slate-500 font-medium">Apr 2022 – Present · 4 yrs 7 mos</span>
+                  </div>
+                  <h3 class="text-lg font-bold text-slate-900">Chief Executive Officer (CEO)</h3>
+                  <div class="text-sm font-semibold text-[#025B66]">Pro-Active Medical College and Hospital Ltd</div>
                 </div>
               </div>
-              <button id="toggleLedgerBtn" class="px-4 py-2 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 text-xs font-black uppercase tracking-wider transition shadow-sm flex items-center gap-2 whitespace-nowrap cursor-pointer">
+              <div class="text-left md:text-right flex-shrink-0 text-xs text-slate-500 font-medium flex items-center md:justify-end gap-1.5">
+                <i class="fa-solid fa-location-dot text-emerald-600"></i>
+                <span>Narayanganj (Signboard), Dhaka</span>
+              </div>
+            </div>
+
+            <div class="mt-4 pt-3.5 border-t border-slate-100 text-xs sm:text-sm text-slate-600 leading-relaxed space-y-1.5">
+              <p>
+                Spearheading total strategic, clinical, operational, and financial governance of this premier medical college hospital. Managing comprehensive inpatient facilities, specialized faculty recruitment, modern surgical suites, and health insurance partnerships.
+              </p>
+            </div>
+
+            <div class="mt-3.5 flex flex-wrap gap-1.5 text-[11px] font-medium">
+              <span class="px-2.5 py-0.5 rounded-md bg-emerald-50 text-emerald-800 border border-emerald-200">Financial Management</span>
+              <span class="px-2.5 py-0.5 rounded-md bg-teal-50 text-teal-800 border border-teal-200">Health Insurance</span>
+              <span class="px-2.5 py-0.5 rounded-md bg-teal-50 text-teal-800 border border-teal-200">Hospital Expansion</span>
+              <span class="px-2.5 py-0.5 rounded-md bg-teal-50 text-teal-800 border border-teal-200">Faculty Leadership</span>
+            </div>
+          </div>
+
+          <!-- 2. Director DNCC Dedicated COVID-19 Hospital -->
+          <div data-category="civilian" class="p-6 rounded-2xl bg-white border border-slate-200/90 border-l-4 border-l-teal-600 shadow-sm hover:shadow-md transition">
+            <div class="flex flex-col md:flex-row md:items-start justify-between gap-4">
+              <div class="flex items-start gap-3.5">
+                <div class="w-12 h-12 rounded-xl bg-teal-50 border border-teal-200 text-teal-700 flex items-center justify-center text-xl flex-shrink-0 shadow-2xs">
+                  <i class="fa-solid fa-shield-virus"></i>
+                </div>
+                <div>
+                  <div class="flex items-center gap-2 flex-wrap mb-1">
+                    <span class="px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-teal-100/70 text-teal-900 border border-teal-300">
+                      National Pandemic Command
+                    </span>
+                    <span class="text-xs text-slate-500 font-medium">Dec 2020 – Oct 2021 · 11 mos</span>
+                  </div>
+                  <h3 class="text-lg font-bold text-slate-900">Former Director (as Brigadier General)</h3>
+                  <div class="text-sm font-semibold text-[#025B66]">DNCC Dedicated Covid-19 Hospital (1,000+ Beds)</div>
+                </div>
+              </div>
+              <div class="text-left md:text-right flex-shrink-0 text-xs text-slate-500 font-medium flex items-center md:justify-end gap-1.5">
+                <i class="fa-solid fa-location-dot text-teal-600"></i>
+                <span>Mohakhali, Dhaka</span>
+              </div>
+            </div>
+
+            <div class="mt-4 pt-3.5 border-t border-slate-100 text-xs sm:text-sm text-slate-600 leading-relaxed space-y-1.5">
+              <p>
+                Deputed from Bangladesh Army under dual oversight of Ministry of Local Government (MoLGRD) and Ministry of Health & Family Welfare. Established and commanded Bangladesh's largest COVID defense facility with 1,000+ beds, 200+ ICU/HDU units, and central liquid oxygen infrastructure during national emergency waves.
+              </p>
+            </div>
+
+            <div class="mt-3.5 flex flex-wrap gap-1.5 text-[11px] font-medium">
+              <span class="px-2.5 py-0.5 rounded-md bg-teal-50 text-teal-800 border border-teal-200">Crisis Leadership</span>
+              <span class="px-2.5 py-0.5 rounded-md bg-teal-50 text-teal-800 border border-teal-200">Critical Care Logistics</span>
+              <span class="px-2.5 py-0.5 rounded-md bg-teal-50 text-teal-800 border border-teal-200">Emergency Oxygen Grid</span>
+              <span class="px-2.5 py-0.5 rounded-md bg-teal-50 text-teal-800 border border-teal-200">Inter-Ministerial Command</span>
+            </div>
+          </div>
+
+          <!-- 3. Director DMCH -->
+          <div data-category="civilian" class="p-6 rounded-2xl bg-white border border-slate-200/90 border-l-4 border-l-[#02464E] shadow-sm hover:shadow-md transition">
+            <div class="flex flex-col md:flex-row md:items-start justify-between gap-4">
+              <div class="flex items-start gap-3.5">
+                <div class="w-12 h-12 rounded-xl bg-slate-900 border border-teal-700 text-amber-300 flex items-center justify-center text-xl flex-shrink-0 shadow-2xs">
+                  <i class="fa-solid fa-building-columns"></i>
+                </div>
+                <div>
+                  <div class="flex items-center gap-2 flex-wrap mb-1">
+                    <span class="px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-slate-100 text-slate-800 border border-slate-300">
+                      Apex National Tertiary Hospital
+                    </span>
+                    <span class="text-xs text-slate-500 font-medium">Aug 2017 – Nov 2020 · 3 yrs 4 mos</span>
+                  </div>
+                  <h3 class="text-lg font-bold text-slate-900">Former Director (as Brigadier General)</h3>
+                  <div class="text-sm font-semibold text-[#025B66]">Dhaka Medical College and Hospital (DMCH)</div>
+                </div>
+              </div>
+              <div class="text-left md:text-right flex-shrink-0 text-xs text-slate-500 font-medium flex items-center md:justify-end gap-1.5">
+                <i class="fa-solid fa-location-dot text-[#02464E]"></i>
+                <span>Dhaka, Bangladesh</span>
+              </div>
+            </div>
+
+            <div class="mt-4 pt-3.5 border-t border-slate-100 text-xs sm:text-sm text-slate-600 leading-relaxed space-y-1.5">
+              <p>
+                Executive leadership of the country's flagship 2,600-bed hospital. Spearheaded the landmark <strong>৳23,000 Crore Master Plan</strong> for a 5,000-bed expansion with five 18-20 storied towers, chaired JICA Health Quality Improvement projects (5S-KAIZEN), and led One-Stop Crisis Centres (OCC) for women & child protection.
+              </p>
+            </div>
+
+            <div class="mt-3.5 flex flex-wrap gap-1.5 text-[11px] font-medium">
+              <span class="px-2.5 py-0.5 rounded-md bg-teal-50 text-teal-800 border border-teal-200">৳23,000 Cr Master Plan</span>
+              <span class="px-2.5 py-0.5 rounded-md bg-teal-50 text-teal-800 border border-teal-200">JICA Quality (QI)</span>
+              <span class="px-2.5 py-0.5 rounded-md bg-teal-50 text-teal-800 border border-teal-200">Financial Governance</span>
+              <span class="px-2.5 py-0.5 rounded-md bg-teal-50 text-teal-800 border border-teal-200">OCC Protection</span>
+            </div>
+          </div>
+
+          <!-- 4. Commandant AFMI -->
+          <div data-category="army" class="p-6 rounded-2xl bg-white border border-slate-200/90 border-l-4 border-l-amber-500 shadow-sm hover:shadow-md transition">
+            <div class="flex flex-col md:flex-row md:items-start justify-between gap-4">
+              <div class="flex items-start gap-3.5">
+                <div class="w-12 h-12 rounded-xl bg-amber-50 border border-amber-200 text-amber-800 flex items-center justify-center text-xl flex-shrink-0 shadow-2xs">
+                  <i class="fa-solid fa-medal"></i>
+                </div>
+                <div>
+                  <div class="flex items-center gap-2 flex-wrap mb-1">
+                    <span class="px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-amber-100/70 text-amber-900 border border-amber-300">
+                      Army Medical Command
+                    </span>
+                    <span class="text-xs text-slate-500 font-medium">Oct 2021 (Also Former Commandant 2012)</span>
+                  </div>
+                  <h3 class="text-lg font-bold text-slate-900">Former Commandant (as Brigadier General)</h3>
+                  <div class="text-sm font-semibold text-[#025B66]">Armed Forces Medical Institute (AFMI) — Bangladesh Army</div>
+                </div>
+              </div>
+              <div class="text-left md:text-right flex-shrink-0 text-xs text-slate-500 font-medium flex items-center md:justify-end gap-1.5">
+                <i class="fa-solid fa-location-dot text-amber-600"></i>
+                <span>Dhaka Cantonment</span>
+              </div>
+            </div>
+
+            <div class="mt-4 pt-3.5 border-t border-slate-100 text-xs sm:text-sm text-slate-600 leading-relaxed space-y-1.5">
+              <p>
+                Commanded the premier postgraduate medical training institute of the Bangladesh Armed Forces. Supervised advanced military medical specialization, surgical combat readiness, dental corps courses, and armed forces nursing curriculum modernization.
+              </p>
+            </div>
+
+            <div class="mt-3.5 flex flex-wrap gap-1.5 text-[11px] font-medium">
+              <span class="px-2.5 py-0.5 rounded-md bg-amber-50 text-amber-900 border border-amber-200">Postgraduate Military Training</span>
+              <span class="px-2.5 py-0.5 rounded-md bg-amber-50 text-amber-900 border border-amber-200">Officer Curriculum</span>
+              <span class="px-2.5 py-0.5 rounded-md bg-amber-50 text-amber-900 border border-amber-200">Medical Administration</span>
+            </div>
+          </div>
+
+          <!-- 5. Chairman Medical & Anti-Doping Committee BOA -->
+          <div data-category="advisory" class="p-6 rounded-2xl bg-white border border-slate-200/90 border-l-4 border-l-sky-600 shadow-sm hover:shadow-md transition">
+            <div class="flex flex-col md:flex-row md:items-start justify-between gap-4">
+              <div class="flex items-start gap-3.5">
+                <div class="w-12 h-12 rounded-xl bg-sky-50 border border-sky-200 text-sky-800 flex items-center justify-center text-xl flex-shrink-0 shadow-2xs">
+                  <i class="fa-solid fa-award"></i>
+                </div>
+                <div>
+                  <div class="flex items-center gap-2 flex-wrap mb-1">
+                    <span class="px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-sky-100/70 text-sky-900 border border-sky-300">
+                      National Sports Integrity
+                    </span>
+                    <span class="text-xs text-slate-500 font-medium">Aug 2017 – May 2022 · 4 yrs 10 mos</span>
+                  </div>
+                  <h3 class="text-lg font-bold text-slate-900">Chairman, Medical & Anti-Doping Committee</h3>
+                  <div class="text-sm font-semibold text-[#025B66]">Bangladesh Olympic Association (BOA) / WADA Affiliated</div>
+                </div>
+              </div>
+              <div class="text-left md:text-right flex-shrink-0 text-xs text-slate-500 font-medium flex items-center md:justify-end gap-1.5">
+                <i class="fa-solid fa-location-dot text-sky-600"></i>
+                <span>Dhaka, Bangladesh</span>
+              </div>
+            </div>
+
+            <div class="mt-4 pt-3.5 border-t border-slate-100 text-xs sm:text-sm text-slate-600 leading-relaxed space-y-1.5">
+              <p>
+                Orchestrated sports medicine, athlete trauma care, and strict anti-doping protocols in direct coordination with the World Anti-Doping Agency (WADA). Provided medical coverage across all national sports federations and international Olympic contingents.
+              </p>
+            </div>
+
+            <div class="mt-3.5 flex flex-wrap gap-1.5 text-[11px] font-medium">
+              <span class="px-2.5 py-0.5 rounded-md bg-sky-50 text-sky-800 border border-sky-200">WADA Regulatory Protocols</span>
+              <span class="px-2.5 py-0.5 rounded-md bg-sky-50 text-sky-800 border border-sky-200">Sports Physiology</span>
+              <span class="px-2.5 py-0.5 rounded-md bg-sky-50 text-sky-800 border border-sky-200">Olympic Contingent Health</span>
+            </div>
+          </div>
+
+          <!-- ==================== EXECUTIVE COLLAPSIBLE MILITARY LEDGER (12 POSTINGS) ==================== -->
+          <div class="pt-2">
+            <!-- Sleek Ledger Banner -->
+            <div class="p-5 rounded-2xl bg-gradient-to-r from-slate-950 via-[#013137] to-slate-950 text-white flex flex-col sm:flex-row items-center justify-between gap-4 shadow-md border border-teal-800/50">
+              <div class="flex items-center gap-3.5 text-center sm:text-left">
+                <div class="w-11 h-11 rounded-xl bg-amber-400/20 border border-amber-400/40 flex items-center justify-center text-amber-300 flex-shrink-0">
+                  <i class="fa-solid fa-medal text-lg"></i>
+                </div>
+                <div>
+                  <h4 class="text-sm font-bold text-white flex items-center gap-2 justify-center sm:justify-start">
+                    <span>Military Service & Bilateral Deputations Ledger</span>
+                    <span class="text-[10px] px-2 py-0.5 rounded-full bg-amber-400 text-slate-950 font-black">12 Roles</span>
+                  </h4>
+                  <p class="text-xs text-teal-200 font-light mt-0.5">Comprehensive chronology across Kuwait Air Force, Rajshahi Medical, Kurmitola, CMH, BGB & Field Ambulances.</p>
+                </div>
+              </div>
+              <button id="toggleLedgerBtn" class="px-4 py-2.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 text-xs font-black uppercase tracking-wider transition shadow-sm flex items-center gap-2 whitespace-nowrap cursor-pointer flex-shrink-0">
                 <span id="toggleLedgerText">Expand All 12 Roles</span>
                 <i class="fa-solid fa-chevron-down text-xs transition-transform duration-300" id="ledgerChevron"></i>
               </button>
             </div>
 
-            <!-- Expandable Drawer with 12 Postings in Compact 2-Column Grid -->
+            <!-- Expandable Drawer with 12 Postings in 2-Column Responsive Grid -->
             <div id="ledgerDrawer" class="hidden mt-4 space-y-3 transition-all duration-500">
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5">
 
                 <!-- 6. BRAC National Consultant -->
-                <div data-category="advisory" class="p-4 rounded-xl bg-white border border-slate-200 shadow-2xs hover:border-[#025B66] transition">
-                  <div class="flex items-center justify-between text-xs text-slate-500 pb-1.5 border-b border-slate-100">
-                    <span class="font-bold text-sky-800 bg-sky-50 px-2 py-0.5 rounded text-[10px]">National Advisory</span>
-                    <span>Apr 2022 – Dec 2023 • 1 yr 9 mos</span>
+                <div data-category="advisory" class="p-4.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs hover:border-[#025B66] transition">
+                  <div class="flex items-center justify-between text-xs text-slate-500 pb-2 border-b border-slate-100">
+                    <span class="font-bold text-sky-800 bg-sky-50 px-2 py-0.5 rounded text-[10px] border border-sky-200">National Advisory</span>
+                    <span>Apr 2022 – Dec 2023 · 1 yr 9 mos</span>
                   </div>
                   <h4 class="text-sm font-bold text-slate-900 mt-2">National Consultant — HNPP</h4>
                   <div class="text-xs font-semibold text-slate-700">BRAC Health Nutrition Population Program</div>
-                  <p class="text-xs text-slate-600 mt-1">Strategic healthcare program development and community nutrition frameworks across Bangladesh.</p>
+                  <p class="text-xs text-slate-600 mt-1 leading-relaxed">Strategic health system planning, maternal nutrition frameworks, and community primary healthcare delivery models nationwide.</p>
                 </div>
 
                 <!-- 7. Professor Physiology AFMC -->
-                <div data-category="army" class="p-4 rounded-xl bg-white border border-slate-200 shadow-2xs hover:border-[#025B66] transition">
-                  <div class="flex items-center justify-between text-xs text-slate-500 pb-1.5 border-b border-slate-100">
-                    <span class="font-bold text-amber-800 bg-amber-50 px-2 py-0.5 rounded text-[10px]">Medical Professorship</span>
+                <div data-category="army" class="p-4.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs hover:border-[#025B66] transition">
+                  <div class="flex items-center justify-between text-xs text-slate-500 pb-2 border-b border-slate-100">
+                    <span class="font-bold text-amber-800 bg-amber-50 px-2 py-0.5 rounded text-[10px] border border-amber-200">Medical Professorship</span>
                     <span>Nov 2020 – Dec 2020</span>
                   </div>
                   <h4 class="text-sm font-bold text-slate-900 mt-2">Professor, Physiology Dept (as Brig Gen)</h4>
                   <div class="text-xs font-semibold text-slate-700">Armed Forces Medical College (AFMC)</div>
-                  <p class="text-xs text-slate-600 mt-1">Delivered advanced physiology instruction and mentored undergraduate military cadet doctors.</p>
+                  <p class="text-xs text-slate-600 mt-1 leading-relaxed">Delivered advanced medical physiology instruction and academic mentorship to undergraduate cadet military doctors.</p>
                 </div>
 
                 <!-- 8. Director RMCH -->
-                <div data-category="civilian" class="p-4 rounded-xl bg-white border border-slate-200 shadow-2xs hover:border-[#025B66] transition">
-                  <div class="flex items-center justify-between text-xs text-slate-500 pb-1.5 border-b border-slate-100">
-                    <span class="font-bold text-teal-800 bg-teal-50 px-2 py-0.5 rounded text-[10px]">Tertiary Hospital</span>
-                    <span>Apr 2014 – Aug 2015 • 1 yr 5 mos</span>
+                <div data-category="civilian" class="p-4.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs hover:border-[#025B66] transition">
+                  <div class="flex items-center justify-between text-xs text-slate-500 pb-2 border-b border-slate-100">
+                    <span class="font-bold text-teal-800 bg-teal-50 px-2 py-0.5 rounded text-[10px] border border-teal-200">Tertiary Hospital</span>
+                    <span>Apr 2014 – Aug 2015 · 1 yr 5 mos</span>
                   </div>
                   <h4 class="text-sm font-bold text-slate-900 mt-2">Former Director (as Brigadier General)</h4>
                   <div class="text-xs font-semibold text-slate-700">Rajshahi Medical College Hospital (RMCH)</div>
-                  <p class="text-xs text-slate-600 mt-1">Directed northern Bangladesh's premier referral hospital; coordinated GIZ maternal health and One-Stop Crisis Centre.</p>
+                  <p class="text-xs text-slate-600 mt-1 leading-relaxed">Directed northern Bangladesh's apex 1,000+ bed referral center; coordinated GIZ maternal health project and One-Stop Crisis Centre.</p>
                 </div>
 
                 <!-- 9. Director Kurmitola -->
-                <div data-category="civilian" class="p-4 rounded-xl bg-white border border-slate-200 shadow-2xs hover:border-[#025B66] transition">
-                  <div class="flex items-center justify-between text-xs text-slate-500 pb-1.5 border-b border-slate-100">
-                    <span class="font-bold text-teal-800 bg-teal-50 px-2 py-0.5 rounded text-[10px]">Tertiary Hospital</span>
-                    <span>Sep 2012 – Apr 2014 • 1 yr 8 mos</span>
+                <div data-category="civilian" class="p-4.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs hover:border-[#025B66] transition">
+                  <div class="flex items-center justify-between text-xs text-slate-500 pb-2 border-b border-slate-100">
+                    <span class="font-bold text-teal-800 bg-teal-50 px-2 py-0.5 rounded text-[10px] border border-teal-200">Tertiary Hospital</span>
+                    <span>Sep 2012 – Apr 2014 · 1 yr 8 mos</span>
                   </div>
                   <h4 class="text-sm font-bold text-slate-900 mt-2">Former Director (as Brigadier General)</h4>
                   <div class="text-xs font-semibold text-slate-700">Kurmitola General Hospital, Dhaka</div>
-                  <p class="text-xs text-slate-600 mt-1">Spearheaded full operational commissioning of this major modern 500-bed government general hospital.</p>
+                  <p class="text-xs text-slate-600 mt-1 leading-relaxed">Spearheaded the initial operational commissioning, departmental structuring, and inpatient launch of this 500-bed general hospital.</p>
                 </div>
 
                 <!-- 10. Commandant CMH Chattogram -->
-                <div data-category="army" class="p-4 rounded-xl bg-white border border-slate-200 shadow-2xs hover:border-[#025B66] transition">
-                  <div class="flex items-center justify-between text-xs text-slate-500 pb-1.5 border-b border-slate-100">
-                    <span class="font-bold text-amber-800 bg-amber-50 px-2 py-0.5 rounded text-[10px]">Military Hospital Command</span>
-                    <span>Apr 2012 – Sep 2012 • 6 mos</span>
+                <div data-category="army" class="p-4.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs hover:border-[#025B66] transition">
+                  <div class="flex items-center justify-between text-xs text-slate-500 pb-2 border-b border-slate-100">
+                    <span class="font-bold text-amber-800 bg-amber-50 px-2 py-0.5 rounded text-[10px] border border-amber-200">Military Hospital Command</span>
+                    <span>Apr 2012 – Sep 2012 · 6 mos</span>
                   </div>
                   <h4 class="text-sm font-bold text-slate-900 mt-2">Former Commandant (as Brigadier General)</h4>
                   <div class="text-xs font-semibold text-slate-700">Combined Military Hospital (CMH) Chattogram</div>
-                  <p class="text-xs text-slate-600 mt-1">Executive command of CMH Chattogram, delivering specialized secondary and tertiary clinical defense care.</p>
+                  <p class="text-xs text-slate-600 mt-1 leading-relaxed">Executive command of CMH Chattogram, delivering specialized secondary and tertiary clinical defense care to active and veteran forces.</p>
                 </div>
 
                 <!-- 11. Commanding Officer 48 Field Ambulance -->
-                <div data-category="army" class="p-4 rounded-xl bg-white border border-slate-200 shadow-2xs hover:border-[#025B66] transition">
-                  <div class="flex items-center justify-between text-xs text-slate-500 pb-1.5 border-b border-slate-100">
-                    <span class="font-bold text-amber-800 bg-amber-50 px-2 py-0.5 rounded text-[10px]">Field Medical Command</span>
-                    <span>Nov 2010 – Apr 2012 • 1 yr 6 mos</span>
+                <div data-category="army" class="p-4.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs hover:border-[#025B66] transition">
+                  <div class="flex items-center justify-between text-xs text-slate-500 pb-2 border-b border-slate-100">
+                    <span class="font-bold text-amber-800 bg-amber-50 px-2 py-0.5 rounded text-[10px] border border-amber-200">Field Medical Command</span>
+                    <span>Nov 2010 – Apr 2012 · 1 yr 6 mos</span>
                   </div>
                   <h4 class="text-sm font-bold text-slate-900 mt-2">Former Commanding Officer (as Colonel)</h4>
                   <div class="text-xs font-semibold text-slate-700">48 Field Ambulance — Savar Cantonment</div>
-                  <p class="text-xs text-slate-600 mt-1">Commanded brigade-level field medical unit, mobile casualty evacuation, and tactical medical readiness.</p>
+                  <p class="text-xs text-slate-600 mt-1 leading-relaxed">Commanded brigade-level mobile field hospital, casualty evacuation units, combat medical readiness, and disaster triage.</p>
                 </div>
 
                 <!-- 12. Commanding Officer CMH Momenshahi -->
-                <div data-category="army" class="p-4 rounded-xl bg-white border border-slate-200 shadow-2xs hover:border-[#025B66] transition">
-                  <div class="flex items-center justify-between text-xs text-slate-500 pb-1.5 border-b border-slate-100">
-                    <span class="font-bold text-amber-800 bg-amber-50 px-2 py-0.5 rounded text-[10px]">Military Hospital Command</span>
-                    <span>Jul 2008 – Jan 2010 • 1 yr 7 mos</span>
+                <div data-category="army" class="p-4.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs hover:border-[#025B66] transition">
+                  <div class="flex items-center justify-between text-xs text-slate-500 pb-2 border-b border-slate-100">
+                    <span class="font-bold text-amber-800 bg-amber-50 px-2 py-0.5 rounded text-[10px] border border-amber-200">Military Hospital Command</span>
+                    <span>Jul 2008 – Jan 2010 · 1 yr 7 mos</span>
                   </div>
                   <h4 class="text-sm font-bold text-slate-900 mt-2">Former Commanding Officer (as Lt. Colonel)</h4>
                   <div class="text-xs font-semibold text-slate-700">Combined Military Hospital (CMH) Momenshahi</div>
-                  <p class="text-xs text-slate-600 mt-1">Directed cantonment hospital clinical services, surgical operations, and healthcare administration.</p>
+                  <p class="text-xs text-slate-600 mt-1 leading-relaxed">Commanded cantonment clinical facilities, general surgeries, public health protocols, and medical supplies administration.</p>
                 </div>
 
                 <!-- 13. SMO BGB Bandarban -->
-                <div data-category="army" class="p-4 rounded-xl bg-white border border-slate-200 shadow-2xs hover:border-[#025B66] transition">
-                  <div class="flex items-center justify-between text-xs text-slate-500 pb-1.5 border-b border-slate-100">
-                    <span class="font-bold text-amber-800 bg-amber-50 px-2 py-0.5 rounded text-[10px]">Border Defense Medicine</span>
-                    <span>Sep 2006 – Jul 2008 • 1 yr 11 mos</span>
+                <div data-category="army" class="p-4.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs hover:border-[#025B66] transition">
+                  <div class="flex items-center justify-between text-xs text-slate-500 pb-2 border-b border-slate-100">
+                    <span class="font-bold text-amber-800 bg-amber-50 px-2 py-0.5 rounded text-[10px] border border-amber-200">Border Defense Medicine</span>
+                    <span>Sep 2006 – Jul 2008 · 1 yr 11 mos</span>
                   </div>
                   <h4 class="text-sm font-bold text-slate-900 mt-2">Senior Medical Officer (as Lt. Colonel)</h4>
                   <div class="text-xs font-semibold text-slate-700">Border Guard Bangladesh (BGB), Bandarban Sector</div>
-                  <p class="text-xs text-slate-600 mt-1">Head of medical services for frontline border security forces in rugged southeastern hill tracts.</p>
+                  <p class="text-xs text-slate-600 mt-1 leading-relaxed">Principal medical officer for border security forces across remote Chittagong Hill Tracts, overseeing emergency field treatment and malaria control.</p>
                 </div>
 
                 <!-- 14. 2iC CMH Ghatail -->
-                <div data-category="army" class="p-4 rounded-xl bg-white border border-slate-200 shadow-2xs hover:border-[#025B66] transition">
-                  <div class="flex items-center justify-between text-xs text-slate-500 pb-1.5 border-b border-slate-100">
-                    <span class="font-bold text-amber-800 bg-amber-50 px-2 py-0.5 rounded text-[10px]">Military Administration</span>
-                    <span>Dec 2003 – Sep 2006 • 2 yrs 10 mos</span>
+                <div data-category="army" class="p-4.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs hover:border-[#025B66] transition">
+                  <div class="flex items-center justify-between text-xs text-slate-500 pb-2 border-b border-slate-100">
+                    <span class="font-bold text-amber-800 bg-amber-50 px-2 py-0.5 rounded text-[10px] border border-amber-200">Military Administration</span>
+                    <span>Dec 2003 – Sep 2006 · 2 yrs 10 mos</span>
                   </div>
                   <h4 class="text-sm font-bold text-slate-900 mt-2">2nd in Command (2iC)</h4>
                   <div class="text-xs font-semibold text-slate-700">Combined Military Hospital (CMH) Ghatail</div>
-                  <p class="text-xs text-slate-600 mt-1">Administered daily clinical operations, cantonment health inspection, and pharmaceutical logistics.</p>
+                  <p class="text-xs text-slate-600 mt-1 leading-relaxed">Administered hospital operations, patient admissions, pharmaceutical inventories, and military hygiene inspections.</p>
                 </div>
 
                 <!-- 15. RMO Mirzapur Cadet College -->
-                <div data-category="army" class="p-4 rounded-xl bg-white border border-slate-200 shadow-2xs hover:border-[#025B66] transition">
-                  <div class="flex items-center justify-between text-xs text-slate-500 pb-1.5 border-b border-slate-100">
-                    <span class="font-bold text-amber-800 bg-amber-50 px-2 py-0.5 rounded text-[10px]">Cadet Health Oversight</span>
-                    <span>Mar 1999 – Jun 2002 • 3 yrs 4 mos</span>
+                <div data-category="army" class="p-4.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs hover:border-[#025B66] transition">
+                  <div class="flex items-center justify-between text-xs text-slate-500 pb-2 border-b border-slate-100">
+                    <span class="font-bold text-amber-800 bg-amber-50 px-2 py-0.5 rounded text-[10px] border border-amber-200">Cadet Health Oversight</span>
+                    <span>Mar 1999 – Jun 2002 · 3 yrs 4 mos</span>
                   </div>
                   <h4 class="text-sm font-bold text-slate-900 mt-2">Regimental Medical Officer (RMO)</h4>
                   <div class="text-xs font-semibold text-slate-700">Mirzapur Cadet College, Tangail</div>
-                  <p class="text-xs text-slate-600 mt-1">Total medical guardianship, sports physiology, emergency response, and public hygiene for cadet students.</p>
+                  <p class="text-xs text-slate-600 mt-1 leading-relaxed">Total medical guardianship, sports physical fitness, trauma emergency response, and public health standards for cadet students.</p>
                 </div>
 
                 <!-- 16. DAA & QMG Field Ambulance -->
-                <div data-category="army" class="p-4 rounded-xl bg-white border border-slate-200 shadow-2xs hover:border-[#025B66] transition">
-                  <div class="flex items-center justify-between text-xs text-slate-500 pb-1.5 border-b border-slate-100">
-                    <span class="font-bold text-amber-800 bg-amber-50 px-2 py-0.5 rounded text-[10px]">Staff Command Logistics</span>
-                    <span>Mar 1996 – Oct 1998 • 2 yrs 8 mos</span>
+                <div data-category="army" class="p-4.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs hover:border-[#025B66] transition">
+                  <div class="flex items-center justify-between text-xs text-slate-500 pb-2 border-b border-slate-100">
+                    <span class="font-bold text-amber-800 bg-amber-50 px-2 py-0.5 rounded text-[10px] border border-amber-200">Staff Command Logistics</span>
+                    <span>Mar 1996 – Oct 1998 · 2 yrs 8 mos</span>
                   </div>
                   <h4 class="text-sm font-bold text-slate-900 mt-2">DAA & QMG — Field Ambulance</h4>
                   <div class="text-xs font-semibold text-slate-700">Field Ambulance, Bangladesh Army</div>
-                  <p class="text-xs text-slate-600 mt-1">Staff appointment managing troop movement, medical resupply logistics, equipment procurement, and field triage.</p>
+                  <p class="text-xs text-slate-600 mt-1 leading-relaxed">Staff appointment managing troop logistics, medical resupply chain, vehicle fleets, and operational preparedness.</p>
                 </div>
 
                 <!-- 17. Kuwait Armed Forces Air Base -->
-                <div data-category="advisory" class="p-4 rounded-xl bg-white border-2 border-amber-300 shadow-xs hover:border-amber-500 transition">
-                  <div class="flex items-center justify-between text-xs text-slate-500 pb-1.5 border-b border-slate-100">
-                    <span class="font-bold text-amber-900 bg-amber-100 px-2 py-0.5 rounded text-[10px]">International Deputation</span>
-                    <span>May 1992 – Mar 1996 • 3 yrs 11 mos</span>
+                <div data-category="advisory" class="p-4.5 rounded-xl bg-white border-2 border-amber-300 shadow-xs hover:border-amber-500 transition">
+                  <div class="flex items-center justify-between text-xs text-slate-500 pb-2 border-b border-slate-100">
+                    <span class="font-bold text-amber-900 bg-amber-100 px-2 py-0.5 rounded text-[10px] border border-amber-300">International Deputation</span>
+                    <span>May 1992 – Mar 1996 · 3 yrs 11 mos</span>
                   </div>
                   <h4 class="text-sm font-bold text-slate-900 mt-2">Medical Officer (as Captain) — Kuwait Air Force</h4>
                   <div class="text-xs font-semibold text-slate-700">Ahmed Al Jaber Air Base, Kuwait Armed Forces</div>
-                  <p class="text-xs text-slate-600 mt-1">Served on official defense deputation providing aviation clinical medicine, emergency response, and airbase triage in post-Gulf War era.</p>
+                  <p class="text-xs text-slate-600 mt-1 leading-relaxed">International clinical defense deputation providing flight medicine, airbase trauma care, and clinical support in post-Gulf War reconstruction.</p>
                 </div>
 
               </div>
@@ -782,7 +866,6 @@
       </div>
     </section>
 
-    <!-- ==================== LANDMARK NATIONAL MEGAPROJECTS (#projects) ==================== -->
     <section id="projects" class="py-16 sm:py-20 bg-white border-b border-slate-200">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
