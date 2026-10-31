@@ -71,9 +71,9 @@ const translations = {
     "creed-quote": "\"My career is defined by steadfast commitment to service, exemplary crisis leadership, and a profound contribution to military and civilian health systems in Bangladesh. I am passionate about building resilient, high-quality health systems and leveraging professional capital for societal good.\"",
 
     // LinkedIn Experience Section
-    "exp-badge": "LinkedIn Verified Career History",
-    "exp-title": "Executive Appointments & Institutional Leadership",
-    "exp-subtitle": "An extensive overview of leadership tenures recorded on his professional LinkedIn portfolio across military and civilian medical sectors.",
+    "exp-badge": "Distinguished Command & Career Record",
+    "exp-title": "Executive Appointments & <span class=\"italic text-[#025B66] font-normal\">Institutional Leadership</span>",
+    "exp-subtitle": "Over 35 years of exemplary institutional stewardship spanning apex national tertiary hospitals, the Bangladesh Army Medical Corps, and international defense medicine.",
     "exp1-role": "Chief Executive Officer (CEO)",
     "exp1-company": "Pro-Active Medical College & Hospital Ltd.",
     "exp1-desc": "Spearheading comprehensive hospital governance, modernizing 24/7 ICU & critical care, operating suites, medical staff development, patient safety protocols, and strategic hospital branding in Dhaka.",
@@ -299,9 +299,9 @@ const translations = {
     "creed-quote": "\"স্বাস্থ্যসেবা শুধুমাত্র একটি প্রশাসনিক দায়িত্ব নয়; এটি এক পবিত্র জাতীয় আমানত। একজন সফল স্বাস্থ্য প্রশাসকের সবচেয়ে বড় শক্তি হলো সামরিক সততা, রোগীর প্রতি অকৃত্রিম মানবিক সহানুভূতি এবং যেকোনো জাতীয় সংকটে সাহসী উদ্ভাবনী পদক্ষেপ গ্রহণ করার মানসিকতা।\"",
 
     // LinkedIn Experience Section
-    "exp-badge": "লিঙ্কডইন ভেরিফাইড কর্মজীবন",
-    "exp-title": "নির্বাহী পদমর্যাদা ও প্রাতিষ্ঠানিক নেতৃত্ব",
-    "exp-subtitle": "সামরিক ও বেসামরিক স্বাস্থ্য খাতে তাঁর পেশাদার লিঙ্কডইন প্রোফাইলে লিপিবদ্ধ গৌরবোজ্জ্বল দায়িত্বসমূহের বিস্তারিত চিত্র।",
+    "exp-badge": "গৌরবোজ্জ্বল কর্মজীবন ও প্রাতিষ্ঠানিক কমান্ড",
+    "exp-title": "নির্বাহী পদমর্যাদা ও <span class=\"italic text-[#025B66] font-normal\">প্রাতিষ্ঠানিক নেতৃত্ব</span>",
+    "exp-subtitle": "সামরিক বাহিনী, শীর্ষ টারশিয়ারি হাসপাতাল ও আন্তর্জাতিক ডিফেন্স মেডিসিনে ৩৫+ বছরের অনন্য নেতৃত্ব ও সেবা।",
     "exp1-role": "প্রধান নির্বাহী কর্মকর্তা (সিইও)",
     "exp1-company": "প্রো-অ্যাক্টিভ মেডিকেল কলেজ ও হাসপাতাল লিমিটেড",
     "exp1-desc": "সার্বিক হাসপাতাল পরিচালনা, ২৪/৭ আইসিইউ ও ক্রিটিক্যাল কেয়ার আধুনিকায়ন, আধুনিক অপারেশন থিয়েটার, ডাক্তার ও নার্সদের প্রশিক্ষণ এবং ঢাকার বুকে বিশ্বমানের রোগীসেবা নিশ্চিতকরণ।",
