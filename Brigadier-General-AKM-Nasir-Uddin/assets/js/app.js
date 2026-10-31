@@ -15,19 +15,21 @@ const translations = {
     "top-book": "Request Executive Consultation",
 
     // Navigation
-    "nav-sub": "MPhil, MPH, MBBS | Healthcare Statesman & Administrator",
-    "nav-about": "Biography",
+    "nav-sub": "MPhil, MPH, MBBS | Healthcare Statesman",
+    "nav-about": "About",
+    "nav-career": "Career & Command",
     "nav-milestones": "Command Record",
     "nav-linkedin-exp": "Career History",
     "nav-skills": "Core Competencies",
-    "nav-pillars": "Advisory Pillars",
+    "nav-pillars": "Strategic Advisory",
     "nav-crisis": "Crisis Leadership",
     "nav-media": "Media & Press",
-    "nav-credentials": "Degrees",
+    "nav-credentials": "Degrees & Research",
     "btn-consult": "Advisory Desk",
 
     // Hero Section
     "hero-army-badge": "Bangladesh Army Medical Corps • Retired Brigadier General",
+    "hero-photo-ribbon": "Army Medical Corps Veteran",
     "hero-ceo-subtitle": "Healthcare Statesman & Medical Administrator",
     "hero-title-prefix": "Brigadier General (Dr.)",
     "frame-caption-title": "Former Director, Dhaka Medical College Hospital (DMCH) & Public Health Leader",
@@ -189,12 +191,13 @@ const translations = {
     "top-book": "এক্সিকিউটিভ পরামর্শ বুক করুন",
 
     // Navigation
-    "nav-sub": "এমফিল, এমপিএইচ, এমবিবিএস | স্বাস্থ্যখাতের রূপকার ও প্রশাসক",
-    "nav-about": "জীবন ও কর্ম",
+    "nav-sub": "এমফিল, এমপিএইচ, এমবিবিএস | স্বাস্থ্যখাতের রূপকার",
+    "nav-about": "পরিচিতি",
+    "nav-career": "কর্মজীবন ও কমান্ড",
     "nav-milestones": "কমান্ড রেকর্ড",
     "nav-linkedin-exp": "কর্মজীবন ও পদমর্যাদা",
     "nav-skills": "দক্ষতার ক্ষেত্রসমূহ",
-    "nav-pillars": "উপদেষ্টা ক্ষেত্র",
+    "nav-pillars": "কৌশলগত পরামর্শ",
     "nav-crisis": "সংকটকালীন নেতৃত্ব",
     "nav-media": "প্রেস ও মিডিয়া",
     "nav-credentials": "ডিগ্রি ও গবেষণা",
@@ -202,6 +205,7 @@ const translations = {
 
     // Hero Section
     "hero-army-badge": "বাংলাদেশ সেনাবাহিনী মেডিকেল কোর • অবসরপ্রাপ্ত ব্রিগেডিয়ার জেনারেল",
+    "hero-photo-ribbon": "সেনাবাহিনী মেডিকেল কোর ভেটেরান",
     "hero-ceo-subtitle": "স্বাস্থ্য প্রশাসক ও জাতীয় স্বাস্থ্য রূপকার",
     "hero-title-prefix": "ব্রিগেডিয়ার জেনারেল (ডা.)",
     "frame-caption-title": "সাবেক পরিচালক, ঢাকা মেডিকেল কলেজ হাসপাতাল (DMCH) ও স্বাস্থ্য প্রশাসক",
