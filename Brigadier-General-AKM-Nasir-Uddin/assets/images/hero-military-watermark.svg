@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <!-- Gold Gradient Definition -->
+    <linearGradient id="goldStroke" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5D695" stop-opacity="0.35"/>
+      <stop offset="50%" stop-color="#D4AF37" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#A67C1E" stop-opacity="0.05"/>
+    </linearGradient>
+
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00A884" stop-opacity="0.15"/>
+      <stop offset="50%" stop-color="#D4AF37" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#025B66" stop-opacity="0.0"/>
+    </linearGradient>
+
+    <radialGradient id="sealGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F5D695" stop-opacity="0.12"/>
+      <stop offset="70%" stop-color="#D4AF37" stop-opacity="0.03"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- ==================== SUBTLE GEOMETRIC TACTICAL MESH ==================== -->
+  <g stroke="url(#goldStroke)" stroke-width="0.75" fill="none" opacity="0.4">
+    <!-- Angular Constellation Lines -->
+    <line x1="0" y1="150" x2="350" y2="400" />
+    <line x1="350" y1="400" x2="200" y2="750" />
+    <line x1="200" y1="750" x2="600" y2="850" />
+    <line x1="350" y1="400" x2="600" y2="300" />
+    <line x1="600" y1="300" x2="850" y2="150" />
+    <line x1="850" y1="150" x2="1200" y2="250" />
+    <line x1="1200" y1="250" x2="1550" y2="180" />
+    <line x1="1200" y1="250" x2="1350" y2="600" />
+    <line x1="1350" y1="600" x2="1600" y2="750" />
+    <line x1="850" y1="150" x2="1000" y2="550" />
+    <line x1="1000" y1="550" x2="1350" y2="600" />
+    <line x1="600" y1="300" x2="1000" y2="550" />
+    <line x1="600" y1="850" x2="1000" y2="550" />
+    
+    <!-- Coordinate Intersection Nodes -->
+    <circle cx="350" cy="400" r="3" fill="#D4AF37" opacity="0.3"/>
+    <circle cx="600" cy="300" r="2.5" fill="#D4AF37" opacity="0.3"/>
+    <circle cx="850" cy="150" r="3" fill="#D4AF37" opacity="0.3"/>
+    <circle cx="1200" cy="250" r="3" fill="#D4AF37" opacity="0.3"/>
+    <circle cx="1000" cy="550" r="2.5" fill="#D4AF37" opacity="0.3"/>
+    <circle cx="1350" cy="600" r="3" fill="#D4AF37" opacity="0.3"/>
+  </g>
+
+  <!-- ==================== LEFT CREST: NATIONAL SEAL & CADUCEUS ==================== -->
+  <!-- Positioned behind the left circular portrait (approx center cx=320, cy=420) -->
+  <g transform="translate(320, 420)" opacity="0.45">
+    <!-- Circular Seal Rays -->
+    <circle cx="0" cy="0" r="280" fill="url(#sealGlow)" />
+    <circle cx="0" cy="0" r="260" stroke="url(#goldStroke)" stroke-width="1" fill="none" stroke-dasharray="6,4" />
+    <circle cx="0" cy="0" r="240" stroke="url(#goldStroke)" stroke-width="1.5" fill="none" />
+    <circle cx="0" cy="0" r="210" stroke="url(#goldStroke)" stroke-width="0.75" fill="none" />
+    
+    <!-- 8 Compass Honor Rays -->
+    <g stroke="url(#goldStroke)" stroke-width="1.2" opacity="0.5">
+      <line x1="0" y1="-260" x2="0" y2="-210" />
+      <line x1="0" y1="210" x2="0" y2="260" />
+      <line x1="-260" y1="0" x2="-210" y2="0" />
+      <line x1="210" y1="0" x2="260" y2="0" />
+      <line x1="-184" y1="-184" x2="-148" y2="-148" />
+      <line x1="148" y1="148" x2="184" y2="184" />
+      <line x1="184" y1="-184" x2="148" y2="-148" />
+      <line x1="-148" y1="148" x2="-184" y2="184" />
+    </g>
+
+    <!-- Medical Caduceus Staff & Laurel Leaves -->
+    <g fill="none" stroke="url(#goldStroke)" stroke-width="1.5" opacity="0.6">
+      <!-- Central Rod -->
+      <line x1="0" y1="-160" x2="0" y2="160" stroke-width="3" stroke="#D4AF37" stroke-opacity="0.3" />
+      <circle cx="0" cy="-165" r="8" fill="#D4AF37" fill-opacity="0.3" stroke="#F5D695" />
+      
+      <!-- Serpentine Waves (Entwined Medical Serpents) -->
+      <path d="M 0,-140 C 40,-120 40,-80 0,-60 C -40,-40 -40,0 0,20 C 40,40 40,80 0,100 C -40,120 -30,140 0,150" />
+      <path d="M 0,-140 C -40,-120 -40,-80 0,-60 C 40,-40 40,0 0,20 C -40,40 -40,80 0,100 C 40,120 30,140 0,150" />
+      
+      <!-- Asclepius Wings Spread -->
+      <path d="M 0,-150 C 30,-175 80,-165 120,-130 C 80,-125 50,-130 0,-135" fill="#D4AF37" fill-opacity="0.1" />
+      <path d="M 0,-150 C -30,-175 -80,-165 -120,-130 C -80,-125 -50,-130 0,-135" fill="#D4AF37" fill-opacity="0.1" />
+    </g>
+
+    <!-- Top National 4 Stars -->
+    <g fill="#D4AF37" opacity="0.35" transform="translate(0, -225)">
+      <polygon points="0,-10 3,-3 10,-3 4,2 6,9 0,5 -6,9 -4,2 -10,-3 -3,-3" transform="translate(-45, 0) scale(0.8)"/>
+      <polygon points="0,-10 3,-3 10,-3 4,2 6,9 0,5 -6,9 -4,2 -10,-3 -3,-3" transform="translate(-15, 0) scale(0.8)"/>
+      <polygon points="0,-10 3,-3 10,-3 4,2 6,9 0,5 -6,9 -4,2 -10,-3 -3,-3" transform="translate(15, 0) scale(0.8)"/>
+      <polygon points="0,-10 3,-3 10,-3 4,2 6,9 0,5 -6,9 -4,2 -10,-3 -3,-3" transform="translate(45, 0) scale(0.8)"/>
+    </g>
+  </g>
+
+  <!-- ==================== RIGHT WATERMARK: ARMED FORCES HERALDIC CREST ==================== -->
+  <!-- Positioned behind the right heading & cards (cx=1150, cy=400) -->
+  <g transform="translate(1150, 420)" opacity="0.38">
+    <!-- Ambient Radial Halo -->
+    <circle cx="0" cy="0" r="320" fill="url(#sealGlow)" />
+
+    <!-- Outer Honor Laurel Wreath -->
+    <g fill="none" stroke="url(#goldStroke)" stroke-width="1.2">
+      <!-- Left Laurel Branch -->
+      <path d="M 0,260 C -160,240 -250,120 -250,-20 C -250,-140 -160,-220 0,-260" stroke-width="2"/>
+      <!-- Right Laurel Branch -->
+      <path d="M 0,260 C 160,240 250,120 250,-20 C 250,-140 160,-220 0,-260" stroke-width="2"/>
+
+      <!-- Laurel Leaves pairs along arc -->
+      <path d="M -150,200 C -180,180 -190,150 -170,140 C -150,150 -140,180 -150,200 Z" fill="#D4AF37" fill-opacity="0.1"/>
+      <path d="M -210,120 C -240,100 -250,70 -230,60 C -210,70 -200,100 -210,120 Z" fill="#D4AF37" fill-opacity="0.1"/>
+      <path d="M -230,20 C -260,0 -265,-30 -245,-40 C -225,-30 -220,0 -230,20 Z" fill="#D4AF37" fill-opacity="0.1"/>
+      <path d="M -210,-80 C -235,-100 -235,-130 -215,-140 C -195,-130 -195,-100 -210,-80 Z" fill="#D4AF37" fill-opacity="0.1"/>
+      <path d="M -150,-170 C -170,-190 -165,-220 -145,-225 C -130,-210 -135,-180 -150,-170 Z" fill="#D4AF37" fill-opacity="0.1"/>
+
+      <!-- Right Leaves -->
+      <path d="M 150,200 C 180,180 190,150 170,140 C 150,150 140,180 150,200 Z" fill="#D4AF37" fill-opacity="0.1"/>
+      <path d="M 210,120 C 240,100 250,70 230,60 C 210,70 200,100 210,120 Z" fill="#D4AF37" fill-opacity="0.1"/>
+      <path d="M 230,20 C 260,0 265,-30 245,-40 C 225,-30 220,0 230,20 Z" fill="#D4AF37" fill-opacity="0.1"/>
+      <path d="M 210,-80 C 235,-100 235,-130 215,-140 C 195,-130 195,-100 210,-80 Z" fill="#D4AF37" fill-opacity="0.1"/>
+      <path d="M 150,-170 C 170,-190 165,-220 145,-225 C 130,-210 135,-180 150,-170 Z" fill="#D4AF37" fill-opacity="0.1"/>
+    </g>
+
+    <!-- Crossed Military Sabres (General Officer Distinction) -->
+    <g stroke="url(#goldStroke)" stroke-width="2.5" fill="none" opacity="0.5">
+      <!-- Sabre 1 -->
+      <line x1="-180" y1="-140" x2="180" y2="140" />
+      <path d="M -180,-140 C -190,-150 -185,-165 -170,-160" />
+      <circle cx="-160" cy="-125" r="10" stroke-width="1.5"/>
+
+      <!-- Sabre 2 -->
+      <line x1="180" y1="-140" x2="-180" y2="140" />
+      <path d="M 180,-140 C 190,-150 185,-165 170,-160" />
+      <circle cx="160" cy="-125" r="10" stroke-width="1.5"/>
+    </g>
+
+    <!-- Grand Brigadier General Five-Pointed Star -->
+    <g transform="translate(0, -20)" opacity="0.65">
+      <!-- Faceted Shaded Military Star -->
+      <polygon points="0,-100 29,-35 95,-31 43,14 62,81 0,45 -62,81 -43,14 -95,-31 -29,-35" 
+               fill="#D4AF37" fill-opacity="0.15" stroke="#F5D695" stroke-width="2"/>
+      
+      <!-- Inner Facet Lines -->
+      <g stroke="#F5D695" stroke-width="1" opacity="0.5">
+        <line x1="0" y1="-100" x2="0" y2="0"/>
+        <line x1="95" y1="-31" x2="0" y2="0"/>
+        <line x1="62" y1="81" x2="0" y2="0"/>
+        <line x1="-62" y1="81" x2="0" y2="0"/>
+        <line x1="-95" y1="-31" x2="0" y2="0"/>
+      </g>
+      <circle cx="0" cy="0" r="12" fill="#D4AF37" fill-opacity="0.3" stroke="#F5D695"/>
+    </g>
+
+    <!-- Bottom Ribbon Scroll -->
+    <path d="M -120,240 C -60,260 60,260 120,240 C 90,270 -90,270 -120,240 Z" 
+          fill="#D4AF37" fill-opacity="0.15" stroke="url(#goldStroke)" stroke-width="1.5"/>
+  </g>
+</svg>
