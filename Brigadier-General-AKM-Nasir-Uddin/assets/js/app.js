@@ -58,17 +58,17 @@ const translations = {
     // Biography
     "about-badge": "The Statesman's Journey",
     "about-title": "Where Military Precision Meets Compassionate Healing",
-    "about-p1": "Brigadier General (Dr.) A.K.M. Nasir Uddin (Retd.) represents a distinguished standard of healthcare leadership in South Asia—bridging the disciplined rigor of the Bangladesh Army Medical Corps with the complex operational agility demanded by the nation's premier tertiary healthcare institutions.",
-    "about-p2": "Across his illustrious career, he served as the Director of Dhaka Medical College Hospital (DMCH)—the central nerve center of Bangladesh's national referral system. During critical public health emergencies, including the peak waves of COVID-19 and historic Dengue outbreaks, his strategic decisiveness expanded bed capacity, secured logistics, protected thousands of medical professionals, and ensured equitable care for the vulnerable.",
-    "about-p3": "His institutional stewardship also includes serving as Commandant of the Armed Forces Medical Institute (AFMI), Commandant of CMH Chattogram, Director of Rajshahi Medical College Hospital (RMCH), Director of Kurmitola General Hospital, and steering the mammoth DNCC Dedicated COVID-19 Hospital.",
-    "about-p4": "Today, as the Chief Executive Officer (CEO) of Pro-Active Medical College and Hospital Ltd., and former National Consultant for BRAC Health Program, he spearheads modernized hospital systems, clinical governance, and strategic healthcare advisory.",
+    "about-p1": "Brigadier General (Dr.) AKM Nasir Uddin (retd.) is a distinguished medical commander, health system architect, and healthcare statesman with over 33+ years of high-command leadership across military, public tertiary, private, and international NGO sectors.",
+    "about-p2": "Throughout his career, he served as strategic commander of major military hospitals, commanded field medical units in operational and austere environments, and served as Commandant of the Armed Forces Medical Institute (AFMI). Under the Ministry of Health and Family Welfare, he successfully led and transformed four of the nation’s largest tertiary care medical college hospitals, most notably as Director of Dhaka Medical College Hospital (DMCH) and Director of Rajshahi Medical College Hospital (RMCH).",
+    "about-p3": "A certified CBRN (Chemical, Biological, Radiation, and Nuclear) medical expert, his crisis leadership was critically tested during the COVID-19 pandemic, where he spearheaded the national response by leading two apex COVID-19 tertiary hospital facilities (including founding the 1,000-bed DNCC Dedicated COVID-19 Hospital). From 2017 to 2021, he served as Chairman of the Medical & Anti-Doping Committee of the Bangladesh Olympic Association (BOA) under WADA protocols.",
+    "about-p4": "As National Consultant for the BRAC Health Program (BHP), he guided national public health mega-programs in NCD, Mental Health & Psychosocial Support (MHPSS), and Maternal & Child Health. Currently, he applies his multi-sectoral executive expertise as Chief Executive Officer (CEO) of Pro-Active Medical College and Hospital Ltd, actively dedicated to civic organizations and building resilient health systems for societal good.",
     "pill-1-title": "Crisis-Tested Governance",
     "pill-1-desc": "Proven experience commanding thousands of beds during national crises.",
     "pill-2-title": "Institutional Transformation",
     "pill-2-desc": "Turnaround strategist for both public mega-hospitals and private setups.",
     "creed-subtitle": "Message From CEO",
     "creed-title": "Core Principles of Health Stewardship",
-    "creed-quote": "\"Healthcare is not merely an administrative domain; it is a sacred national covenant. True hospital leadership demands military integrity, unwavering empathy for every patient, and the visionary courage to innovate in times of unprecedented crisis.\"",
+    "creed-quote": "\"My career is defined by steadfast commitment to service, exemplary crisis leadership, and a profound contribution to military and civilian health systems in Bangladesh. I am passionate about building resilient, high-quality health systems and leveraging professional capital for societal good.\"",
 
     // LinkedIn Experience Section
     "exp-badge": "LinkedIn Verified Career History",
