@@ -719,11 +719,11 @@ function initTimelineFilters() {
 
       // Update segmented pill button styling
       filterBtns.forEach(b => {
-        b.classList.remove('active', 'bg-[#025B66]', 'text-white', 'shadow-xs');
+        b.classList.remove('active', 'bg-[#025B66]', 'bg-[#023E3A]', 'text-white', 'shadow-xs', 'shadow-sm', 'ring-1', 'ring-[#025B66]/30');
         b.classList.add('text-slate-700', 'hover:text-slate-900', 'hover:bg-slate-50');
       });
       btn.classList.remove('text-slate-700', 'hover:text-slate-900', 'hover:bg-slate-50');
-      btn.classList.add('active', 'bg-[#025B66]', 'text-white', 'shadow-xs');
+      btn.classList.add('active', 'bg-[#023E3A]', 'text-white', 'shadow-sm', 'ring-1', 'ring-[#025B66]/30');
 
       // Filter timeline cards with smooth transition
       cards.forEach(card => {
@@ -878,11 +878,11 @@ function initCompetencyFilters() {
 
       // Update light segmented button styling
       filterBtns.forEach(b => {
-        b.classList.remove('active', 'bg-[#025B66]', 'text-white', 'shadow-xs');
+        b.classList.remove('active', 'bg-[#025B66]', 'bg-[#023E3A]', 'text-white', 'shadow-xs', 'shadow-sm', 'ring-1', 'ring-[#025B66]/30');
         b.classList.add('text-slate-600', 'hover:text-slate-900', 'hover:bg-slate-200/60');
       });
       btn.classList.remove('text-slate-600', 'hover:text-slate-900', 'hover:bg-slate-200/60');
-      btn.classList.add('active', 'bg-[#025B66]', 'text-white', 'shadow-xs');
+      btn.classList.add('active', 'bg-[#023E3A]', 'text-white', 'shadow-sm', 'ring-1', 'ring-[#025B66]/30');
 
       // Filter cards
       cards.forEach(card => {
