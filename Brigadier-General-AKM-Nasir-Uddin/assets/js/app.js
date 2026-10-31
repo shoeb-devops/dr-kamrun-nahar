@@ -872,13 +872,13 @@ function initCompetencyFilters() {
     btn.addEventListener('click', () => {
       const filter = btn.getAttribute('data-filter');
 
-      // Update button styling
+      // Update light segmented button styling
       filterBtns.forEach(b => {
-        b.classList.remove('active', 'bg-gradient-to-r', 'from-[#DFB15B]', 'to-[#C8963E]', 'text-slate-950', 'shadow-md');
-        b.classList.add('text-emerald-100/80', 'hover:text-white', 'hover:bg-white/5');
+        b.classList.remove('active', 'bg-[#025B66]', 'text-white', 'shadow-xs');
+        b.classList.add('text-slate-600', 'hover:text-slate-900', 'hover:bg-slate-200/60');
       });
-      btn.classList.remove('text-emerald-100/80', 'hover:text-white', 'hover:bg-white/5');
-      btn.classList.add('active', 'bg-gradient-to-r', 'from-[#DFB15B]', 'to-[#C8963E]', 'text-slate-950', 'shadow-md');
+      btn.classList.remove('text-slate-600', 'hover:text-slate-900', 'hover:bg-slate-200/60');
+      btn.classList.add('active', 'bg-[#025B66]', 'text-white', 'shadow-xs');
 
       // Filter cards
       cards.forEach(card => {
