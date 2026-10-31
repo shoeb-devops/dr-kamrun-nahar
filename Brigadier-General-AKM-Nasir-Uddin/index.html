@@ -167,10 +167,11 @@
         </div>
       </a>
 
-      <!-- Streamlined 4-Item Desktop Navigation (Zero Horizontal Overflow) -->
-      <nav class="hidden md:flex items-center space-x-6 lg:space-x-8 text-sm font-bold text-slate-700">
+      <!-- Streamlined Desktop Navigation -->
+      <nav class="hidden md:flex items-center space-x-5 lg:space-x-7 text-sm font-bold text-slate-700">
         <a href="#about" class="whitespace-nowrap hover:text-[#025B66] transition py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[#025B66] hover:after:w-full after:transition-all" data-lang="nav-about">About</a>
         <a href="#experience" class="whitespace-nowrap hover:text-[#025B66] transition py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[#025B66] hover:after:w-full after:transition-all" data-lang="nav-career">Career & Command</a>
+        <a href="#competencies" class="whitespace-nowrap hover:text-[#025B66] transition py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[#025B66] hover:after:w-full after:transition-all text-[#025B66]" data-lang="nav-skills">Core Competencies</a>
         <a href="#projects" class="whitespace-nowrap hover:text-[#025B66] transition py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[#025B66] hover:after:w-full after:transition-all" data-lang="nav-projects">Key Megaprojects</a>
         <a href="#academic" class="whitespace-nowrap hover:text-[#025B66] transition py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[#025B66] hover:after:w-full after:transition-all" data-lang="nav-credentials">Degrees & Research</a>
       </nav>
@@ -200,6 +201,7 @@
     <div id="mobileMenu" class="hidden md:hidden border-t border-slate-200 bg-white px-5 pt-3 pb-5 space-y-3 shadow-xl">
       <a href="#about" class="block py-2 text-sm font-semibold text-slate-700 hover:text-[#025B66]" data-lang="nav-about">About</a>
       <a href="#experience" class="block py-2 text-sm font-semibold text-slate-700 hover:text-[#025B66]" data-lang="nav-career">Career & Command</a>
+      <a href="#competencies" class="block py-2 text-sm font-semibold text-slate-700 hover:text-[#025B66]" data-lang="nav-skills">Core Competencies</a>
       <a href="#projects" class="block py-2 text-sm font-semibold text-slate-700 hover:text-[#025B66]" data-lang="nav-projects">Key Megaprojects</a>
       <a href="#academic" class="block py-2 text-sm font-semibold text-slate-700 hover:text-[#025B66]" data-lang="nav-credentials">Degrees & Research</a>
       <a href="#contact" class="block py-2.5 text-center text-sm font-bold text-white bg-[#00A884] rounded-xl shadow-md" data-lang="btn-consult">Request Advisory Consultation</a>
@@ -1274,6 +1276,582 @@
       </div>
     </section>
 
+
+    <!-- ==================== CORE COMPETENCIES & GLOBAL ACCREDITATIONS SECTION ==================== -->
+    <section id="competencies" class="py-16 sm:py-24 bg-gradient-to-b from-[#031512] via-[#06211B] to-[#041914] text-white border-b border-amber-400/20 relative overflow-hidden">
+      
+      <!-- Ambient Background Lighting Flares -->
+      <div class="absolute -top-32 -left-32 w-96 h-96 bg-amber-400/10 rounded-full blur-[120px] pointer-events-none"></div>
+      <div class="absolute -bottom-32 -right-32 w-96 h-96 bg-emerald-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto space-y-3 mb-10 sm:mb-14">
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-950/80 border border-[#D4AF37]/50 text-amber-200 text-xs font-bold tracking-widest uppercase shadow-md backdrop-blur-md">
+            <i class="fa-brands fa-linkedin text-sky-400 text-sm"></i>
+            <span data-lang="skills-badge">LINKEDIN VERIFIED COMPETENCIES • 35+ YEARS COMMAND ARCHIVE</span>
+          </div>
+          <h2 class="text-2xl sm:text-4xl md:text-5xl font-extrabold text-[#FFF8EE] tracking-tight" style="font-family: 'Playfair Display', Georgia, serif;">
+            Core Competencies & <span class="gold-gradient-text">Global Accreditations</span>
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-300 font-normal leading-relaxed" data-lang="skills-subtitle">
+            Over 30+ validated proficiencies recorded on LinkedIn across tertiary hospital turnaround, bilateral programs with JICA (Japan) and GIZ (Germany), clinical medical trials, and defense command.
+          </p>
+        </div>
+
+        <!-- Interactive Category Segmented Tabs -->
+        <div class="flex items-center justify-center mb-10 sm:mb-12">
+          <div id="competencyFilters" class="inline-flex flex-wrap items-center justify-center gap-1.5 p-1.5 bg-black/40 border border-emerald-900/60 rounded-2xl backdrop-blur-md shadow-xl">
+            <button class="comp-filter-btn active px-4 py-2 rounded-xl text-xs sm:text-[13px] font-bold transition-all duration-200 bg-gradient-to-r from-[#DFB15B] to-[#C8963E] text-slate-950 shadow-md cursor-pointer" data-filter="all">
+              <i class="fa-solid fa-layer-group mr-1.5"></i> All Competencies (24)
+            </button>
+            <button class="comp-filter-btn px-4 py-2 rounded-xl text-xs sm:text-[13px] font-bold transition-all duration-200 text-emerald-100/80 hover:text-white hover:bg-white/5 cursor-pointer" data-filter="hospital">
+              <i class="fa-solid fa-hospital mr-1.5 text-amber-300"></i> Hospital Governance & QI
+            </button>
+            <button class="comp-filter-btn px-4 py-2 rounded-xl text-xs sm:text-[13px] font-bold transition-all duration-200 text-emerald-100/80 hover:text-white hover:bg-white/5 cursor-pointer" data-filter="military">
+              <i class="fa-solid fa-shield-halved mr-1.5 text-amber-300"></i> Military Command & Crisis
+            </button>
+            <button class="comp-filter-btn px-4 py-2 rounded-xl text-xs sm:text-[13px] font-bold transition-all duration-200 text-emerald-100/80 hover:text-white hover:bg-white/5 cursor-pointer" data-filter="public-health">
+              <i class="fa-solid fa-globe mr-1.5 text-amber-300"></i> Public Health & Global Missions
+            </button>
+            <button class="comp-filter-btn px-4 py-2 rounded-xl text-xs sm:text-[13px] font-bold transition-all duration-200 text-emerald-100/80 hover:text-white hover:bg-white/5 cursor-pointer" data-filter="research">
+              <i class="fa-solid fa-flask-vial mr-1.5 text-amber-300"></i> Medical Research & Academia
+            </button>
+          </div>
+        </div>
+
+        <!-- ==================== FEATURED CLINICAL RESEARCH DOSSIER SHOWCASE ==================== -->
+        <div class="mb-14 p-6 sm:p-8 rounded-3xl border border-[#D4AF37]/50 shadow-[0_20px_50px_rgba(0,0,0,0.8)] relative overflow-hidden"
+             style="background: linear-gradient(135deg, rgba(14, 30, 24, 0.9) 0%, rgba(6, 16, 13, 0.95) 100%); backdrop-filter: blur(16px);">
+          
+          <div class="absolute -top-12 -left-12 w-48 h-48 bg-[#D4AF37]/15 rounded-full blur-2xl pointer-events-none"></div>
+
+          <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6 pb-4 border-b border-white/10 relative z-10">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-amber-500 to-[#D4AF37] text-slate-950 flex items-center justify-center font-bold text-lg shadow-md shrink-0">
+                <i class="fa-solid fa-microscope"></i>
+              </div>
+              <div>
+                <span class="text-[11px] font-extrabold uppercase tracking-widest text-[#E5C178]">Published Medical Evidence & Clinical Trials</span>
+                <h3 class="text-lg sm:text-xl font-bold text-white tracking-tight">Peer-Reviewed Clinical Research Studies Conducted</h3>
+              </div>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="px-3 py-1 rounded-full bg-emerald-900/60 border border-emerald-500/40 text-emerald-200 text-xs font-semibold">
+                <i class="fa-solid fa-circle-check text-emerald-400 mr-1"></i> LinkedIn Verified Publications
+              </span>
+            </div>
+          </div>
+
+          <!-- 2 Research Dossier Cards Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 relative z-10">
+            
+            <!-- Research 1: COVID-19 Nasopharyngeal RCT -->
+            <div class="p-5 sm:p-6 rounded-2xl bg-black/40 border border-[#D4AF37]/35 hover:border-[#D4AF37] transition-all duration-300 shadow-md flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between gap-2 mb-3">
+                  <span class="px-2.5 py-0.5 rounded-full bg-red-950/80 text-red-300 border border-red-500/40 text-[10px] font-extrabold uppercase tracking-wider">
+                    COVID-19 CLINICAL TRIAL
+                  </span>
+                  <span class="text-xs text-amber-300 font-bold">Randomized Clinical Trial (RCT)</span>
+                </div>
+                <h4 class="text-base sm:text-lg font-bold text-white leading-snug mb-2 hover:text-[#F3D389] transition">
+                  "Virucidal Effect of Povidone Iodine on SARS-CoV-2 in the Nasopharynx: An Open-Label Randomized Clinical Trial"
+                </h4>
+                <p class="text-xs text-slate-300 leading-relaxed mb-4">
+                  Investigated immediate viral load clearance in high-risk COVID-19 patients and frontline health personnel. Led and managed during clinical command of national referral pandemic hospitals (DMCH & DNCC Dedicated COVID-19 Hospital).
+                </p>
+              </div>
+              <div class="pt-3 border-t border-white/10 flex flex-wrap items-center justify-between text-[11px] text-[#E5C178]">
+                <span><i class="fa-solid fa-hospital mr-1"></i> DMCH & DNCC Hospital Deployment</span>
+                <span class="text-white/80"><i class="fa-solid fa-tag mr-1"></i> Infectious Disease & Virology</span>
+              </div>
+            </div>
+
+            <!-- Research 2: CABG Cardiac Surgery Risk Factor Analysis -->
+            <div class="p-5 sm:p-6 rounded-2xl bg-black/40 border border-[#D4AF37]/35 hover:border-[#D4AF37] transition-all duration-300 shadow-md flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between gap-2 mb-3">
+                  <span class="px-2.5 py-0.5 rounded-full bg-blue-950/80 text-blue-300 border border-blue-500/40 text-[10px] font-extrabold uppercase tracking-wider">
+                    CARDIAC SURGERY STUDY
+                  </span>
+                  <span class="text-xs text-amber-300 font-bold">Clinical Risk Analysis</span>
+                </div>
+                <h4 class="text-base sm:text-lg font-bold text-white leading-snug mb-2 hover:text-[#F3D389] transition">
+                  "Risk Factor Analysis of Patients Who Underwent CABG (Coronary Artery Bypass Grafting) Operation at Combined Military Hospital (CMH) Dhaka"
+                </h4>
+                <p class="text-xs text-slate-300 leading-relaxed mb-4">
+                  Multi-year comprehensive clinical outcome analysis of open-heart surgical patients (2001–2002) at the Armed Forces Cardiac Center, identifying critical comorbid predictors to reduce postoperative surgical morbidity.
+                </p>
+              </div>
+              <div class="pt-3 border-t border-white/10 flex flex-wrap items-center justify-between text-[11px] text-[#E5C178]">
+                <span><i class="fa-solid fa-shield-halved mr-1"></i> CMH Dhaka Cardiac Center</span>
+                <span class="text-white/80"><i class="fa-solid fa-tag mr-1"></i> Cardiothoracic Clinical Protocol</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ==================== COMPETENCIES CARDS GRID (24 Cards) ==================== -->
+        <div id="competencyCardsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+
+          <!-- 1. Healthcare & Hospital Management -->
+          <div class="comp-card rounded-2xl p-5 sm:p-6 border border-[#C8A25D]/30 hover:border-[#D4AF37] transition-all duration-300 flex flex-col justify-between group shadow-lg"
+               data-category="hospital"
+               style="background: linear-gradient(180deg, rgba(16, 32, 26, 0.8) 0%, rgba(8, 18, 14, 0.9) 100%); backdrop-filter: blur(14px);">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <div class="w-9 h-9 rounded-xl bg-amber-400/15 border border-amber-400/40 flex items-center justify-center text-amber-300 group-hover:scale-110 transition shrink-0">
+                  <i class="fa-solid fa-hospital-user text-sm"></i>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full bg-emerald-950/80 border border-emerald-500/40 text-emerald-300 text-[10px] font-bold">
+                  16 Exp • 4 Endorsements
+                </span>
+              </div>
+              <h3 class="text-base font-bold text-white mb-1.5 group-hover:text-[#F3D389] transition">Healthcare & Hospital Management</h3>
+              <p class="text-xs text-slate-300 leading-relaxed mb-3">
+                Executive turnaround of civilian tertiary hospitals (DMCH, RMCH, Kurmitola) and private medical colleges (Pro-Active). Spearheaded ICU expansions, clinical governance, and emergency response infrastructure.
+              </p>
+            </div>
+            <div class="pt-2.5 border-t border-white/10 flex flex-wrap gap-1.5">
+              <span class="px-2 py-0.5 rounded bg-black/40 text-[10px] text-amber-200 border border-white/10">Tertiary Hospitals</span>
+              <span class="px-2 py-0.5 rounded bg-black/40 text-[10px] text-slate-300 border border-white/10">Clinical Governance</span>
+              <span class="px-2 py-0.5 rounded bg-black/40 text-[10px] text-slate-300 border border-white/10">ICU Modernization</span>
+            </div>
+          </div>
+
+          <!-- 2. Quality Management (QI) & Nursing Capacity -->
+          <div class="comp-card rounded-2xl p-5 sm:p-6 border border-[#C8A25D]/30 hover:border-[#D4AF37] transition-all duration-300 flex flex-col justify-between group shadow-lg"
+               data-category="hospital"
+               style="background: linear-gradient(180deg, rgba(16, 32, 26, 0.8) 0%, rgba(8, 18, 14, 0.9) 100%); backdrop-filter: blur(14px);">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <div class="w-9 h-9 rounded-xl bg-amber-400/15 border border-amber-400/40 flex items-center justify-center text-amber-300 group-hover:scale-110 transition shrink-0">
+                  <i class="fa-solid fa-award text-sm"></i>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full bg-amber-950/80 border border-amber-500/40 text-amber-300 text-[10px] font-bold">
+                  JICA Japan 🇯🇵 • Germany 🇩🇪
+                </span>
+              </div>
+              <h3 class="text-base font-bold text-white mb-1.5 group-hover:text-[#F3D389] transition">Quality Management (QI) & Nursing Capacity</h3>
+              <p class="text-xs text-slate-300 leading-relaxed mb-3">
+                Conducted the Health Services Strengthening Project (QI) at DMCH and Capacity Building of Nursing Services (CBNS) with JICA Japan. Certified in International Health Quality Management from Heidelberg University, Germany.
+              </p>
+            </div>
+            <div class="pt-2.5 border-t border-white/10 flex flex-wrap gap-1.5">
+              <span class="px-2 py-0.5 rounded bg-black/40 text-[10px] text-amber-200 border border-white/10">JICA (Japan)</span>
+              <span class="px-2 py-0.5 rounded bg-black/40 text-[10px] text-slate-300 border border-white/10">Heidelberg Univ</span>
+              <span class="px-2 py-0.5 rounded bg-black/40 text-[10px] text-slate-300 border border-white/10">Nursing QI</span>
+            </div>
+          </div>
+
+          <!-- 3. Military Command & Defense Leadership -->
+          <div class="comp-card rounded-2xl p-5 sm:p-6 border border-[#C8A25D]/30 hover:border-[#D4AF37] transition-all duration-300 flex flex-col justify-between group shadow-lg"
+               data-category="military"
+               style="background: linear-gradient(180deg, rgba(16, 32, 26, 0.8) 0%, rgba(8, 18, 14, 0.9) 100%); backdrop-filter: blur(14px);">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <div class="w-9 h-9 rounded-xl bg-amber-400/15 border border-amber-400/40 flex items-center justify-center text-amber-300 group-hover:scale-110 transition shrink-0">
+                  <i class="fa-solid fa-medal text-sm"></i>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full bg-emerald-950/80 border border-emerald-500/40 text-emerald-300 text-[10px] font-bold">
+                  10 Army Tenures
+                </span>
+              </div>
+              <h3 class="text-base font-bold text-white mb-1.5 group-hover:text-[#F3D389] transition">Military Command & Defense Leadership</h3>
+              <p class="text-xs text-slate-300 leading-relaxed mb-3">
+                Commanded major Combined Military Hospitals (CMH Chattogram, Momenshahi, Ghatail), Armed Forces Medical Institute (AFMI), and Field Ambulances. Over 35 years of disciplined high-command service in Bangladesh Army.
+              </p>
+            </div>
+            <div class="pt-2.5 border-t border-white/10 flex flex-wrap gap-1.5">
+              <span class="px-2 py-0.5 rounded bg-black/40 text-[10px] text-amber-200 border border-white/10">Army Medical Corps</span>
+              <span class="px-2 py-0.5 rounded bg-black/40 text-[10px] text-slate-300 border border-white/10">CMH Command</span>
+              <span class="px-2 py-0.5 rounded bg-black/40 text-[10px] text-slate-300 border border-white/10">AFMI</span>
+            </div>
+          </div>
+
+          <!-- 4. Pandemic & Disaster Crisis Management -->
+          <div class="comp-card rounded-2xl p-5 sm:p-6 border border-[#C8A25D]/30 hover:border-[#D4AF37] transition-all duration-300 flex flex-col justify-between group shadow-lg"
+               data-category="military"
+               style="background: linear-gradient(180deg, rgba(16, 32, 26, 0.8) 0%, rgba(8, 18, 14, 0.9) 100%); backdrop-filter: blur(14px);">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <div class="w-9 h-9 rounded-xl bg-amber-400/15 border border-amber-400/40 flex items-center justify-center text-amber-300 group-hover:scale-110 transition shrink-0">
+                  <i class="fa-solid fa-triangle-exclamation text-sm"></i>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full bg-red-950/80 border border-red-500/40 text-red-300 text-[10px] font-bold">
+                  DNCC Dedicated COVID Hospital
+                </span>
+              </div>
+              <h3 class="text-base font-bold text-white mb-1.5 group-hover:text-[#F3D389] transition">Pandemic & Disaster Crisis Management</h3>
+              <p class="text-xs text-slate-300 leading-relaxed mb-3">
+                Commanded Bangladesh's apex 1,000-bed COVID field hospital with 200+ ICU capacity during peak pandemic waves. Managed 2019 national Dengue epidemic at DMCH, expanding bed capacity from 2,300 to 4,000+ under crisis.
+              </p>
+            </div>
+            <div class="pt-2.5 border-t border-white/10 flex flex-wrap gap-1.5">
+              <span class="px-2 py-0.5 rounded bg-black/40 text-[10px] text-amber-200 border border-white/10">1,000-Bed Field Hospital</span>
+              <span class="px-2 py-0.5 rounded bg-black/40 text-[10px] text-slate-300 border border-white/10">COVID-19 Command</span>
+              <span class="px-2 py-0.5 rounded bg-black/40 text-[10px] text-slate-300 border border-white/10">Dengue Response</span>
+            </div>
+          </div>
+
+          <!-- 5. Maternal & Reproductive Health (MCH) -->
+          <div class="comp-card rounded-2xl p-5 sm:p-6 border border-[#C8A25D]/30 hover:border-[#D4AF37] transition-all duration-300 flex flex-col justify-between group shadow-lg"
+               data-category="public-health"
+               style="background: linear-gradient(180deg, rgba(16, 32, 26, 0.8) 0%, rgba(8, 18, 14, 0.9) 100%); backdrop-filter: blur(14px);">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <div class="w-9 h-9 rounded-xl bg-amber-400/15 border border-amber-400/40 flex items-center justify-center text-amber-300 group-hover:scale-110 transition shrink-0">
+                  <i class="fa-solid fa-person-breastfeeding text-sm"></i>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full bg-amber-950/80 border border-amber-500/40 text-amber-300 text-[10px] font-bold">
+                  GIZ Germany 🇩🇪
+                </span>
+              </div>
+              <h3 class="text-base font-bold text-white mb-1.5 group-hover:text-[#F3D389] transition">Maternal & Reproductive Healthcare (MCH)</h3>
+              <p class="text-xs text-slate-300 leading-relaxed mb-3">
+                Addressed Bangladesh's reproductive challenges through the comprehensive Maternal & Child Health and Reproductive Services project conducted by GIZ Germany. Established safe delivery protocols and neonatal care standards.
+              </p>
+            </div>
+            <div class="pt-2.5 border-t border-white/10 flex flex-wrap gap-1.5">
+              <span class="px-2 py-0.5 rounded bg-black/40 text-[10px] text-amber-200 border border-white/10">GIZ (Germany)</span>
+              <span class="px-2 py-0.5 rounded bg-black/40 text-[10px] text-slate-300 border border-white/10">Maternal Health</span>
+              <span class="px-2 py-0.5 rounded bg-black/40 text-[10px] text-slate-300 border border-white/10">Reproductive Rights</span>
+            </div>
+          </div>
+
+          <!-- 6. Sexual & Reproductive Health Rights (SRHR) -->
+          <div class="comp-card rounded-2xl p-5 sm:p-6 border border-[#C8A25D]/30 hover:border-[#D4AF37] transition-all duration-300 flex flex-col justify-between group shadow-lg"
+               data-category="public-health"
+               style="background: linear-gradient(180deg, rgba(16, 32, 26, 0.8) 0%, rgba(8, 18, 14, 0.9) 100%); backdrop-filter: blur(14px);">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <div class="w-9 h-9 rounded-xl bg-amber-400/15 border border-amber-400/40 flex items-center justify-center text-amber-300 group-hover:scale-110 transition shrink-0">
+                  <i class="fa-solid fa-venus text-sm"></i>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full bg-purple-950/80 border border-purple-500/40 text-purple-300 text-[10px] font-bold">
+                  RHSTEP & Ipas 🌐
+                </span>
+              </div>
+              <h3 class="text-base font-bold text-white mb-1.5 group-hover:text-[#F3D389] transition">Women's Empowerment & SRHR Programs</h3>
+              <p class="text-xs text-slate-300 leading-relaxed mb-3">
+                Jointly conducted rights-based sexual and reproductive health initiatives with RHSTEP & Ipas. Championed clinical training on reproductive rights, youth counseling, gender equity, and women's health empowerment.
+              </p>
+            </div>
+            <div class="pt-2.5 border-t border-white/10 flex flex-wrap gap-1.5">
+              <span class="px-2 py-0.5 rounded bg-black/40 text-[10px] text-amber-200 border border-white/10">RHSTEP & Ipas</span>
+              <span class="px-2 py-0.5 rounded bg-black/40 text-[10px] text-slate-300 border border-white/10">Women's Health</span>
+              <span class="px-2 py-0.5 rounded bg-black/40 text-[10px] text-slate-300 border border-white/10">SRHR Advocacy</span>
+            </div>
+          </div>
+
+          <!-- 7. Public Health & Community Medicine -->
+          <div class="comp-card rounded-2xl p-5 sm:p-6 border border-[#C8A25D]/30 hover:border-[#D4AF37] transition-all duration-300 flex flex-col justify-between group shadow-lg"
+               data-category="public-health"
+               style="background: linear-gradient(180deg, rgba(16, 32, 26, 0.8) 0%, rgba(8, 18, 14, 0.9) 100%); backdrop-filter: blur(14px);">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <div class="w-9 h-9 rounded-xl bg-amber-400/15 border border-amber-400/40 flex items-center justify-center text-amber-300 group-hover:scale-110 transition shrink-0">
+                  <i class="fa-solid fa-people-roof text-sm"></i>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full bg-emerald-950/80 border border-emerald-500/40 text-emerald-300 text-[10px] font-bold">
+                  BRAC Health • MPH (DU)
+                </span>
+              </div>
+              <h3 class="text-base font-bold text-white mb-1.5 group-hover:text-[#F3D389] transition">Public Health Administration & Community Health</h3>
+              <p class="text-xs text-slate-300 leading-relaxed mb-3">
+                Served as National Consultant for BRAC Health, Nutrition and Population Program (HNPP). Consulted on grassroots rural healthcare delivery, maternal-child survival models, community health workers, and public-private health integration.
+              </p>
+            </div>
+            <div class="pt-2.5 border-t border-white/10 flex flex-wrap gap-1.5">
+              <span class="px-2 py-0.5 rounded bg-black/40 text-[10px] text-amber-200 border border-white/10">BRAC HNPP</span>
+              <span class="px-2 py-0.5 rounded bg-black/40 text-[10px] text-slate-300 border border-white/10">MPH Dhaka Univ</span>
+              <span class="px-2 py-0.5 rounded bg-black/40 text-[10px] text-slate-300 border border-white/10">Community Health</span>
+            </div>
+          </div>
+
+          <!-- 8. Sports Medicine & Anti-Doping Governance -->
+          <div class="comp-card rounded-2xl p-5 sm:p-6 border border-[#C8A25D]/30 hover:border-[#D4AF37] transition-all duration-300 flex flex-col justify-between group shadow-lg"
+               data-category="research"
+               style="background: linear-gradient(180deg, rgba(16, 32, 26, 0.8) 0%, rgba(8, 18, 14, 0.9) 100%); backdrop-filter: blur(14px);">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <div class="w-9 h-9 rounded-xl bg-amber-400/15 border border-amber-400/40 flex items-center justify-center text-amber-300 group-hover:scale-110 transition shrink-0">
+                  <i class="fa-solid fa-person-running text-sm"></i>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full bg-amber-950/80 border border-amber-500/40 text-amber-300 text-[10px] font-bold">
+                  BOA / WADA Compliance
+                </span>
+              </div>
+              <h3 class="text-base font-bold text-white mb-1.5 group-hover:text-[#F3D389] transition">Sports Medicine & Anti-Doping Governance</h3>
+              <p class="text-xs text-slate-300 leading-relaxed mb-3">
+                Served as Chairman of the Medical & Anti-Doping Committee at Bangladesh Olympic Association (BOA). Ensured international WADA anti-doping compliance, athlete nutritional counseling, trauma management, and Olympic sports delegation medical care.
+              </p>
+            </div>
+            <div class="pt-2.5 border-t border-white/10 flex flex-wrap gap-1.5">
+              <span class="px-2 py-0.5 rounded bg-black/40 text-[10px] text-amber-200 border border-white/10">Olympic Association</span>
+              <span class="px-2 py-0.5 rounded bg-black/40 text-[10px] text-slate-300 border border-white/10">WADA Anti-Doping</span>
+              <span class="px-2 py-0.5 rounded bg-black/40 text-[10px] text-slate-300 border border-white/10">Sports Nutrition</span>
+            </div>
+          </div>
+
+          <!-- 9. University Teaching & AFMC Faculty -->
+          <div class="comp-card rounded-2xl p-5 sm:p-6 border border-[#C8A25D]/30 hover:border-[#D4AF37] transition-all duration-300 flex flex-col justify-between group shadow-lg"
+               data-category="research"
+               style="background: linear-gradient(180deg, rgba(16, 32, 26, 0.8) 0%, rgba(8, 18, 14, 0.9) 100%); backdrop-filter: blur(14px);">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <div class="w-9 h-9 rounded-xl bg-amber-400/15 border border-amber-400/40 flex items-center justify-center text-amber-300 group-hover:scale-110 transition shrink-0">
+                  <i class="fa-solid fa-graduation-cap text-sm"></i>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full bg-emerald-950/80 border border-emerald-500/40 text-emerald-300 text-[10px] font-bold">
+                  AFMC Faculty • 3 Teaching Exp
+                </span>
+              </div>
+              <h3 class="text-base font-bold text-white mb-1.5 group-hover:text-[#F3D389] transition">University Teaching & Academic Leadership</h3>
+              <p class="text-xs text-slate-300 leading-relaxed mb-3">
+                Faculty mentor and university lecturer at Armed Forces Medical College (AFMC) and Armed Forces Medical Institute (AFMI). Trained future military and civilian doctors in clinical disciplines, hospital ethics, and public health command.
+              </p>
+            </div>
+            <div class="pt-2.5 border-t border-white/10 flex flex-wrap gap-1.5">
+              <span class="px-2 py-0.5 rounded bg-black/40 text-[10px] text-amber-200 border border-white/10">AFMC Faculty</span>
+              <span class="px-2 py-0.5 rounded bg-black/40 text-[10px] text-slate-300 border border-white/10">Postgraduate AFMI</span>
+              <span class="px-2 py-0.5 rounded bg-black/40 text-[10px] text-slate-300 border border-white/10">Medical Pedagogy</span>
+            </div>
+          </div>
+
+          <!-- 10. Financial Management & Revenue Cycle -->
+          <div class="comp-card rounded-2xl p-5 sm:p-6 border border-[#C8A25D]/30 hover:border-[#D4AF37] transition-all duration-300 flex flex-col justify-between group shadow-lg"
+               data-category="hospital"
+               style="background: linear-gradient(180deg, rgba(16, 32, 26, 0.8) 0%, rgba(8, 18, 14, 0.9) 100%); backdrop-filter: blur(14px);">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <div class="w-9 h-9 rounded-xl bg-amber-400/15 border border-amber-400/40 flex items-center justify-center text-amber-300 group-hover:scale-110 transition shrink-0">
+                  <i class="fa-solid fa-chart-line text-sm"></i>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full bg-emerald-950/80 border border-emerald-500/40 text-emerald-300 text-[10px] font-bold">
+                  13 Experiences
+                </span>
+              </div>
+              <h3 class="text-base font-bold text-white mb-1.5 group-hover:text-[#F3D389] transition">Hospital Financial Management & Insurance</h3>
+              <p class="text-xs text-slate-300 leading-relaxed mb-3">
+                Extensive financial stewardship across 13 major appointments. Directed hospital operational budgeting, corporate health insurance tie-ups, revenue integrity, cost-containment measures, and transparent fiscal governance.
+              </p>
+            </div>
+            <div class="pt-2.5 border-t border-white/10 flex flex-wrap gap-1.5">
+              <span class="px-2 py-0.5 rounded bg-black/40 text-[10px] text-amber-200 border border-white/10">Fiscal Stewardship</span>
+              <span class="px-2 py-0.5 rounded bg-black/40 text-[10px] text-slate-300 border border-white/10">Health Insurance</span>
+              <span class="px-2 py-0.5 rounded bg-black/40 text-[10px] text-slate-300 border border-white/10">Revenue Cycle</span>
+            </div>
+          </div>
+
+          <!-- 11. Government Accountability & Public Trust -->
+          <div class="comp-card rounded-2xl p-5 sm:p-6 border border-[#C8A25D]/30 hover:border-[#D4AF37] transition-all duration-300 flex flex-col justify-between group shadow-lg"
+               data-category="military"
+               style="background: linear-gradient(180deg, rgba(16, 32, 26, 0.8) 0%, rgba(8, 18, 14, 0.9) 100%); backdrop-filter: blur(14px);">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <div class="w-9 h-9 rounded-xl bg-amber-400/15 border border-amber-400/40 flex items-center justify-center text-amber-300 group-hover:scale-110 transition shrink-0">
+                  <i class="fa-solid fa-landmark text-sm"></i>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full bg-emerald-950/80 border border-emerald-500/40 text-emerald-300 text-[10px] font-bold">
+                  13 Experiences
+                </span>
+              </div>
+              <h3 class="text-base font-bold text-white mb-1.5 group-hover:text-[#F3D389] transition">Government Accountability & Public Trust</h3>
+              <p class="text-xs text-slate-300 leading-relaxed mb-3">
+                Stewardship of apex public sector health budgets and national medical procurement across Ministry of Health and Armed Forces with spotless audit compliance, transparent government accountability, and integrity standards.
+              </p>
+            </div>
+            <div class="pt-2.5 border-t border-white/10 flex flex-wrap gap-1.5">
+              <span class="px-2 py-0.5 rounded bg-black/40 text-[10px] text-amber-200 border border-white/10">Inter-Ministerial</span>
+              <span class="px-2 py-0.5 rounded bg-black/40 text-[10px] text-slate-300 border border-white/10">Public Procurement</span>
+              <span class="px-2 py-0.5 rounded bg-black/40 text-[10px] text-slate-300 border border-white/10">Audit Compliance</span>
+            </div>
+          </div>
+
+          <!-- 12. International Defense Deputation (Kuwait) -->
+          <div class="comp-card rounded-2xl p-5 sm:p-6 border border-[#C8A25D]/30 hover:border-[#D4AF37] transition-all duration-300 flex flex-col justify-between group shadow-lg"
+               data-category="military"
+               style="background: linear-gradient(180deg, rgba(16, 32, 26, 0.8) 0%, rgba(8, 18, 14, 0.9) 100%); backdrop-filter: blur(14px);">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <div class="w-9 h-9 rounded-xl bg-amber-400/15 border border-amber-400/40 flex items-center justify-center text-amber-300 group-hover:scale-110 transition shrink-0">
+                  <i class="fa-solid fa-plane-up text-sm"></i>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full bg-blue-950/80 border border-blue-500/40 text-blue-300 text-[10px] font-bold">
+                  Kuwait Armed Forces 🇰🇼
+                </span>
+              </div>
+              <h3 class="text-base font-bold text-white mb-1.5 group-hover:text-[#F3D389] transition">International Defense Medicine & Aviation</h3>
+              <p class="text-xs text-slate-300 leading-relaxed mb-3">
+                Selected for international military medical deputation at Ahmed Al Jaber Air Base, Kuwait Armed Forces (1992–1996). Specialized in aviation medicine, airbase emergency trauma care, and multinational defense health protocols.
+              </p>
+            </div>
+            <div class="pt-2.5 border-t border-white/10 flex flex-wrap gap-1.5">
+              <span class="px-2 py-0.5 rounded bg-black/40 text-[10px] text-amber-200 border border-white/10">Kuwait Airbase</span>
+              <span class="px-2 py-0.5 rounded bg-black/40 text-[10px] text-slate-300 border border-white/10">Aviation Medicine</span>
+              <span class="px-2 py-0.5 rounded bg-black/40 text-[10px] text-slate-300 border border-white/10">Defense Deputation</span>
+            </div>
+          </div>
+
+          <!-- 13. Military Logistics & Field Ambulances -->
+          <div class="comp-card rounded-2xl p-5 sm:p-6 border border-[#C8A25D]/30 hover:border-[#D4AF37] transition-all duration-300 flex flex-col justify-between group shadow-lg"
+               data-category="military"
+               style="background: linear-gradient(180deg, rgba(16, 32, 26, 0.8) 0%, rgba(8, 18, 14, 0.9) 100%); backdrop-filter: blur(14px);">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <div class="w-9 h-9 rounded-xl bg-amber-400/15 border border-amber-400/40 flex items-center justify-center text-amber-300 group-hover:scale-110 transition shrink-0">
+                  <i class="fa-solid fa-truck-medical text-sm"></i>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full bg-emerald-950/80 border border-emerald-500/40 text-emerald-300 text-[10px] font-bold">
+                  10 & 48 Field Ambulance
+                </span>
+              </div>
+              <h3 class="text-base font-bold text-white mb-1.5 group-hover:text-[#F3D389] transition">Military Logistics & Tactical Field Medicine</h3>
+              <p class="text-xs text-slate-300 leading-relaxed mb-3">
+                Commanded Army Field Ambulances across Rangpur and national cantonments. Directed rapid field deployment, frontline surgical triage, casualty evacuation, cold-chain medical supplies, and theater medical stores.
+              </p>
+            </div>
+            <div class="pt-2.5 border-t border-white/10 flex flex-wrap gap-1.5">
+              <span class="px-2 py-0.5 rounded bg-black/40 text-[10px] text-amber-200 border border-white/10">Field Ambulance</span>
+              <span class="px-2 py-0.5 rounded bg-black/40 text-[10px] text-slate-300 border border-white/10">Tactical Triage</span>
+              <span class="px-2 py-0.5 rounded bg-black/40 text-[10px] text-slate-300 border border-white/10">Casualty Evac</span>
+            </div>
+          </div>
+
+          <!-- 14. High-Stakes Negotiation & Multi-Agency Relations -->
+          <div class="comp-card rounded-2xl p-5 sm:p-6 border border-[#C8A25D]/30 hover:border-[#D4AF37] transition-all duration-300 flex flex-col justify-between group shadow-lg"
+               data-category="hospital"
+               style="background: linear-gradient(180deg, rgba(16, 32, 26, 0.8) 0%, rgba(8, 18, 14, 0.9) 100%); backdrop-filter: blur(14px);">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <div class="w-9 h-9 rounded-xl bg-amber-400/15 border border-amber-400/40 flex items-center justify-center text-amber-300 group-hover:scale-110 transition shrink-0">
+                  <i class="fa-solid fa-handshake-simple text-sm"></i>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full bg-emerald-950/80 border border-emerald-500/40 text-emerald-300 text-[10px] font-bold">
+                  Multi-Agency Liaison
+                </span>
+              </div>
+              <h3 class="text-base font-bold text-white mb-1.5 group-hover:text-[#F3D389] transition">Strategic Negotiation & Multi-Agency Liaison</h3>
+              <p class="text-xs text-slate-300 leading-relaxed mb-3">
+                Mastery in high-stakes negotiations between international development partners (JICA, GIZ), ministries (Health, LGRD, Defense), doctor-nurse associations, and private enterprise leadership to align institutional outcomes.
+              </p>
+            </div>
+            <div class="pt-2.5 border-t border-white/10 flex flex-wrap gap-1.5">
+              <span class="px-2 py-0.5 rounded bg-black/40 text-[10px] text-amber-200 border border-white/10">Bilateral Pacts</span>
+              <span class="px-2 py-0.5 rounded bg-black/40 text-[10px] text-slate-300 border border-white/10">Ministry Liaison</span>
+              <span class="px-2 py-0.5 rounded bg-black/40 text-[10px] text-slate-300 border border-white/10">Mediation</span>
+            </div>
+          </div>
+
+          <!-- 15. Media Relations & Crisis Communication -->
+          <div class="comp-card rounded-2xl p-5 sm:p-6 border border-[#C8A25D]/30 hover:border-[#D4AF37] transition-all duration-300 flex flex-col justify-between group shadow-lg"
+               data-category="research"
+               style="background: linear-gradient(180deg, rgba(16, 32, 26, 0.8) 0%, rgba(8, 18, 14, 0.9) 100%); backdrop-filter: blur(14px);">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <div class="w-9 h-9 rounded-xl bg-amber-400/15 border border-amber-400/40 flex items-center justify-center text-amber-300 group-hover:scale-110 transition shrink-0">
+                  <i class="fa-solid fa-microphone-lines text-sm"></i>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full bg-amber-950/80 border border-amber-500/40 text-amber-300 text-[10px] font-bold">
+                  National Broadcasts
+                </span>
+              </div>
+              <h3 class="text-base font-bold text-white mb-1.5 group-hover:text-[#F3D389] transition">Crisis Communication & Public Spokesperson</h3>
+              <p class="text-xs text-slate-300 leading-relaxed mb-3">
+                Lead national spokesperson during the height of the COVID-19 pandemic and Dengue outbreaks. Managed press conferences, live prime-time television briefings, countered medical misinformation, and sustained public morale.
+              </p>
+            </div>
+            <div class="pt-2.5 border-t border-white/10 flex flex-wrap gap-1.5">
+              <span class="px-2 py-0.5 rounded bg-black/40 text-[10px] text-amber-200 border border-white/10">National Media</span>
+              <span class="px-2 py-0.5 rounded bg-black/40 text-[10px] text-slate-300 border border-white/10">Crisis PR</span>
+              <span class="px-2 py-0.5 rounded bg-black/40 text-[10px] text-slate-300 border border-white/10">Public Health Trust</span>
+            </div>
+          </div>
+
+          <!-- 16. Epidemiology & Outbreak Surveillance -->
+          <div class="comp-card rounded-2xl p-5 sm:p-6 border border-[#C8A25D]/30 hover:border-[#D4AF37] transition-all duration-300 flex flex-col justify-between group shadow-lg"
+               data-category="public-health"
+               style="background: linear-gradient(180deg, rgba(16, 32, 26, 0.8) 0%, rgba(8, 18, 14, 0.9) 100%); backdrop-filter: blur(14px);">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <div class="w-9 h-9 rounded-xl bg-amber-400/15 border border-amber-400/40 flex items-center justify-center text-amber-300 group-hover:scale-110 transition shrink-0">
+                  <i class="fa-solid fa-viruses text-sm"></i>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full bg-emerald-950/80 border border-emerald-500/40 text-emerald-300 text-[10px] font-bold">
+                  MPH (DU) Endorsed
+                </span>
+              </div>
+              <h3 class="text-base font-bold text-white mb-1.5 group-hover:text-[#F3D389] transition">Epidemiology & Outbreak Surveillance</h3>
+              <p class="text-xs text-slate-300 leading-relaxed mb-3">
+                Advanced epidemiological surveillance, disease tracking, and infection prevention and control (IPC). Coordinated patient admission triage, diagnostic testing workflows, and biosecurity containment across hospital buildings.
+              </p>
+            </div>
+            <div class="pt-2.5 border-t border-white/10 flex flex-wrap gap-1.5">
+              <span class="px-2 py-0.5 rounded bg-black/40 text-[10px] text-amber-200 border border-white/10">Epidemiology</span>
+              <span class="px-2 py-0.5 rounded bg-black/40 text-[10px] text-slate-300 border border-white/10">Disease Surveillance</span>
+              <span class="px-2 py-0.5 rounded bg-black/40 text-[10px] text-slate-300 border border-white/10">Biosecurity</span>
+            </div>
+          </div>
+
+          <!-- 17. Operational Planning & Risk Management -->
+          <div class="comp-card rounded-2xl p-5 sm:p-6 border border-[#C8A25D]/30 hover:border-[#D4AF37] transition-all duration-300 flex flex-col justify-between group shadow-lg"
+               data-category="hospital"
+               style="background: linear-gradient(180deg, rgba(16, 32, 26, 0.8) 0%, rgba(8, 18, 14, 0.9) 100%); backdrop-filter: blur(14px);">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <div class="w-9 h-9 rounded-xl bg-amber-400/15 border border-amber-400/40 flex items-center justify-center text-amber-300 group-hover:scale-110 transition shrink-0">
+                  <i class="fa-solid fa-compass-drafting text-sm"></i>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full bg-emerald-950/80 border border-emerald-500/40 text-emerald-300 text-[10px] font-bold">
+                  9 Experiences
+                </span>
+              </div>
+              <h3 class="text-base font-bold text-white mb-1.5 group-hover:text-[#F3D389] transition">Operational Planning & Risk Management</h3>
+              <p class="text-xs text-slate-300 leading-relaxed mb-3">
+                Mastery in long-range strategic master plans, hospital disaster response playbooks, clinical risk mitigation matrices, medical asset protection, and emergency backup continuity plans for major tertiary installations.
+              </p>
+            </div>
+            <div class="pt-2.5 border-t border-white/10 flex flex-wrap gap-1.5">
+              <span class="px-2 py-0.5 rounded bg-black/40 text-[10px] text-amber-200 border border-white/10">Risk Matrix</span>
+              <span class="px-2 py-0.5 rounded bg-black/40 text-[10px] text-slate-300 border border-white/10">Master Planning</span>
+              <span class="px-2 py-0.5 rounded bg-black/40 text-[10px] text-slate-300 border border-white/10">Continuity Plan</span>
+            </div>
+          </div>
+
+          <!-- 18. Medical Academic Administration (AFMI) -->
+          <div class="comp-card rounded-2xl p-5 sm:p-6 border border-[#C8A25D]/30 hover:border-[#D4AF37] transition-all duration-300 flex flex-col justify-between group shadow-lg"
+               data-category="research"
+               style="background: linear-gradient(180deg, rgba(16, 32, 26, 0.8) 0%, rgba(8, 18, 14, 0.9) 100%); backdrop-filter: blur(14px);">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <div class="w-9 h-9 rounded-xl bg-amber-400/15 border border-amber-400/40 flex items-center justify-center text-amber-300 group-hover:scale-110 transition shrink-0">
+                  <i class="fa-solid fa-book-medical text-sm"></i>
+                </div>
+                <span class="px-2.5 py-0.5 rounded-full bg-emerald-950/80 border border-emerald-500/40 text-emerald-300 text-[10px] font-bold">
+                  Commandant AFMI (2 Tenures)
+                </span>
+              </div>
+              <h3 class="text-base font-bold text-white mb-1.5 group-hover:text-[#F3D389] transition">Medical Academic Institution Administration</h3>
+              <p class="text-xs text-slate-300 leading-relaxed mb-3">
+                Directed postgraduate medical curricula, professional accreditation, hospital administration courses, and specialty training for doctors of the Armed Forces as Commandant of the Armed Forces Medical Institute (AFMI).
+              </p>
+            </div>
+            <div class="pt-2.5 border-t border-white/10 flex flex-wrap gap-1.5">
+              <span class="px-2 py-0.5 rounded bg-black/40 text-[10px] text-amber-200 border border-white/10">Postgrad Pedagogy</span>
+              <span class="px-2 py-0.5 rounded bg-black/40 text-[10px] text-slate-300 border border-white/10">AFMI Commandant</span>
+              <span class="px-2 py-0.5 rounded bg-black/40 text-[10px] text-slate-300 border border-white/10">Accreditation</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
     <section id="projects" class="py-16 sm:py-20 bg-white border-b border-slate-200">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
@@ -1664,6 +2242,7 @@
         <div class="flex items-center space-x-4 text-xs font-semibold">
           <a href="#about" class="text-teal-200 hover:text-white transition">About</a>
           <a href="#experience" class="text-teal-200 hover:text-white transition">Career</a>
+          <a href="#competencies" class="text-teal-200 hover:text-white transition">Competencies</a>
           <a href="#projects" class="text-teal-200 hover:text-white transition">Megaprojects</a>
           <a href="#academic" class="text-teal-200 hover:text-white transition">Degrees</a>
           <a href="#contact" class="text-teal-200 hover:text-white transition">Contact</a>

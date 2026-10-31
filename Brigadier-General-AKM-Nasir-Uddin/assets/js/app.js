@@ -490,6 +490,9 @@ document.addEventListener('DOMContentLoaded', () => {
   // Initialize Category Filters for Career Appointments
   initTimelineFilters();
 
+  // Initialize Core Competencies Category Filter Tabs
+  initCompetencyFilters();
+
   // Initialize Military Ledger Drawer Toggle
   initLedgerToggle();
 
@@ -854,4 +857,39 @@ Sent via Official VIP Executive Portfolio`;
     ? 'ধন্যবাদ! আপনার প্রস্তাবটি সচিবালয়ের জন্য সফলভাবে প্রস্তুত হয়েছে।'
     : 'Thank you! Your strategic proposal has been formatted for the Executive Secretariat.';
   alert(successMsg);
+}
+
+
+/**
+ * Initialize Category Filter for Core Competencies Section
+ */
+function initCompetencyFilters() {
+  const filterBtns = document.querySelectorAll('#competencyFilters .comp-filter-btn');
+  const cards = document.querySelectorAll('#competencyCardsGrid .comp-card');
+  if (!filterBtns.length || !cards.length) return;
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const filter = btn.getAttribute('data-filter');
+
+      // Update button styling
+      filterBtns.forEach(b => {
+        b.classList.remove('active', 'bg-gradient-to-r', 'from-[#DFB15B]', 'to-[#C8963E]', 'text-slate-950', 'shadow-md');
+        b.classList.add('text-emerald-100/80', 'hover:text-white', 'hover:bg-white/5');
+      });
+      btn.classList.remove('text-emerald-100/80', 'hover:text-white', 'hover:bg-white/5');
+      btn.classList.add('active', 'bg-gradient-to-r', 'from-[#DFB15B]', 'to-[#C8963E]', 'text-slate-950', 'shadow-md');
+
+      // Filter cards
+      cards.forEach(card => {
+        const cat = card.getAttribute('data-category');
+        if (filter === 'all' || cat === filter) {
+          card.style.display = 'flex';
+          card.classList.add('reveal-visible');
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
 }
