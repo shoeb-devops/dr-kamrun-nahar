@@ -94,8 +94,8 @@ const translations = {
     "exp6-desc": "Consulted on national community health initiatives, rural healthcare delivery models, maternal and child survival strategies, and public-private healthcare collaborations.",
 
     // Skills
-    "skills-badge": "Core Competencies & Endorsements",
-    "skills-title": "LinkedIn Verified Skills & Strategic Expertise",
+    "skills-badge": "Executive Competencies & Accreditations",
+    "skills-title": "Strategic Competencies & Global Accreditations",
     "skills-subtitle": "Demonstrated capabilities validated over 35+ years of healthcare leadership in high-stakes civilian and military environments.",
 
     // Timeline
