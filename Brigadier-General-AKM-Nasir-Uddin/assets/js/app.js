@@ -10,6 +10,9 @@ const translations = {
     "hero-tag": "Distinguished Leadership",
     "top-announcement": "Executive Healthcare Advisory • Hospital Commissioning • Public Health Strategy",
     "top-book": "Request Executive Consultation",
+    "top-service": "24/7 Tertiary Medical Service Available",
+    "hero-ceo-subtitle": "Executive Leadership & Medical Statesman",
+    "hero-tenures-summary": "Former National Consultant, BRAC Health Program (BHP) • Former Commandant, Armed Forces Medical Institute (AFMI) • Former Commandant, Combined Military Hospital (CMH) Chattogram • Former Director, Dhaka Medical College Hospital (DMCH) • Former Director, Rajshahi Medical College Hospital (RMCH) • Former Director, Kurmitola General Hospital • Former Director, DNCC Dedicated Covid-19 Hospital.",
 
     // Navigation
     "nav-sub": "MBBS • MPhil • MPH | Healthcare Statesman",
@@ -157,6 +160,9 @@ const translations = {
     "hero-tag": "বিশিষ্ট নেতৃত্ব ও সম্মান",
     "top-announcement": "স্বাস্থ্যসেবা কৌশলগত পরামর্শ • হাসপাতাল কমিশনিং • জনস্বাস্থ্য পলিসি",
     "top-book": "এক্সিকিউটিভ পরামর্শ বুক করুন",
+    "top-service": "২৪/৭ টারশিয়ারি স্বাস্থ্যসেবা সার্বক্ষণিক প্রস্তুত",
+    "hero-ceo-subtitle": "নির্বাহী স্বাস্থ্য নেতৃত্ব ও জাতীয় রূপকার",
+    "hero-tenures-summary": "সাবেক জাতীয় পরামর্শক, ব্র্যাক হেলথ প্রোগ্রাম (BHP) • সাবেক কমান্ড্যান্ট, আর্মড ফোর্সেস মেডিকেল ইনস্টিটিউট (AFMI) • সাবেক কমান্ড্যান্ট, সিএমএইচ চট্টগ্রাম • সাবেক পরিচালক, ঢাকা মেডিকেল কলেজ হাসপাতাল (DMCH) • সাবেক পরিচালক, রাজশাহী মেডিকেল কলেজ হাসপাতাল (RMCH) • সাবেক পরিচালক, কুর্মিটোলা জেনারেল হাসপাতাল • সাবেক পরিচালক, ডিএনসিসি ডেডিকেটেড কোভিড-১৯ হাসপাতাল।",
 
     // Navigation
     "nav-sub": "এমবিবিএস • এমফিল • এমপিএইচ | স্বাস্থ্যখাতের রূপকার",
@@ -419,8 +425,8 @@ ${msg}
 Sent via Official VIP Portfolio`;
 
   const encodedWa = encodeURIComponent(waText);
-  // Default WhatsApp Secretariat contact
-  const waUrl = `https://wa.me/8801700000000?text=${encodedWa}`;
+  // Official Pro-Active Executive & Emergency Secretariat Contact
+  const waUrl = `https://wa.me/8801902556070?text=${encodedWa}`;
 
   // Open WhatsApp in new tab
   window.open(waUrl, '_blank');
