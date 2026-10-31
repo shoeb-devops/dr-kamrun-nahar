@@ -82,6 +82,27 @@
       backdrop-filter: blur(16px);
       box-shadow: 0 12px 36px -10px rgba(0, 0, 0, 0.8), 0 0 20px rgba(212, 175, 55, 0.15);
     }
+    @keyframes spinSlow {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    @keyframes floatSubtle {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-8px); }
+    }
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.35; transform: scale(1); }
+      50% { opacity: 0.7; transform: scale(1.04); }
+    }
+    .animate-spin-slow {
+      animation: spinSlow 24s linear infinite;
+    }
+    .animate-float-subtle {
+      animation: floatSubtle 6s ease-in-out infinite;
+    }
+    .animate-pulse-glow {
+      animation: pulseGlow 5s ease-in-out infinite;
+    }
   </style>
 </head>
 
@@ -223,18 +244,31 @@
           <div class="lg:col-span-5 flex flex-col items-center justify-center relative">
             <div class="relative my-2 flex flex-col items-center">
 
-              <!-- Outer Concentric Gold Ring Frame with Radiant Glow -->
-              <div class="relative p-2.5 sm:p-3.5 rounded-full border-[1.5px] border-[#C8A25D] shadow-[0_0_35px_rgba(200,162,93,0.3)] flex items-center justify-center bg-black/20 backdrop-blur-xs">
+              <!-- Floating Portrait Container (Slow Float Animation) -->
+              <div class="relative flex items-center justify-center animate-float-subtle">
+                
+                <!-- Ambient Golden Glow behind Circle -->
+                <div class="absolute -inset-4 rounded-full bg-gradient-to-r from-amber-500/20 via-[#D4AF37]/30 to-emerald-500/10 blur-2xl pointer-events-none animate-pulse-glow"></div>
 
-                <!-- Inner Gold Ring with High-Resolution Portrait -->
-                <div class="w-64 h-64 sm:w-76 sm:h-76 md:w-84 md:h-84 lg:w-92 lg:h-92 rounded-full border-2 border-[#C8A25D] overflow-hidden relative shadow-inner">
-                  <img src="assets/images/Gemini_Generated_Image_revc7hrevc7hrevc.jpg"
-                       alt="Brigadier General (Dr.) AKM Nasir Uddin (retd.)"
-                       id="heroDoctorImage"
-                       class="w-full h-full object-cover object-[center_12%] rounded-full transition-transform duration-700 hover:scale-103">
+                <!-- Slowly Rotating Outer Golden Conic Ring -->
+                <div class="absolute -inset-1.5 sm:-inset-2 rounded-full pointer-events-none animate-spin-slow"
+                     style="background: conic-gradient(from 0deg, transparent 0deg, rgba(245, 215, 130, 0.85) 70deg, transparent 140deg, transparent 180deg, rgba(212, 175, 55, 0.75) 250deg, transparent 320deg);
+                            -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 2.5px), #fff calc(100% - 2px));
+                            mask: radial-gradient(farthest-side, transparent calc(100% - 2.5px), #fff calc(100% - 2px));">
                 </div>
 
+                <!-- Outer Concentric Gold Ring Frame with Radiant Glow -->
+                <div class="relative p-2.5 sm:p-3.5 rounded-full border-[1.5px] border-[#C8A25D]/70 shadow-[0_0_35px_rgba(200,162,93,0.35)] flex items-center justify-center bg-black/25 backdrop-blur-xs">
 
+                  <!-- Inner Gold Ring with High-Resolution Portrait (Static & Upright) -->
+                  <div class="w-64 h-64 sm:w-76 sm:h-76 md:w-84 md:h-84 lg:w-92 lg:h-92 rounded-full border-2 border-[#C8A25D] overflow-hidden relative shadow-inner">
+                    <img src="assets/images/Gemini_Generated_Image_revc7hrevc7hrevc.jpg"
+                         alt="Brigadier General (Dr.) AKM Nasir Uddin (retd.)"
+                         id="heroDoctorImage"
+                         class="w-full h-full object-cover object-[center_12%] rounded-full transition-transform duration-700 hover:scale-103">
+                  </div>
+
+                </div>
 
               </div>
 
