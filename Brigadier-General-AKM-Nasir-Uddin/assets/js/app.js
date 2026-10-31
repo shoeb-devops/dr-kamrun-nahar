@@ -19,6 +19,13 @@ const translations = {
     "nav-about": "About",
     "nav-career": "Career & Command",
     "nav-projects": "Key Projects",
+    "nav-media": "Media & Press",
+    "filter-all": "All Appointments (17)",
+    "filter-civilian": "Civilian Hospitals (5)",
+    "filter-army": "Army Medical Command (9)",
+    "filter-advisory": "National Advisory & Sports (3)",
+    "btn-send-wa": "WhatsApp Secretariat",
+    "btn-send-mail": "Official Email Desk",
     "nav-milestones": "Command Record",
     "nav-linkedin-exp": "Career History",
     "nav-skills": "Core Competencies",
@@ -240,6 +247,13 @@ const translations = {
     "nav-about": "পরিচিতি",
     "nav-career": "কর্মজীবন ও কমান্ড",
     "nav-projects": "প্রধান প্রকল্পসমূহ",
+    "nav-media": "মিডিয়া ও প্রেস",
+    "filter-all": "সকল দায়িত্ব (১৭টি)",
+    "filter-civilian": "বেসামরিক মেগা হাসপাতাল (৫টি)",
+    "filter-army": "সেনাবাহিনী মেডিকেল কমান্ড (৯টি)",
+    "filter-advisory": "জাতীয় উপদেষ্টা ও ক্রীড়া (৩টি)",
+    "btn-send-wa": "হোয়াটসঅ্যাপ সচিবালয়",
+    "btn-send-mail": "অফিসিয়াল ইমেইল ডেস্ক",
     "nav-milestones": "কমান্ড রেকর্ড",
     "nav-linkedin-exp": "কর্মজীবন ও পদমর্যাদা",
     "nav-skills": "দক্ষতার ক্ষেত্রসমূহ",
@@ -473,6 +487,12 @@ document.addEventListener('DOMContentLoaded', () => {
   // Setup Count-Up Statistics Animation
   initCountUpAnimation();
 
+  // Initialize Category Filters for Career Appointments
+  initTimelineFilters();
+
+  // Initialize Scroll-Spy for Active Navbar Links
+  initScrollSpy();
+
   // Advisory Form Submission Handler
   const advisoryForm = document.getElementById('advisoryForm');
   if (advisoryForm) {
@@ -673,3 +693,119 @@ window.addEventListener('click', (e) => {
     closeExecutiveBriefModal();
   }
 });
+
+
+/**
+ * Interactive Timeline Category Filters (All, Civilian, Army, Advisory)
+ */
+function initTimelineFilters() {
+  const filterBtns = document.querySelectorAll('#timelineFilters .filter-btn');
+  const cards = document.querySelectorAll('#timelineCardsContainer [data-category]');
+  if (!filterBtns.length || !cards.length) return;
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const filter = btn.getAttribute('data-filter');
+
+      // Update button styling
+      filterBtns.forEach(b => {
+        b.classList.remove('bg-[#025B66]', 'text-white', 'border-[#025B66]', 'shadow-md');
+        b.classList.add('bg-white', 'text-slate-700', 'border-slate-300', 'shadow-xs');
+      });
+      btn.classList.remove('bg-white', 'text-slate-700', 'border-slate-300', 'shadow-xs');
+      btn.classList.add('bg-[#025B66]', 'text-white', 'border-[#025B66]', 'shadow-md');
+
+      // Filter timeline cards with smooth transition
+      cards.forEach(card => {
+        const cat = card.getAttribute('data-category');
+        if (filter === 'all' || cat === filter) {
+          card.style.display = 'block';
+          card.classList.add('reveal-visible');
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+}
+
+/**
+ * Scroll-Spy Navigation Link Highlighting
+ */
+function initScrollSpy() {
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('header nav a[href^="#"]');
+  if (!sections.length || !navLinks.length) return;
+
+  window.addEventListener('scroll', () => {
+    let currentSectionId = '';
+    const scrollPos = window.scrollY + 180;
+
+    sections.forEach(sec => {
+      const top = sec.offsetTop;
+      const height = sec.offsetHeight;
+      if (scrollPos >= top && scrollPos < top + height) {
+        currentSectionId = sec.getAttribute('id');
+      }
+    });
+
+    navLinks.forEach(link => {
+      const href = link.getAttribute('href').replace('#', '');
+      if (href === currentSectionId) {
+        link.classList.add('text-[#025B66]', 'font-black');
+      } else {
+        link.classList.remove('text-[#025B66]', 'font-black');
+      }
+    });
+  }, { passive: true });
+}
+
+/**
+ * Dual-Channel Advisory Submission (WhatsApp & Official Email)
+ */
+function submitAdvisoryChannel(channel) {
+  const name = document.getElementById('senderName').value.trim();
+  const org = document.getElementById('senderOrg').value.trim();
+  const phone = document.getElementById('senderPhone').value.trim();
+  const email = document.getElementById('senderEmail').value.trim();
+  const type = document.getElementById('engagementType').value;
+  const msg = document.getElementById('senderMsg').value.trim();
+
+  if (!name || !phone || !org || !msg) {
+    alert(currentLanguage === 'bn' 
+      ? 'অনুগ্রহ করে সব প্রয়োজনীয় তথ্য পূরণ করুন।' 
+      : 'Please complete all required fields.');
+    return;
+  }
+
+  const proposalText = 
+`EXECUTIVE CONSULTATION PROPOSAL
+To: Secretariat of Brigadier General (Dr.) AKM Nasir Uddin (retd.)
+From: ${name}
+Organization: ${org}
+Phone/WhatsApp: ${phone}
+Official Email: ${email}
+Engagement Nature: ${type}
+
+Proposal Brief:
+${msg}
+
+-------------------------
+Sent via Official VIP Executive Portfolio`;
+
+  if (channel === 'whatsapp') {
+    const encodedWa = encodeURIComponent(proposalText);
+    const waUrl = `https://wa.me/8801902556070?text=${encodedWa}`;
+    window.open(waUrl, '_blank');
+  } else if (channel === 'email') {
+    const subject = encodeURIComponent(`Executive Consultation Proposal - ${name} (${org})`);
+    const body = encodeURIComponent(proposalText);
+    const mailtoUrl = `mailto:secretariat@briggennasiruddin.com?subject=${subject}&body=${body}`;
+    window.location.href = mailtoUrl;
+  }
+
+  const successMsg = currentLanguage === 'bn'
+    ? 'ধন্যবাদ! আপনার প্রস্তাবটি সচিবালয়ের জন্য সফলভাবে প্রস্তুত হয়েছে।'
+    : 'Thank you! Your strategic proposal has been formatted for the Executive Secretariat.';
+  alert(successMsg);
+}
