@@ -1,3 +1,47 @@
+
+/* ==========================================================================
+   Ultra-Smooth Momentum Scrolling (Lenis Luxury Physics)
+   ========================================================================== */
+html.lenis, html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+/* Luxury Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #023E3A 0%, #025B66 50%, #00A884 100%);
+  border-radius: 9999px;
+  border: 2px solid #ffffff;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #01262B;
+}
+
+/* Subtle Card Hover Floating Physics */
+.hover-float {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.hover-float:hover {
+  transform: translateY(-4px);
+}
+
 /* ==========================================================================
    Ultra-Premium Animated Styles & Micro-Interactions
    Brigadier General (Dr.) AKM Nasir Uddin (retd.)

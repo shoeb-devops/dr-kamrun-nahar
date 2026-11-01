@@ -442,6 +442,8 @@ let currentLanguage = localStorage.getItem('site_lang') || 'en';
 
 // Initialize on DOM load
 document.addEventListener('DOMContentLoaded', () => {
+  // Initialize Ultra-Smooth Momentum Scrolling & Progress Effects
+  initLenisSmoothScroll();
   // Set current year
   const yearElem = document.getElementById('currentYear');
   if (yearElem) yearElem.textContent = new Date().getFullYear();
@@ -900,4 +902,95 @@ function initCompetencyFilters() {
       });
     });
   });
+}
+
+
+/**
+ * Initialize Ultra-Smooth Momentum Scrolling (Lenis Luxury Physics)
+ */
+let lenisInstance = null;
+function initLenisSmoothScroll() {
+  if (typeof Lenis === 'undefined') {
+    // Fallback if CDN is unreachable
+    window.addEventListener('scroll', handleScrollEffects, { passive: true });
+    return;
+  }
+
+  lenisInstance = new Lenis({
+    duration: 1.25,
+    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Exponential deceleration
+    orientation: 'vertical',
+    gestureOrientation: 'vertical',
+    smoothWheel: true,
+    wheelMultiplier: 0.95,
+    touchMultiplier: 1.2,
+    infinite: false,
+  });
+
+  function raf(time) {
+    lenisInstance.raf(time);
+    requestAnimationFrame(raf);
+  }
+  requestAnimationFrame(raf);
+
+  // Sync scroll effects on every smooth tick
+  lenisInstance.on('scroll', () => {
+    handleScrollEffects();
+  });
+
+  // Enable smooth anchor link scrolling via Lenis
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const targetId = this.getAttribute('href');
+      if (targetId === '#') return;
+      const targetElem = document.querySelector(targetId);
+      if (targetElem) {
+        e.preventDefault();
+        lenisInstance.scrollTo(targetElem, {
+          offset: -80,
+          duration: 1.4,
+          easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t))
+        });
+      }
+    });
+  });
+}
+
+/**
+ * Handle Luxury Scroll Progress Indicator and Glass Header Dynamics
+ */
+function handleScrollEffects() {
+  const scrollTop = window.scrollY || document.documentElement.scrollTop;
+  const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+  
+  // 1. Update Luxury Top Progress Bar
+  const progressBar = document.getElementById('scrollProgressBar');
+  if (progressBar) {
+    const scrollPercent = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+    progressBar.style.width = scrollPercent + '%';
+  }
+
+  // 2. Dynamic Glass Header Elevation on Scroll
+  const header = document.querySelector('header');
+  if (header) {
+    if (scrollTop > 40) {
+      header.classList.add('shadow-lg', 'bg-white/95', 'backdrop-blur-md', 'border-teal-900/10');
+      header.classList.remove('bg-white');
+    } else {
+      header.classList.remove('shadow-lg', 'bg-white/95', 'backdrop-blur-md', 'border-teal-900/10');
+      header.classList.add('bg-white');
+    }
+  }
+
+  // 3. Scroll to Top Floating Pill Visibility
+  const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+  if (scrollToTopBtn) {
+    if (scrollTop > 450) {
+      scrollToTopBtn.classList.remove('hidden');
+      scrollToTopBtn.classList.add('flex');
+    } else {
+      scrollToTopBtn.classList.add('hidden');
+      scrollToTopBtn.classList.remove('flex');
+    }
+  }
 }
