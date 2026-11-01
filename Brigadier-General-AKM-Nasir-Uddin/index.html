@@ -118,6 +118,41 @@
       font-weight: 700;
     }
   </style>
+
+  <!-- Google Structured Data (JSON-LD Schema) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["Person", "Physician"],
+    "name": "Brigadier General (Dr.) AKM Nasir Uddin (retd.)",
+    "alternateName": "Dr. AKM Nasir Uddin",
+    "honorificPrefix": "Brigadier General (Dr.)",
+    "honorificSuffix": "MBBS, MPhil, MPH",
+    "jobTitle": "Chief Executive Officer (CEO)",
+    "worksFor": {
+      "@type": "MedicalOrganization",
+      "name": "Pro-Active Medical College and Hospital Ltd"
+    },
+    "alumniOf": [
+      {"@type": "EducationalOrganization", "name": "Bangladesh University of Professionals (BUP)"},
+      {"@type": "EducationalOrganization", "name": "University of Dhaka"},
+      {"@type": "EducationalOrganization", "name": "Rajshahi University"},
+      {"@type": "EducationalOrganization", "name": "Armed Forces Medical Institute (AFMI)"}
+    ],
+    "knowsAbout": [
+      "Hospital Governance & Administration",
+      "Disaster & Emergency Medicine",
+      "CBRN Medical Defense Containment",
+      "Pandemic Frontline Hospital Command",
+      "Public Health Systems (NCD, MHPSS)",
+      "Sports Medicine & WADA Anti-Doping Regulations"
+    ],
+    "sameAs": [
+      "https://www.linkedin.com/in/brig-gen-dr-akm-nasir-uddin-retd-mphil-mph-mbbs-b84464119/"
+    ]
+  }
+  </script>
+
 </head>
 
 <body class="bg-[#F8FAFB] text-slate-800 antialiased font-sans selection:bg-[#025B66] selection:text-white overflow-x-hidden">
@@ -2283,61 +2318,61 @@
   </footer>
 
   <!-- ==================== EXECUTIVE PROFILE BRIEF MODAL ==================== -->
-  <div id="briefModal" class="fixed inset-0 z-50 hidden bg-slate-950/80 backdrop-blur-sm items-center justify-center p-4 overflow-y-auto">
-    <div class="bg-white rounded-3xl max-w-3xl w-full p-6 sm:p-8 shadow-2xl relative border border-slate-200 my-8">
-      <button onclick="closeExecutiveBriefModal()" class="absolute top-5 right-5 text-slate-400 hover:text-slate-900 text-xl w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center">
-        <i class="fa-solid fa-xmark"></i>
-      </button>
-
-      <div class="text-center pb-4 border-b border-slate-200">
-        <div class="w-12 h-12 rounded-xl bg-[#02464E] text-amber-300 mx-auto flex items-center justify-center text-xl shadow-md mb-2">
-          <i class="fa-solid fa-staff-snake"></i>
-        </div>
-        <h3 class="text-xl font-black text-slate-900 font-cinzel">BRIGADIER GENERAL (DR.) AKM NASIR UDDIN (RETD.)</h3>
-        <p class="text-xs font-bold text-[#025B66] mt-0.5">MPhil (BUP) • MPH (DU) • MBBS (RU) • Senior Healthcare Statesman</p>
-        <p class="text-[11px] text-slate-500">Chief Executive Officer — Pro-Active Medical College and Hospital Ltd</p>
-      </div>
-
-      <div class="py-4 space-y-4 text-xs text-slate-700 max-h-[60vh] overflow-y-auto pr-2">
-        <div>
-          <h4 class="font-bold text-slate-900 uppercase tracking-wider text-[11px] text-[#025B66] mb-1">Executive Summary</h4>
-          <p class="leading-relaxed">Distinguished hospital administrator and military medical veteran with 35+ years of high-command appointments across Bangladesh Army Medical Corps, apex tertiary civilian healthcare institutes (DMCH, DNCC COVID Hospital, RMCH, Kurmitola), and international defense aviation medicine in Kuwait.</p>
-        </div>
-
-        <div>
-          <h4 class="font-bold text-slate-900 uppercase tracking-wider text-[11px] text-[#025B66] mb-1">Key High-Command Appointments (17 Total)</h4>
-          <ul class="list-disc pl-4 space-y-1">
-            <li><strong>CEO</strong>, Pro-Active Medical College and Hospital Ltd (2022–Present)</li>
-            <li><strong>Director</strong>, DNCC Dedicated COVID-19 Hospital (1,000+ Beds) (2020–2021)</li>
-            <li><strong>Director</strong>, Dhaka Medical College Hospital (DMCH) (2017–2020)</li>
-            <li><strong>Commandant</strong>, Armed Forces Medical Institute (AFMI) (2021 & 2012)</li>
-            <li><strong>Chairman</strong>, Medical & Anti-Doping Committee, Bangladesh Olympic Association / WADA (2017–2022)</li>
-            <li><strong>National Consultant</strong>, HNPP, BRAC (2022–2023)</li>
-            <li><strong>Director</strong>, Rajshahi Medical College Hospital (2014–2015)</li>
-            <li><strong>Director</strong>, Kurmitola General Hospital (2012–2014)</li>
-            <li><strong>Medical Officer</strong>, Kuwait Armed Forces Air Base (Ahmed Al Jaber Air Base) (1992–1996)</li>
-            <li><strong>Commandant & Commanding Officer</strong>, CMH Chattogram, Momenshahi, Ghatail & 48 Field Ambulance</li>
-          </ul>
-        </div>
-
-        <div>
-          <h4 class="font-bold text-slate-900 uppercase tracking-wider text-[11px] text-[#025B66] mb-1">Higher Education & Accreditations</h4>
-          <p>• <strong>MPhil in Healthcare & Hospital Management</strong> — Bangladesh University of Professionals (BUP)</p>
-          <p>• <strong>MPH in Public Health Administration</strong> — University of Dhaka</p>
-          <p>• <strong>MBBS</strong> — Rajshahi University</p>
-          <p>• <strong>HSC (Science)</strong> — Notre Dame College, Dhaka (First Division)</p>
-        </div>
-      </div>
-
-      <div class="pt-4 border-t border-slate-200 flex items-center justify-between">
-        <span class="text-[11px] text-slate-500">Official Dossier • secretariat@briggennasiruddin.com</span>
-        <button onclick="window.print()" class="px-4 py-2 rounded-xl bg-[#025B66] hover:bg-[#013137] text-white text-xs font-bold transition flex items-center gap-1.5 shadow-sm">
-          <i class="fa-solid fa-print"></i>
-          <span>Print / Save as PDF</span>
-        </button>
-      </div>
-    </div>
-  </div>
+  <div  • i • d • = • " • b • r • i • e • f • M • o • d • a • l • " •   • c • l • a • s • s • = • " • f • i • x • e • d •   • i • n • s • e • t • - • 0 •   • z • - • 5 • 0 •   • h • i • d • d • e • n •   • b • g • - • s • l • a • t • e • - • 9 • 5 • 0 • / • 8 • 0 •   • b • a • c • k • d • r • o • p • - • b • l • u • r • - • s • m •   • i • t • e • m • s • - • c • e • n • t • e • r •   • j • u • s • t • i • f • y • - • c • e • n • t • e • r •   • p • - • 4 •   • o • v • e • r • f • l • o • w • - • y • - • a • u • t • o • " • > • 
+ •   •   •   •   • < • d • i • v •   • c • l • a • s • s • = • " • b • g • - • w • h • i • t • e •   • r • o • u • n • d • e • d • - • 3 • x • l •   • m • a • x • - • w • - • 3 • x • l •   • w • - • f • u • l • l •   • p • - • 6 •   • s • m • : • p • - • 8 •   • s • h • a • d • o • w • - • 2 • x • l •   • r • e • l • a • t • i • v • e •   • b • o • r • d • e • r •   • b • o • r • d • e • r • - • s • l • a • t • e • - • 2 • 0 • 0 •   • m • y • - • 8 • " • > • 
+ •   •   •   •   •   •   • < • b • u • t • t • o • n •   • o • n • c • l • i • c • k • = • " • c • l • o • s • e • E • x • e • c • u • t • i • v • e • B • r • i • e • f • M • o • d • a • l • ( • ) • " •   • c • l • a • s • s • = • " • a • b • s • o • l • u • t • e •   • t • o • p • - • 5 •   • r • i • g • h • t • - • 5 •   • t • e • x • t • - • s • l • a • t • e • - • 4 • 0 • 0 •   • h • o • v • e • r • : • t • e • x • t • - • s • l • a • t • e • - • 9 • 0 • 0 •   • t • e • x • t • - • x • l •   • w • - • 8 •   • h • - • 8 •   • r • o • u • n • d • e • d • - • f • u • l • l •   • b • g • - • s • l • a • t • e • - • 1 • 0 • 0 •   • f • l • e • x •   • i • t • e • m • s • - • c • e • n • t • e • r •   • j • u • s • t • i • f • y • - • c • e • n • t • e • r • " • > • 
+ •   •   •   •   •   •   •   •   • < • i •   • c • l • a • s • s • = • " • f • a • - • s • o • l • i • d •   • f • a • - • x • m • a • r • k • " • > • < • / • i • > • 
+ •   •   •   •   •   •   • < • / • b • u • t • t • o • n • > • 
+ • 
+ •   •   •   •   •   •   • < • d • i • v •   • c • l • a • s • s • = • " • t • e • x • t • - • c • e • n • t • e • r •   • p • b • - • 4 •   • b • o • r • d • e • r • - • b •   • b • o • r • d • e • r • - • s • l • a • t • e • - • 2 • 0 • 0 • " • > • 
+ •   •   •   •   •   •   •   •   • < • d • i • v •   • c • l • a • s • s • = • " • w • - • 1 • 2 •   • h • - • 1 • 2 •   • r • o • u • n • d • e • d • - • x • l •   • b • g • - • [ • # • 0 • 2 • 4 • 6 • 4 • E • ] •   • t • e • x • t • - • a • m • b • e • r • - • 3 • 0 • 0 •   • m • x • - • a • u • t • o •   • f • l • e • x •   • i • t • e • m • s • - • c • e • n • t • e • r •   • j • u • s • t • i • f • y • - • c • e • n • t • e • r •   • t • e • x • t • - • x • l •   • s • h • a • d • o • w • - • m • d •   • m • b • - • 2 • " • > • 
+ •   •   •   •   •   •   •   •   •   •   • < • i •   • c • l • a • s • s • = • " • f • a • - • s • o • l • i • d •   • f • a • - • s • t • a • f • f • - • s • n • a • k • e • " • > • < • / • i • > • 
+ •   •   •   •   •   •   •   •   • < • / • d • i • v • > • 
+ •   •   •   •   •   •   •   •   • < • h • 3 •   • c • l • a • s • s • = • " • t • e • x • t • - • x • l •   • f • o • n • t • - • b • l • a • c • k •   • t • e • x • t • - • s • l • a • t • e • - • 9 • 0 • 0 •   • f • o • n • t • - • c • i • n • z • e • l • " • > • B • R • I • G • A • D • I • E • R •   • G • E • N • E • R • A • L •   • ( • D • R • . • ) •   • A • K • M •   • N • A • S • I • R •   • U • D • D • I • N •   • ( • R • E • T • D • . • ) • < • / • h • 3 • > • 
+ •   •   •   •   •   •   •   •   • < • p •   • c • l • a • s • s • = • " • t • e • x • t • - • x • s •   • f • o • n • t • - • b • o • l • d •   • t • e • x • t • - • [ • # • 0 • 2 • 5 • B • 6 • 6 • ] •   • m • t • - • 0 • . • 5 • " • > • M • P • h • i • l •   • ( • B • U • P • ) •   • • •   • M • P • H •   • ( • D • U • ) •   • • •   • M • B • B • S •   • ( • R • U • ) •   • • •   • S • e • n • i • o • r •   • H • e • a • l • t • h • c • a • r • e •   • S • t • a • t • e • s • m • a • n • < • / • p • > • 
+ •   •   •   •   •   •   •   •   • < • p •   • c • l • a • s • s • = • " • t • e • x • t • - • [ • 1 • 1 • p • x • ] •   • t • e • x • t • - • s • l • a • t • e • - • 5 • 0 • 0 • " • > • C • h • i • e • f •   • E • x • e • c • u • t • i • v • e •   • O • f • f • i • c • e • r •   • — •   • P • r • o • - • A • c • t • i • v • e •   • M • e • d • i • c • a • l •   • C • o • l • l • e • g • e •   • a • n • d •   • H • o • s • p • i • t • a • l •   • L • t • d • < • / • p • > • 
+ •   •   •   •   •   •   • < • / • d • i • v • > • 
+ • 
+ •   •   •   •   •   •   • < • d • i • v •   • c • l • a • s • s • = • " • p • y • - • 4 •   • s • p • a • c • e • - • y • - • 4 •   • t • e • x • t • - • x • s •   • t • e • x • t • - • s • l • a • t • e • - • 7 • 0 • 0 •   • m • a • x • - • h • - • [ • 6 • 0 • v • h • ] •   • o • v • e • r • f • l • o • w • - • y • - • a • u • t • o •   • p • r • - • 2 • " • > • 
+ •   •   •   •   •   •   •   •   • < • d • i • v • > • 
+ •   •   •   •   •   •   •   •   •   •   • < • h • 4 •   • c • l • a • s • s • = • " • f • o • n • t • - • b • o • l • d •   • t • e • x • t • - • s • l • a • t • e • - • 9 • 0 • 0 •   • u • p • p • e • r • c • a • s • e •   • t • r • a • c • k • i • n • g • - • w • i • d • e • r •   • t • e • x • t • - • [ • 1 • 1 • p • x • ] •   • t • e • x • t • - • [ • # • 0 • 2 • 5 • B • 6 • 6 • ] •   • m • b • - • 1 • " • > • E • x • e • c • u • t • i • v • e •   • S • u • m • m • a • r • y • < • / • h • 4 • > • 
+ •   •   •   •   •   •   •   •   •   •   • < • p •   • c • l • a • s • s • = • " • l • e • a • d • i • n • g • - • r • e • l • a • x • e • d • " • > • D • i • s • t • i • n • g • u • i • s • h • e • d •   • h • o • s • p • i • t • a • l •   • a • d • m • i • n • i • s • t • r • a • t • o • r •   • a • n • d •   • m • i • l • i • t • a • r • y •   • m • e • d • i • c • a • l •   • v • e • t • e • r • a • n •   • w • i • t • h •   • 3 • 5 • + •   • y • e • a • r • s •   • o • f •   • h • i • g • h • - • c • o • m • m • a • n • d •   • a • p • p • o • i • n • t • m • e • n • t • s •   • a • c • r • o • s • s •   • B • a • n • g • l • a • d • e • s • h •   • A • r • m • y •   • M • e • d • i • c • a • l •   • C • o • r • p • s • , •   • a • p • e • x •   • t • e • r • t • i • a • r • y •   • c • i • v • i • l • i • a • n •   • h • e • a • l • t • h • c • a • r • e •   • i • n • s • t • i • t • u • t • e • s •   • ( • D • M • C • H • , •   • D • N • C • C •   • C • O • V • I • D •   • H • o • s • p • i • t • a • l • , •   • R • M • C • H • , •   • K • u • r • m • i • t • o • l • a • ) • , •   • a • n • d •   • i • n • t • e • r • n • a • t • i • o • n • a • l •   • d • e • f • e • n • s • e •   • a • v • i • a • t • i • o • n •   • m • e • d • i • c • i • n • e •   • i • n •   • K • u • w • a • i • t • . • < • / • p • > • 
+ •   •   •   •   •   •   •   •   • < • / • d • i • v • > • 
+ • 
+ •   •   •   •   •   •   •   •   • < • d • i • v • > • 
+ •   •   •   •   •   •   •   •   •   •   • < • h • 4 •   • c • l • a • s • s • = • " • f • o • n • t • - • b • o • l • d •   • t • e • x • t • - • s • l • a • t • e • - • 9 • 0 • 0 •   • u • p • p • e • r • c • a • s • e •   • t • r • a • c • k • i • n • g • - • w • i • d • e • r •   • t • e • x • t • - • [ • 1 • 1 • p • x • ] •   • t • e • x • t • - • [ • # • 0 • 2 • 5 • B • 6 • 6 • ] •   • m • b • - • 1 • " • > • K • e • y •   • H • i • g • h • - • C • o • m • m • a • n • d •   • A • p • p • o • i • n • t • m • e • n • t • s •   • ( • 1 • 7 •   • T • o • t • a • l • ) • < • / • h • 4 • > • 
+ •   •   •   •   •   •   •   •   •   •   • < • u • l •   • c • l • a • s • s • = • " • l • i • s • t • - • d • i • s • c •   • p • l • - • 4 •   • s • p • a • c • e • - • y • - • 1 • " • > • 
+ •   •   •   •   •   •   •   •   •   •   •   •   • < • l • i • > • < • s • t • r • o • n • g • > • C • E • O • < • / • s • t • r • o • n • g • > • , •   • P • r • o • - • A • c • t • i • v • e •   • M • e • d • i • c • a • l •   • C • o • l • l • e • g • e •   • a • n • d •   • H • o • s • p • i • t • a • l •   • L • t • d •   • ( • 2 • 0 • 2 • 2 • – • P • r • e • s • e • n • t • ) • < • / • l • i • > • 
+ •   •   •   •   •   •   •   •   •   •   •   •   • < • l • i • > • < • s • t • r • o • n • g • > • D • i • r • e • c • t • o • r • < • / • s • t • r • o • n • g • > • , •   • D • N • C • C •   • D • e • d • i • c • a • t • e • d •   • C • O • V • I • D • - • 1 • 9 •   • H • o • s • p • i • t • a • l •   • ( • 1 • , • 0 • 0 • 0 • + •   • B • e • d • s • ) •   • ( • 2 • 0 • 2 • 0 • – • 2 • 0 • 2 • 1 • ) • < • / • l • i • > • 
+ •   •   •   •   •   •   •   •   •   •   •   •   • < • l • i • > • < • s • t • r • o • n • g • > • D • i • r • e • c • t • o • r • < • / • s • t • r • o • n • g • > • , •   • D • h • a • k • a •   • M • e • d • i • c • a • l •   • C • o • l • l • e • g • e •   • H • o • s • p • i • t • a • l •   • ( • D • M • C • H • ) •   • ( • 2 • 0 • 1 • 7 • – • 2 • 0 • 2 • 0 • ) • < • / • l • i • > • 
+ •   •   •   •   •   •   •   •   •   •   •   •   • < • l • i • > • < • s • t • r • o • n • g • > • C • o • m • m • a • n • d • a • n • t • < • / • s • t • r • o • n • g • > • , •   • A • r • m • e • d •   • F • o • r • c • e • s •   • M • e • d • i • c • a • l •   • I • n • s • t • i • t • u • t • e •   • ( • A • F • M • I • ) •   • ( • 2 • 0 • 2 • 1 •   • & •   • 2 • 0 • 1 • 2 • ) • < • / • l • i • > • 
+ •   •   •   •   •   •   •   •   •   •   •   •   • < • l • i • > • < • s • t • r • o • n • g • > • C • h • a • i • r • m • a • n • < • / • s • t • r • o • n • g • > • , •   • M • e • d • i • c • a • l •   • & •   • A • n • t • i • - • D • o • p • i • n • g •   • C • o • m • m • i • t • t • e • e • , •   • B • a • n • g • l • a • d • e • s • h •   • O • l • y • m • p • i • c •   • A • s • s • o • c • i • a • t • i • o • n •   • / •   • W • A • D • A •   • ( • 2 • 0 • 1 • 7 • – • 2 • 0 • 2 • 2 • ) • < • / • l • i • > • 
+ •   •   •   •   •   •   •   •   •   •   •   •   • < • l • i • > • < • s • t • r • o • n • g • > • N • a • t • i • o • n • a • l •   • C • o • n • s • u • l • t • a • n • t • < • / • s • t • r • o • n • g • > • , •   • H • N • P • P • , •   • B • R • A • C •   • ( • 2 • 0 • 2 • 2 • – • 2 • 0 • 2 • 3 • ) • < • / • l • i • > • 
+ •   •   •   •   •   •   •   •   •   •   •   •   • < • l • i • > • < • s • t • r • o • n • g • > • D • i • r • e • c • t • o • r • < • / • s • t • r • o • n • g • > • , •   • R • a • j • s • h • a • h • i •   • M • e • d • i • c • a • l •   • C • o • l • l • e • g • e •   • H • o • s • p • i • t • a • l •   • ( • 2 • 0 • 1 • 4 • – • 2 • 0 • 1 • 5 • ) • < • / • l • i • > • 
+ •   •   •   •   •   •   •   •   •   •   •   •   • < • l • i • > • < • s • t • r • o • n • g • > • D • i • r • e • c • t • o • r • < • / • s • t • r • o • n • g • > • , •   • K • u • r • m • i • t • o • l • a •   • G • e • n • e • r • a • l •   • H • o • s • p • i • t • a • l •   • ( • 2 • 0 • 1 • 2 • – • 2 • 0 • 1 • 4 • ) • < • / • l • i • > • 
+ •   •   •   •   •   •   •   •   •   •   •   •   • < • l • i • > • < • s • t • r • o • n • g • > • M • e • d • i • c • a • l •   • O • f • f • i • c • e • r • < • / • s • t • r • o • n • g • > • , •   • K • u • w • a • i • t •   • A • r • m • e • d •   • F • o • r • c • e • s •   • A • i • r •   • B • a • s • e •   • ( • A • h • m • e • d •   • A • l •   • J • a • b • e • r •   • A • i • r •   • B • a • s • e • ) •   • ( • 1 • 9 • 9 • 2 • – • 1 • 9 • 9 • 6 • ) • < • / • l • i • > • 
+ •   •   •   •   •   •   •   •   •   •   •   •   • < • l • i • > • < • s • t • r • o • n • g • > • C • o • m • m • a • n • d • a • n • t •   • & •   • C • o • m • m • a • n • d • i • n • g •   • O • f • f • i • c • e • r • < • / • s • t • r • o • n • g • > • , •   • C • M • H •   • C • h • a • t • t • o • g • r • a • m • , •   • M • o • m • e • n • s • h • a • h • i • , •   • G • h • a • t • a • i • l •   • & •   • 4 • 8 •   • F • i • e • l • d •   • A • m • b • u • l • a • n • c • e • < • / • l • i • > • 
+ •   •   •   •   •   •   •   •   •   •   • < • / • u • l • > • 
+ •   •   •   •   •   •   •   •   • < • / • d • i • v • > • 
+ • 
+ •   •   •   •   •   •   •   •   • < • d • i • v • > • 
+ •   •   •   •   •   •   •   •   •   •   • < • h • 4 •   • c • l • a • s • s • = • " • f • o • n • t • - • b • o • l • d •   • t • e • x • t • - • s • l • a • t • e • - • 9 • 0 • 0 •   • u • p • p • e • r • c • a • s • e •   • t • r • a • c • k • i • n • g • - • w • i • d • e • r •   • t • e • x • t • - • [ • 1 • 1 • p • x • ] •   • t • e • x • t • - • [ • # • 0 • 2 • 5 • B • 6 • 6 • ] •   • m • b • - • 1 • " • > • H • i • g • h • e • r •   • E • d • u • c • a • t • i • o • n •   • & •   • A • c • c • r • e • d • i • t • a • t • i • o • n • s • < • / • h • 4 • > • 
+ •   •   •   •   •   •   •   •   •   •   • < • p • > • • •   • < • s • t • r • o • n • g • > • M • P • h • i • l •   • i • n •   • H • e • a • l • t • h • c • a • r • e •   • & •   • H • o • s • p • i • t • a • l •   • M • a • n • a • g • e • m • e • n • t • < • / • s • t • r • o • n • g • > •   • — •   • B • a • n • g • l • a • d • e • s • h •   • U • n • i • v • e • r • s • i • t • y •   • o • f •   • P • r • o • f • e • s • s • i • o • n • a • l • s •   • ( • B • U • P • ) • < • / • p • > • 
+ •   •   •   •   •   •   •   •   •   •   • < • p • > • • •   • < • s • t • r • o • n • g • > • M • P • H •   • i • n •   • P • u • b • l • i • c •   • H • e • a • l • t • h •   • A • d • m • i • n • i • s • t • r • a • t • i • o • n • < • / • s • t • r • o • n • g • > •   • — •   • U • n • i • v • e • r • s • i • t • y •   • o • f •   • D • h • a • k • a • < • / • p • > • 
+ •   •   •   •   •   •   •   •   •   •   • < • p • > • • •   • < • s • t • r • o • n • g • > • M • B • B • S • < • / • s • t • r • o • n • g • > •   • — •   • R • a • j • s • h • a • h • i •   • U • n • i • v • e • r • s • i • t • y • < • / • p • > • 
+ •   •   •   •   •   •   •   •   •   •   • < • p • > • • •   • < • s • t • r • o • n • g • > • H • S • C •   • ( • S • c • i • e • n • c • e • ) • < • / • s • t • r • o • n • g • > •   • — •   • N • o • t • r • e •   • D • a • m • e •   • C • o • l • l • e • g • e • , •   • D • h • a • k • a •   • ( • F • i • r • s • t •   • D • i • v • i • s • i • o • n • ) • < • / • p • > • 
+ •   •   •   •   •   •   •   •   • < • / • d • i • v • > • 
+ •   •   •   •   •   •   • < • / • d • i • v • > • 
+ • 
+ •   •   •   •   •   •   • < • d • i • v •   • c • l • a • s • s • = • " • p • t • - • 4 •   • b • o • r • d • e • r • - • t •   • b • o • r • d • e • r • - • s • l • a • t • e • - • 2 • 0 • 0 •   • f • l • e • x •   • i • t • e • m • s • - • c • e • n • t • e • r •   • j • u • s • t • i • f • y • - • b • e • t • w • e • e • n • " • > • 
+ •   •   •   •   •   •   •   •   • < • s • p • a • n •   • c • l • a • s • s • = • " • t • e • x • t • - • [ • 1 • 1 • p • x • ] •   • t • e • x • t • - • s • l • a • t • e • - • 5 • 0 • 0 • " • > • O • f • f • i • c • i • a • l •   • D • o • s • s • i • e • r •   • • •   • s • e • c • r • e • t • a • r • i • a • t • @ • b • r • i • g • g • e • n • n • a • s • i • r • u • d • d • i • n • . • c • o • m • < • / • s • p • a • n • > • 
+ •   •   •   •   •   •   •   •   • < • b • u • t • t • o • n •   • o • n • c • l • i • c • k • = • " • w • i • n • d • o • w • . • p • r • i • n • t • ( • ) • " •   • c • l • a • s • s • = • " • p • x • - • 4 •   • p • y • - • 2 •   • r • o • u • n • d • e • d • - • x • l •   • b • g • - • [ • # • 0 • 2 • 5 • B • 6 • 6 • ] •   • h • o • v • e • r • : • b • g • - • [ • # • 0 • 1 • 3 • 1 • 3 • 7 • ] •   • t • e • x • t • - • w • h • i • t • e •   • t • e • x • t • - • x • s •   • f • o • n • t • - • b • o • l • d •   • t • r • a • n • s • i • t • i • o • n •   • f • l • e • x •   • i • t • e • m • s • - • c • e • n • t • e • r •   • g • a • p • - • 1 • . • 5 •   • s • h • a • d • o • w • - • s • m • " • > • 
+ •   •   •   •   •   •   •   •   •   •   • < • i •   • c • l • a • s • s • = • " • f • a • - • s • o • l • i • d •   • f • a • - • p • r • i • n • t • " • > • < • / • i • > • 
+ •   •   •   •   •   •   •   •   •   •   • < • s • p • a • n • > • P • r • i • n • t •   • / •   • S • a • v • e •   • a • s •   • P • D • F • < • / • s • p • a • n • > • 
+ •   •   •   •   •   •   •   •   • < • / • b • u • t • t • o • n • > • 
+ •   •   •   •   •   •   • < • / • d • i • v • > • 
+ •   •   •   •   • < • / • d • i • v • > • 
+ •   •   • < • / • d • i • v • > • 
 
   <!-- WhatsApp Floating Action Button -->
   <a href="https://wa.me/8801902556070?text=Hello%20Secretariat%2C%20I%20would%20like%20to%20request%20an%20executive%20consultation%20with%20Brigadier%20General%20(Dr.)%20AKM%20Nasir%20Uddin."
