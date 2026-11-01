@@ -95,7 +95,7 @@ const translations = {
 
     // Skills
     "skills-badge": "Executive Competencies & Accreditations",
-    "skills-title": "Strategic Competencies & Global Accreditations",
+    "skills-title": "Strategic Competencies & <span class=\"italic text-[#025B66] font-normal\">Global Accreditations</span>",
     "skills-subtitle": "Demonstrated capabilities validated over 35+ years of healthcare leadership in high-stakes civilian and military environments.",
 
     // Timeline
@@ -126,7 +126,7 @@ const translations = {
 
     // Projects
     "proj-badge": "International Bilateral Partnerships & National Megaprojects",
-    "proj-title": "Major Healthcare Projects, Reforms & Bilateral Missions",
+    "proj-title": "Healthcare Transformation & <span class=\"italic text-[#025B66] font-normal\">National Megaprojects</span>",
     "proj-sub": "Heading transformative health developments in collaboration with JICA (Japan), GIZ (Germany), Denmark (Danida), Netherlands, Sweden, USA, and the Government of Bangladesh.",
     "proj-dmch-title": "Preparation of Master Plan & Design for Renovation & Modernization of Dhaka Medical College & Hospital (DMCH)",
     "proj-dmch-desc": "Dhaka Medical College & Hospital (estb. 1946) is the nation's premier tertiary referral hospital with 2,600 existing beds and the largest medical/nursing college campus. Under his leadership as Director, the comprehensive Master Plan, Architectural Blueprint, and Cost Estimation were formulated to build a modern 5,000-bed hospital, new medical college, and nursing college. Envisioned as perhaps the largest academic hospital in the Asia-Pacific region.",
@@ -141,7 +141,7 @@ const translations = {
 
     // Projects
     "proj-badge": "আন্তর্জাতিক দ্বিপাক্ষিক অংশীদারিত্ব ও জাতীয় মেগাপ্রকল্প",
-    "proj-title": "স্বাস্থ্যখাত সংস্কার, মেগাপ্রকল্প ও আন্তর্জাতিক দ্বিপাক্ষিক মিশন",
+    "proj-title": "স্বাস্থ্য রূপান্তর, মেগাপ্রকল্প ও <span class=\"italic text-[#025B66] font-normal\">দ্বিপাক্ষিক মিশন</span>",
     "proj-sub": "জাইকা (জাপান), জিআইজেড (জার্মানি), ডেনমার্ক (ডানিডা), নেদারল্যান্ডস, সুইডেন, যুক্তরাষ্ট্র এবং বাংলাদেশ সরকারের যৌথ অর্থায়ন ও নির্দেশনায় বাস্তবায়িত রূপান্তরমূলক স্বাস্থ্য উদ্যোগসমূহ।",
     "proj-dmch-title": "ঢাকা মেডিকেল কলেজ ও হাসপাতালের আধুনিকায়ন ও সম্প্রসারণের পূর্ণাঙ্গ মাস্টারপ্ল্যান, ডিজাইন ও ব্যয় প্রাক্কলন",
     "proj-dmch-desc": "১৯৪৬ সালে প্রতিষ্ঠিত দেশের প্রাচীনতম ও সর্ববৃহৎ ২,৬০০ শয্যার রেফারাল হাসপাতাল এবং মেডিকেল ও নার্সিং ক্যাম্পাসকে রূপান্তরের রূপরেখা। তাঁর পরিচালনাকালে পুরো হাসপাতাল ও শিক্ষা কার্যক্রম শতভাগ সচল রেখে নতুন ৫,০০০ শয্যার আধুনিক হাসপাতাল, নতুন মেডিকেল কলেজ ও নার্সিং কলেজ নির্মাণের ঐতিহাসিক মাস্টারপ্ল্যান প্রণীত হয়। যা এশিয়া প্যাসিফিকের সর্ববৃহৎ একাডেমিক হাসপাতাল কমপ্লেক্স হিসেবে পরিকল্পিত।",
@@ -197,7 +197,7 @@ const translations = {
 
     // Credentials
     "acad-badge": "Academic Credentials & Higher Education",
-    "acad-title": "Degrees, Postgraduate Research & Alma Mater",
+    "acad-title": "Academic Credentials & <span class=\"italic text-[#025B66] font-normal\">Postgraduate Research</span>",
     "acad-sub": "Verified academic footprint from Notre Dame College, Rajshahi University, University of Dhaka, and Bangladesh University of Professionals (BUP).",
     "edu-1-field": "Health care & Hospital Management",
     "edu-1-inst": "Bangladesh University of Professionals (BUP)",
@@ -217,7 +217,7 @@ const translations = {
 
     // Contact
     "contact-badge": "Executive Engagement",
-    "contact-title": "Strategic Consultation & Advisory Desk",
+    "contact-title": "Executive Advisory & <span class=\"italic text-[#025B66] font-normal\">Consultation Secretariat</span>",
     "contact-desc": "For institutional hospital development, board appointments, medical college commissioning, or keynote invitations, submit your proposal to the executive secretariat.",
     "c-office-title": "Current Executive Office",
     "c-wa-title": "Direct WhatsApp Secretariat",
@@ -323,7 +323,7 @@ const translations = {
 
     // Skills
     "skills-badge": "কোর কম্পিটেন্সি ও অনুমোদন",
-    "skills-title": "লিঙ্কডইন ভেরিফাইড দক্ষতা ও কৌশলগত বিশেষজ্ঞতা",
+    "skills-title": "কৌশলগত দক্ষতা ও <span class=\"italic text-[#025B66] font-normal\">আন্তর্জাতিক স্বীকৃতি</span>",
     "skills-subtitle": "সামরিক ও বেসামরিক জটিল স্বাস্থ্য পরিবেশে দীর্ঘ ৩৫+ বছরের নেতৃত্বের মাধ্যমে অর্জিত প্রমাণিত সক্ষমতা।",
 
     // Timeline
@@ -395,7 +395,7 @@ const translations = {
 
     // Credentials
     "acad-badge": "শিক্ষাগত যোগ্যতা ও উচ্চতর ডিগ্রি",
-    "acad-title": "ডিগ্রি, পোস্টগ্র্যাজুয়েট গবেষণা ও বিদ্যাপীঠ",
+    "acad-title": "উচ্চশিক্ষা, পোস্টগ্র্যাজুয়েট গবেষণা ও <span class=\"italic text-[#025B66] font-normal\">স্বীকৃতি</span>",
     "acad-sub": "নটর ডেম কলেজ, রাজশাহী বিশ্ববিদ্যালয়, ঢাকা বিশ্ববিদ্যালয় ও বাংলাদেশ ইউনিভার্সিটি অব প্রফেশনালস (BUP) থেকে অর্জিত শিক্ষাগত সনদসমূহ।",
     "edu-1-field": "হেলথ কেয়ার অ্যান্ড হসপিটাল ম্যানেজমেন্ট",
     "edu-1-inst": "বাংলাদেশ ইউনিভার্সিটি অব প্রফেশনালস (BUP)",
