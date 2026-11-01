@@ -515,28 +515,99 @@ document.addEventListener('DOMContentLoaded', () => {
 /**
  * Initialize IntersectionObserver for Scroll Animations
  */
+/**
+ * Initialize Luxury Scroll Reveal Animations (Subtle Fluid Fade-In & Slide-Up on Scroll)
+ */
 function initScrollAnimations() {
-  const revealElements = document.querySelectorAll('.reveal-init');
+  // Target key narrative elements, cards, and section headers across the portfolio
+  const targets = [];
+
+  // Section Headers
+  document.querySelectorAll('section > div > div.text-center').forEach(el => targets.push({ el, delay: 0 }));
+
+  // Executive Metric Cards (Strip)
+  document.querySelectorAll('section.-mt-8 .grid > div, section.-mt-10 .grid > div').forEach((el, i) => {
+    targets.push({ el, delay: (i % 4) * 100 });
+  });
+
+  // About Narrative & Photo Columns
+  document.querySelectorAll('#about .grid > div').forEach((el, i) => {
+    targets.push({ el, delay: (i % 2) * 150 });
+  });
+
+  // 4 Strategic Governance Pillars
+  document.querySelectorAll('#about .mt-8 .grid > div').forEach((el, i) => {
+    targets.push({ el, delay: (i % 4) * 100 });
+  });
+
+  // Experience Flagship Timeline Cards
+  document.querySelectorAll('#timelineCardsContainer > div[data-category]').forEach((el, i) => {
+    targets.push({ el, delay: Math.min(i * 80, 240) });
+  });
+
+  // COVID Chronicle Metrics & Cards
+  document.querySelectorAll('#covid .grid > div').forEach((el, i) => {
+    targets.push({ el, delay: (i % 4) * 100 });
+  });
+
+  // Competency Pillars & Research Cards
+  document.querySelectorAll('#competencies .grid > div').forEach((el, i) => {
+    targets.push({ el, delay: (i % 4) * 100 });
+  });
+
+  // Megaprojects Cards
+  document.querySelectorAll('#projects .grid > div').forEach((el, i) => {
+    targets.push({ el, delay: (i % 2) * 120 });
+  });
+
+  // Media Briefings Cards
+  document.querySelectorAll('#media .grid > div').forEach((el, i) => {
+    targets.push({ el, delay: (i % 3) * 120 });
+  });
+
+  // Academic Degree Cards
+  document.querySelectorAll('#academic .grid > div').forEach((el, i) => {
+    targets.push({ el, delay: (i % 4) * 100 });
+  });
+
+  // Contact Columns
+  document.querySelectorAll('#contact .grid > div').forEach((el, i) => {
+    targets.push({ el, delay: (i % 2) * 150 });
+  });
+
   if (!('IntersectionObserver' in window)) {
-    // Fallback if IntersectionObserver is not supported
-    revealElements.forEach(el => el.classList.add('reveal-visible'));
+    targets.forEach(({ el }) => el.classList.add('is-visible'));
     return;
   }
 
-  const revealObserver = new IntersectionObserver((entries, observer) => {
+  const observer = new IntersectionObserver((entries, obs) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('reveal-visible');
-        observer.unobserve(entry.target);
+        entry.target.classList.add('is-visible');
+        obs.unobserve(entry.target);
       }
     });
   }, {
     root: null,
-    threshold: 0.12,
+    threshold: 0.08,
     rootMargin: '0px 0px -40px 0px'
   });
 
-  revealElements.forEach(el => revealObserver.observe(el));
+  targets.forEach(({ el, delay }) => {
+    if (!el) return;
+    el.classList.add('reveal-on-scroll');
+    if (delay > 0) {
+      el.style.transitionDelay = `${delay}ms`;
+    }
+
+    // If already in viewport on load, reveal immediately
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 30) {
+      el.classList.add('is-visible');
+    } else {
+      observer.observe(el);
+    }
+  });
 }
 
 /**

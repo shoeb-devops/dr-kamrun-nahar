@@ -1,5 +1,21 @@
 
 /* ==========================================================================
+   Luxury Scroll Reveal (Halka Halka Fade-In & Fluid Slide-Up)
+   ========================================================================== */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(26px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* ==========================================================================
    Ultra-Smooth Momentum Scrolling (Lenis Luxury Physics)
    ========================================================================== */
 html.lenis, html.lenis body {
